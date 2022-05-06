@@ -24,3 +24,12 @@ Can also check for effect of income grants on vaccination rates. Can use the Bid
 Bill was signed around March 11, though widely expected.
 
 Can also use the expiry of the unemployment insurance top-up, but this was known in advance.
+
+
+https://www.census.gov/library/stories/2021/12/who-are-the-adults-not-vaccinated-against-covid.html
+
+This tells us that why Adults arent vaccinated, as of end 2021. Almost no one (2%) is due to inability to access the vaccine.
+
+https://www.census.gov/programs-surveys/household-pulse-survey/data.html
+
+The household pulse survey has a tonne of state level information.
