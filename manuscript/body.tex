@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\title{Part IIA Paper 3 Project}
+\author{
+	Anonymous
+}
+
+\newcommand\wordcount{
+	\immediate\write18{texcount -sum -1 \jobname.tex > count.txt} 
+	\input{count.txt}
+}
+
+\usepackage[a4paper, total={6in, 10in}]{geometry} % to adjust the margins etc
+\usepackage{titlesec} % for the title formatting
+\usepackage{setspace} % to set line spacing
+\usepackage[parfill]{parskip} % remove the paragraph indentation
+
+\titleformat*{\section}{\centering \LARGE}
+\pagenumbering{arabic} % add page numbers
+
+\begin{document}
+	\maketitle
+	\begin{spacing}{1.5} % set 1.5 line spacing
+		Q1. Vaccination take-up rates: Inter-State differences in the USA in 2021.
+		
+		At the end of 2021 the share of the population fully vaccinated against Covid-19 differed widely across US States.
+		
+		a) Identify and evaluate the main economic and social factors giving rise to this outcome.
+		
+		b) On the basis of your answer to a), suggest how high vaccination rates might be achieved across the entire United States.
+		
+		\wordcount words
+		\section{Introduction}
+		Hello world hi hi hello d
+	\end{spacing}
+\end{document}
