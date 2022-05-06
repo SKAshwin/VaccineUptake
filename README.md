@@ -25,6 +25,10 @@ Bill was signed around March 11, though widely expected.
 
 Can also use the expiry of the unemployment insurance top-up, but this was known in advance.
 
+https://www.bls.gov/lau/#tables
+
+County level unemployment data available here. The unemployment benefit expiry was a larger income shock in counties that had more unemployment to begin with.
+
 
 https://www.census.gov/library/stories/2021/12/who-are-the-adults-not-vaccinated-against-covid.html
 
