@@ -1,4 +1,4 @@
-Question:
+## Question
 
 At the end of 2021 the share of the population fully vaccinated against Covid-19 differed
 widely across US States (see Figure 1).
@@ -9,11 +9,17 @@ achieved across the entire United States
 
 ----
 
+## Ideas
+
 Planned focus: Media coverage on the vaccine, and FOX news
 Solution: more attempt to engage in advocacy for the vaccine on these right-wing networks
 
 Instrument for media coverage/Republican membership: FOX news channel position
 Idea: more FOX news viewership → lower vaccination rates
+
+Synthetic control for vaccine incentive programs: see https://jamanetwork.com/journals/jama/fullarticle/2781792 but maybe pick another state.
+
+Use Vatican's statements to try and see how it influences Catholics: https://pubmed.ncbi.nlm.nih.gov/34960233/. This would work via a DiD type set up - counties with more Catholics should have their new vaccination gap emerge with other counties.
 
 Reduced form regression: rural status, Republican membership, total cumulative covid cases/deaths in that county, demographic factors, educational attainment
 
@@ -25,9 +31,7 @@ Bill was signed around March 11, though widely expected.
 
 Can also use the expiry of the unemployment insurance top-up, but this was known in advance.
 
-https://www.bls.gov/lau/#tables
-
-County level unemployment data available here. The unemployment benefit expiry was a larger income shock in counties that had more unemployment to begin with.
+Can use Afghan invasion as instrument for local Biden approval. Note that only state level data will be available for approval rating, however.
 
 
 https://www.census.gov/library/stories/2021/12/who-are-the-adults-not-vaccinated-against-covid.html
