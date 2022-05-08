@@ -19,7 +19,9 @@ Idea: more FOX news viewership → lower vaccination rates
 
 Synthetic control for vaccine incentive programs: see https://jamanetwork.com/journals/jama/fullarticle/2781792 but maybe pick another state.
 
-Use Vatican's statements to try and see how it influences Catholics: https://pubmed.ncbi.nlm.nih.gov/34960233/. This would work via a DiD type set up - counties with more Catholics should have their new vaccination gap emerge with other counties.
+Use Vatican's statements to try and see how it influences Catholics: https://pubmed.ncbi.nlm.nih.gov/34960233/. This would work via a DiD type set up - counties with more Catholics should have their new vaccination gap emerge with other counties. Can use the statement by the Pope and North/South American bishops on 18 August 2021 to see if gap opened up between Catholics and other religious groups.
+
+Use the proportion of votes in 2020 that were in person, after controlling for donald trump vote %, as a measure for how seriously COVID-19 is taken on average in that county (how much risk do people assess to themselves).
 
 Reduced form regression: rural status, Republican membership, total cumulative covid cases/deaths in that county, demographic factors, educational attainment
 
