@@ -15,13 +15,15 @@ Data we have already obtained has details on how to obtain it. The ones unlabell
 
 * 2020 and 2016 Election results by county. `raw/countypres_2000-2020.csv` contains information on all Presidential elections since 2000, and even breaks down the ballots cost into in-person and mail-in ballots. Obtained from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ 
 
-* Racial breakdown by county.
+* Racial breakdown by county. Obtained from the 2020 Decennial Redestricting Data : https://data.census.gov/cedsci/table?q=P1%3A%20RACE%20county&tid=DECENNIALPL2020.P1 
 
-* Educational attainment by county
+* Educational attainment by county. Obtained from https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/
 
-* Population density by county
+* Poverty by county. Also obtained from https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/ 
 
-* Age by county.
+* Age by county. Obtained for 2019 from here: https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html 
+
+* COVID-19 Deaths in 2020, by county.
 
 * Fox News viewership by county.
 
