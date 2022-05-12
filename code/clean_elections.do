@@ -1,5 +1,5 @@
 global raw_dir "/home/elven/Documents/College/metrics_project/data/raw"
-global cleaned_dir "/home/elven/Documents/College/metrics_project/data/raw"
+global cleaned_dir "/home/elven/Documents/College/metrics_project/data/cleaned"
 global elections_raw "countypres_2000-2020.csv"
 
 *Uncomment on first run
@@ -59,4 +59,6 @@ foreach year of local years {
 }
 
 cd "$cleaned_dir"
+
+rename county_fips fips
 save elections_clean, replace
