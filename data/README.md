@@ -21,7 +21,7 @@ Data we have already obtained has details on how to obtain it. The ones unlabell
 
 * Poverty by county. `raw/PovertyEstimates.xls` contain the Census' Small Area Income and Poverty Estimates, which contains data on the number of people (and % of people) in poverty, child poverty specifically, as well as median income. It also classifies each county's rural or uban influence using the Rural-urban continuum code and the urban influence code (2013). Data as of 2019. Also obtained from https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/ 
 
-* Age by county. Obtained for 2019 from here: https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html 
+* Age by county. `raw/cc-est2019-alldata.csv` contains data from the Census on each county's age breakdown into various categories (see [website](https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2019/cc-est2019-alldata.pdf) for what each number means) as well as racial data by age. Obtained for 2019 from here: https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html 
 
 * COVID-19 Deaths and Cases in 2020, by county. `raw/cases01dec20.csv` contains information on cases and deaths in every region of every country of the world, taken from the CSSE COVID-19 Data Repository maintained by John Hopkins, here: https://github.com/CSSEGISandData/COVID-19 
 
