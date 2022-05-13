@@ -61,6 +61,15 @@ frame change religionrace
 	cd "$temp_dir"
 	import delim "$religion_race_raw", varn(1)
 	rename fipscode fips
+	
+	label var allwhitechristians "All white Christians, PRRI 2020 Religion Census"
+	label var whiteevangelicalprotestant "White Evangelical Protestants, PRRI 2020 Religion Census"
+	label var whitemainlineprotestant "White Mainline Protestants, PRRI 2020 Religion Census"
+	label var blackprotestant "Black Protestants, PRRI 2020 Religion Census"
+	label var whitecatholic "White Catholics, PRRI 2020 Religion Census"
+	label var hispaniccatholic "Hispanic Catholics, PRRI 2020 Religion Census"
+	label var hispanicprotestant "Hispanic Protestants, PRRI 2020 Religion Census"
+	label var mormon "Mormons, PRRI 2020 Religion Census"
 frame change default
 
 frlink 1:1 fips, frame(religionrace)
@@ -75,20 +84,56 @@ frame change religion
 	cd "$temp_dir"
 	import delim "$religion_raw", varn(1) clear
 	rename fipscode fips
+	
+	label var catholic "All Catholics, PRRI 2020 Religion Census"
+	label var standardized "PRRI Religious Diversity Index, PRRI 2020 Religion Census"
 frame change default
 
 frlink 1:1 fips, frame(religion)
 frget catholic, from(religion)
 frget prri_diversity_index=standardized, from(religion)
 drop religion
-/*
+
 capture frame drop race
 frame create race
 frame change race
 	cd "$raw_dir"
-	import delim "$race_raw",varn(1) clear
+	import delim "$race_raw",varn(1) numericcols(3/9) clear
 	* first row has some description
 	drop if _n==1
 	gen fips = real(substr(geo_id, 10, 14))
 	order fips
-*/
+	rename p1_002n totalpop
+	rename p1_003n white
+	rename p1_004n black
+	rename p1_005n native
+	rename p1_006n asian
+	rename p1_007n pacific
+	gen nonwhite = totalpop-white
+	
+	gen whitepct = white/totalpop * 100
+	gen nonwhitepct = nonwhite/totalpop * 100
+	gen blackpct = black/totalpop * 100
+	gen nativepct = native/totalpop * 100
+	gen asianpct = asian/totalpop * 100
+	gen pacificpct = pacific/totalpop * 100
+	
+	label var totalpop "Total Population, 2020 census"
+	label var white "Total White Population, 2020 census"
+	label var nonwhite "Total Non-White Population, 2020 census"
+	label var black "Total Black Population, 2020 census"
+	label var native "Total American Indian/Alaskan Native Population, 2020 census"
+	label var asian "Total Asian Population, 2020 census"
+	label var pacific "Total Pacific Islander/Native Hawaiian Population, 2020 census"
+	
+	label var whitepct "White Proportion of Population, 2020 census"
+	label var nonwhitepct "Nonwhite Proportion of Population, 2020 census"
+	label var blackpct "Black Proportion of Population, 2020 census"
+	label var nativepct "American Indian/Alaskan Native Proportion of Population, 2020 census"
+	label var asianpct "Asian Proportion of Population, 2020 census"
+	label var pacificpct "Pacific Islander/Native Hawaiian Proportion of Population, 2020 census"
+frame change default
+
+frlink 1:1 fips, frame(race)
+frget totalpop=totalpop white=whitepct nonwhite=nonwhitepct black=blackpct native=nativepct asian=asianpct pacific=pacificpct, from(race)
+drop race
