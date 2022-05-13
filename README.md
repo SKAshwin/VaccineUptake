@@ -43,3 +43,8 @@ This tells us that why Adults arent vaccinated, as of end 2021. Almost no one (2
 https://www.census.gov/programs-surveys/household-pulse-survey/data.html
 
 The household pulse survey has a tonne of state level information.
+
+GENERAL NOTES ON FINDINGS:
+* Deaths per capita is actually not predictive of future vaccination
+* Cases per capita is; and positively so, but maybe this is a matter of reflecting more testing and so stronger attitudes towards covid
+* In 30 September, Republican effect weaker, and interestingly Catholic premium also disappears
