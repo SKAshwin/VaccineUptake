@@ -152,12 +152,14 @@ frame change povertyframe
 	drop if substr(FIPStxt, 3,5)=="000"
 	
 	rename PCTPOVALL_2019 poverty
+	rename MEDHHINC_2019 median_household_income_2019
 	gen fips = real(FIPStxt)
 	order fips
 	
 	label var poverty "Estimated percent of people of all ages in poverty 2019, SAIPE Estimates"
+	label var median_household_income_2019 "Estimate of median household income 2019, SAIPE Estimates"
 frame change default
 
 frlink 1:1 fips, frame(povertyframe)
-frget poverty, from(povertyframe)
+frget poverty median_household_income_2019, from(povertyframe)
 drop povertyframe
