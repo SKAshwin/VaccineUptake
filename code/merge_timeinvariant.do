@@ -12,6 +12,7 @@ global race_raw "DECENNIALPL2020.P1_data_with_overlays_2022-04-22T121216.csv"
 global poverty_raw "PovertyEstimates.xls"
 global age_cleaned "age_cleaned"
 global cases_raw "cases01dec20.csv"
+global unemployment_cleaned "unemployment_cleaned"
 
 cd "$raw_dir"
 import excel "$education_raw", cellrange(A5:AU3288) firstrow clear
@@ -220,6 +221,17 @@ frame change default
 frlink 1:1 fips, frame(votes)
 frget *pct, from(votes)
 drop votes
+
+capture frame drop unemployment
+frame create unemployment
+frame change unemployment
+	cd "$cleaned_dir"
+	use "$unemployment_cleaned"
+frame change default
+
+frlink 1:1 fips, frame(unemployment)
+frget unrate*, from(unemployment)
+drop unemployment
 
 cd "$cleaned_dir"
 save "time_invariant", replace
