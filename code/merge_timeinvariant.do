@@ -9,6 +9,7 @@ global religion_race_raw "prri_religion_subset_race.csv"
 global religion_raw "prri_religion.csv"
 global race_raw "DECENNIALPL2020.P1_data_with_overlays_2022-04-22T121216.csv"
 global poverty_raw "PovertyEstimates.xls"
+global age_cleaned "age_cleaned"
 
 cd "$raw_dir"
 import excel "$education_raw", cellrange(A5:AU3288) firstrow clear
@@ -163,3 +164,16 @@ frame change default
 frlink 1:1 fips, frame(povertyframe)
 frget poverty median_household_income_2019, from(povertyframe)
 drop povertyframe
+
+capture frame drop age
+frame create age
+frame change age
+	cd "$cleaned_dir"
+	use "$age_cleaned", replace
+frame change default
+
+frlink 1:1 fips, frame(age)
+frget *pct, from(age)
+frget ctyname, from(age)
+
+order ctyname county_name
