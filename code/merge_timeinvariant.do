@@ -220,3 +220,6 @@ frame change default
 frlink 1:1 fips, frame(votes)
 frget *pct, from(votes)
 drop votes
+
+cd "$cleaned_dir"
+save "time_invariant", replace
