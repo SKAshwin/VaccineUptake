@@ -1,4 +1,5 @@
 frame reset
+macro drop _all
 global raw_dir "/home/elven/Documents/College/metrics_project/data/raw"
 global temp_dir "/home/elven/Documents/College/metrics_project/data/temp"
 global cleaned_dir "/home/elven/Documents/College/metrics_project/data/cleaned"
@@ -10,6 +11,7 @@ global religion_raw "prri_religion.csv"
 global race_raw "DECENNIALPL2020.P1_data_with_overlays_2022-04-22T121216.csv"
 global poverty_raw "PovertyEstimates.xls"
 global age_cleaned "age_cleaned"
+global cases_raw "cases01dec20.csv"
 
 cd "$raw_dir"
 import excel "$education_raw", cellrange(A5:AU3288) firstrow clear
@@ -174,6 +176,47 @@ frame change default
 
 frlink 1:1 fips, frame(age)
 frget *pct, from(age)
-frget ctyname, from(age)
+drop age
 
-order ctyname county_name
+capture frame drop cases
+frame create cases
+frame change cases
+	cd "$raw_dir"
+	import delim "$cases_raw", varn(1)
+	
+	* filter down to just the U
+	keep if country_region == "US"
+	* Random garbage nonexistent counties
+	drop if admin2 == "Unassigned"
+	drop if fips >= 80000
+	
+	gen imputed_pop =  confirmed/(incident_rate/100000)
+	gen deaths_per_capita = deaths/imputed_pop
+	gen cases_per_capita = incident_rate/100000
+	
+	label var cases_per_capita "Per person COVID-19 cases 1 December 2020"
+	label var deaths_per_capita "Per person COVID-19 deaths 1 December 2020"
+frame change default
+
+frlink 1:1 fips, frame(cases)
+frget cases_per_capita deaths_per_capita, from(cases)
+drop cases
+
+capture frame drop votes
+frame create votes
+frame change votes
+	cd "$cleaned_dir"
+	use "$elections_cleaned"
+	
+	label var demvotes2020pct "Percentage of ballots cast for Democrat, 2020"
+	label var repvotes2020pct "Percentage of ballots cast for Republican, 2020"
+	label var othvotes2020pct "Percentage of ballots cast for Others, 2020"
+	
+	label var demvotes2016pct "Percentage of ballots cast for Democrat, 2016"
+	label var repvotes2016pct "Percentage of ballots cast for Republican, 2016"
+	label var othvotes2016pct "Percentage of ballots cast for Others, 2016"
+frame change default
+
+frlink 1:1 fips, frame(votes)
+frget *pct, from(votes)
+drop votes
