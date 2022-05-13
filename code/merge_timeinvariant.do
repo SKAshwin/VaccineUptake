@@ -8,6 +8,7 @@ global education_raw "Education.xls"
 global religion_race_raw "prri_religion_subset_race.csv"
 global religion_raw "prri_religion.csv"
 global race_raw "DECENNIALPL2020.P1_data_with_overlays_2022-04-22T121216.csv"
+global poverty_raw "PovertyEstimates.xls"
 
 cd "$raw_dir"
 import excel "$education_raw", cellrange(A5:AU3288) firstrow clear
@@ -52,6 +53,9 @@ label var monthly_col "EPI 2020 Cost of living for 2 parents 2 children househol
 label var annual_col "EPI 2020 Cost of living for 2 parents 2 children household per annum"
 label var median_family_income "EPI 2020 Median Income 2 parents 2 children household"
 label var mean_family_income "EPI 2020 Mean Income 2 parents 2 children household"
+
+rename median_family_income median_family_income_2020
+rename mean_family_income mean_family_income_2020
 
 drop col
 
@@ -137,3 +141,23 @@ frame change default
 frlink 1:1 fips, frame(race)
 frget totalpop=totalpop white=whitepct nonwhite=nonwhitepct black=blackpct native=nativepct asian=asianpct pacific=pacificpct, from(race)
 drop race
+
+capture frame drop povertyframe
+frame create povertyframe
+frame change povertyframe
+	cd "$raw_dir"
+	import excel "$poverty_raw", sheet("Poverty Data 2019") cellrange(A5:AH3198) firstrow clear
+	drop if Stabr=="US"
+	* Remove the states
+	drop if substr(FIPStxt, 3,5)=="000"
+	
+	rename PCTPOVALL_2019 poverty
+	gen fips = real(FIPStxt)
+	order fips
+	
+	label var poverty "Estimated percent of people of all ages in poverty 2019, SAIPE Estimates"
+frame change default
+
+frlink 1:1 fips, frame(povertyframe)
+frget poverty, from(povertyframe)
+drop povertyframe
