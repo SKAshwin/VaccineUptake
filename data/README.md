@@ -11,7 +11,7 @@ Data we have already obtained has details on how to obtain it. The ones unlabell
 
 * Religious breakdowns by county. `raw/webscrape/prri_religion.html` and `raw/webscrape/prri_religion_subset_race.html` have data on religious affiliations in each US county, broken down into different subsets (the latter is more fine-grained). Also has populations by county. This was scraped from https://www.prri.org/research/2020-census-of-american-religion/, and that page has details on how it was compiled
 
-* Vaccination rates by county by day. Provided by Cambridge.
+* Vaccination rates by county by day. Taken for 31 December 2021, 30 September 2021, and then a 1 May - 30 June period in 2021. Taken from https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-County/8xkx-amqh/data 
 
 * 2020 and 2016 Election results by county. `raw/countypres_2000-2020.csv` contains information on all Presidential elections since 2000, and even breaks down the ballots cost into in-person and mail-in ballots. Obtained from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ 
 
@@ -24,6 +24,8 @@ Data we have already obtained has details on how to obtain it. The ones unlabell
 * Age by county. `raw/cc-est2019-alldata.csv` contains data from the Census on each county's age breakdown into various categories (see [website](https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2019/cc-est2019-alldata.pdf) for what each number means) as well as racial data by age. Obtained for 2019 from here: https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html 
 
 * COVID-19 Deaths and Cases in 2020, by county. `raw/cases01dec20.csv` contains information on cases and deaths in every region of every country of the world, taken from the CSSE COVID-19 Data Repository maintained by John Hopkins, here: https://github.com/CSSEGISandData/COVID-19 
+
+* A county adjacency map, for the matched pair design, taken from https://www.nber.org/research/data/county-adjacency
 
 * Fox News viewership by county.
 
