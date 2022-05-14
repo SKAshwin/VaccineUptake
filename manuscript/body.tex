@@ -13,6 +13,7 @@
 \usepackage{titlesec} % for the title formatting
 \usepackage{setspace} % to set line spacing
 \usepackage[parfill]{parskip} % remove the paragraph indentation
+\usepackage{graphicx}
 
 \titleformat*{\section}{\centering \LARGE}
 \pagenumbering{arabic} % add page numbers
@@ -31,5 +32,11 @@
 		\wordcount words
 		\section{Introduction}
 		Hello world hi hi hello d
+		\begin{table}
+			\centering
+			\caption{Summary Statistics}
+			\input{tables/didsummary.tex}
+			\label{table:didsummary}
+		\end{table}
 	\end{spacing}
 \end{document}
