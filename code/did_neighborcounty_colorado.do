@@ -4,7 +4,7 @@ global raw_dir "/home/elven/Documents/College/metrics_project/data/raw"
 global cleaned_dir "/home/elven/Documents/College/metrics_project/data/cleaned"
 global reg_ready_dir "/home/elven/Documents/College/metrics_project/data/regression_ready"
 global est_dir "/home/elven/Documents/College/metrics_project/estimates"
-global tables_dir "/home/elven/Documents/College/metrics_project/manuscript/tables"
+global tables_dir "/home/elven/Documents/College/metrics_project/raw_tables"
 global time_invariant "time_invariant"
 global vaccuptake "COVID-19_Vaccinations_in_the_United_States_County_Colorado_DID.csv"
 global adjacencymap "county_adjacency2010.dta"
@@ -30,7 +30,7 @@ global adjacencymap "county_adjacency2010.dta"
 
 global treatedlist "8009, 8099, 8061, 8017, 8063, 8125, 8095, 8115, 8075, 8123"
 global untreated_kansas "20129, 20187, 20075, 20071, 20199, 20181, 20023"
-global untreated_nebraska "31057, 31029, 31135, 31101, 31049, 31033, 31105"
+global untreated_nebraska "31057, 31029, 31135, 31049, 31033, 31105"
 global untreated_oklahoma "40025"
 global untreatedlist "$untreated_kansas, $untreated_nebraska"
 *global untreatedlist "$untreated_kansas, $untreated_nebraska, $untreated_oklahoma"
@@ -102,6 +102,7 @@ frame change paircomparison
 		rename `observable'diff `observable'
 	}
 	eststo pairdiff: quietly estpost summarize $observableslist
+frame change default
 
 
 * Expand into panel, for later merging
@@ -125,7 +126,7 @@ eststo allcounties: quietly estpost summarize $observableslist
 cd "$tables_dir"
 esttab treatedcounties untreatedcounties pairdiff allcounties using didsummary.tex, ///
 cells("mean(pattern(1 1 1 0) fmt(2)) sd(pattern(0 0 0 1))") ///
-mlabels("Treated" "Untreated" "Pair Differences" "Nationwide SD")
+mlabels("Treated" "Untreated" "Pair Differences" "Nationwide SD") replace
 
 **** Estimate the actualy DiD
 
