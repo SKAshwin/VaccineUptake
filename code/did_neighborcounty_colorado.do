@@ -3,9 +3,13 @@ macro drop _all
 global raw_dir "/home/elven/Documents/College/metrics_project/data/raw"
 global cleaned_dir "/home/elven/Documents/College/metrics_project/data/cleaned"
 global reg_ready_dir "/home/elven/Documents/College/metrics_project/data/regression_ready"
+global est_dir "/home/elven/Documents/College/metrics_project/estimates"
+global tables_dir "/home/elven/Documents/College/metrics_project/manuscript/tables"
 global time_invariant "time_invariant"
 global vaccuptake "COVID-19_Vaccinations_in_the_United_States_County_Colorado_DID.csv"
 global adjacencymap "county_adjacency2010.dta"
+
+*ssc install estout, replace
 
 ****************************
 * Treatnment: 25 May to 30 June
@@ -28,7 +32,11 @@ global treatedlist "8009, 8099, 8061, 8017, 8063, 8125, 8095, 8115, 8075, 8123"
 global untreated_kansas "20129, 20187, 20075, 20071, 20199, 20181, 20023"
 global untreated_nebraska "31057, 31029, 31135, 31101, 31049, 31033, 31105"
 global untreated_oklahoma "40025"
-global untreatedlist "$untreated_kansas, $untreated_nebraska, $untreated_oklahoma"
+global untreatedlist "$untreated_kansas, $untreated_nebraska"
+*global untreatedlist "$untreated_kansas, $untreated_nebraska, $untreated_oklahoma"
+
+* need to define pop60to79 and above80
+global observableslist "repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty median_family_income_2020 pop60to79 above80"
 
 cd "$cleaned_dir"
 use "$time_invariant", replace
@@ -40,15 +48,15 @@ replace treatedgroup = 0 if treatedgroup == .
 gen pop60to79 = pop60to64pct + pop65to69pct + pop70to74pct + pop75to79pct
 gen above80 = pop80to84pct + pop85above
 
-* REPORT THIS TO JUSTIFY CHOICE OF GROUPS
-bysort treatedgroup: summarize repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty median_family_income_2020 pop60to79 above80 
-
+* REPORT THIS TO JUSTIFY CHOICE OF GROUPS 
+eststo treatedcounties: quietly estpost summarize $observableslist if treatedgroup == 1
+eststo untreatedcounties: quietly estpost summarize $observableslist if treatedgroup == 0
 *** Generate Pairs ***
 
 *** First filter down to relevant pairs in the adjacency map
 *** IE keep pairs if one county in CO and one in neighbor state, OR
 *** one in neighbor state and one in CO
-
+frame reset
 cd "$cleaned_dir"
 use "$adjacencymap", clear
 
@@ -68,6 +76,34 @@ replace pairidstring = fipsneighbor + "-" + fipscounty if fipscounty > fipsneigh
 encode pairidstring, gen(pairid)
 drop fipscounty fipsneighbor
 
+frame create timeinvariantadjacent
+frame change timeinvariantadjacent
+	cd "$cleaned_dir"
+	use "$time_invariant", clear
+	gen pop60to79 = pop60to64pct + pop65to69pct + pop70to74pct + pop75to79pct
+	gen above80 = pop80to84pct + pop85above
+	foreach var of varlist _all {
+		rename `var' `var'adj
+	}
+	rename fipsadj fipsadjacent
+frame copy default paircomparison
+frame change paircomparison
+	cd "$cleaned_dir"
+	merge m:1 fips using "$time_invariant"
+	drop if _m == 2
+	gen pop60to79 = pop60to64pct + pop65to69pct + pop70to74pct + pop75to79pct
+	gen above80 = pop80to84pct + pop85above
+	
+	frlink m:1 fipsadjacent, frame(timeinvariantadjacent)
+	foreach observable of varlist $observableslist {
+		frget `observable'adj, from(timeinvariantadjacent)
+		gen `observable'diff = abs(`observable' - `observable'adj)
+		drop `observable' `observable'adj
+		rename `observable'diff `observable'
+	}
+	eststo pairdiff: quietly estpost summarize $observableslist
+
+
 * Expand into panel, for later merging
 expand 61
 bysort fips fipsadjacent: gen t =_n
@@ -75,9 +111,23 @@ gen date = td(30apr2021) + t
 format %td date
 drop t
 
+cd "$cleaned_dir"
 save "coloradodidpairs", replace
 
-**** Estimate time
+*** Generate the summary statistics
+
+cd "$cleaned_dir"
+use "$time_invariant"
+gen pop60to79 = pop60to64pct + pop65to69pct + pop70to74pct + pop75to79pct
+gen above80 = pop80to84pct + pop85above
+eststo allcounties: quietly estpost summarize $observableslist
+
+cd "$tables_dir"
+esttab treatedcounties untreatedcounties pairdiff allcounties using didsummary.tex, ///
+cells("mean(pattern(1 1 1 0) fmt(2)) sd(pattern(0 0 0 1))") ///
+mlabels("Treated" "Untreated" "Pair Differences" "Nationwide SD")
+
+**** Estimate the actualy DiD
 
 cd "$raw_dir"
 import delim "$vaccuptake", varn(1) clear
