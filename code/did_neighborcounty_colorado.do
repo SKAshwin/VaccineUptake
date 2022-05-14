@@ -5,7 +5,7 @@ global cleaned_dir "/home/elven/Documents/College/metrics_project/data/cleaned"
 global reg_ready_dir "/home/elven/Documents/College/metrics_project/data/regression_ready"
 global est_dir "/home/elven/Documents/College/metrics_project/estimates"
 global tables_dir "/home/elven/Documents/College/metrics_project/raw_tables"
-global time_invariant "time_invariant"
+global time_invariant "time_invariant_standardized"
 global vaccuptake "COVID-19_Vaccinations_in_the_United_States_County_Colorado_DID.csv"
 global adjacencymap "county_adjacency2010.dta"
 
@@ -35,7 +35,6 @@ global untreated_oklahoma "40025"
 global untreatedlist "$untreated_kansas, $untreated_nebraska"
 *global untreatedlist "$untreated_kansas, $untreated_nebraska, $untreated_oklahoma"
 
-* need to define pop60to79 and above80
 global observableslist "repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty median_family_income_2020 pop60to79 above80"
 
 cd "$cleaned_dir"
@@ -44,9 +43,6 @@ use "$time_invariant", replace
 keep if inlist(fips, $treatedlist) | inlist(fips, $untreatedlist)
 gen treatedgroup = 1 if state=="CO"
 replace treatedgroup = 0 if treatedgroup == .
-
-gen pop60to79 = pop60to64pct + pop65to69pct + pop70to74pct + pop75to79pct
-gen above80 = pop80to84pct + pop85above
 
 * REPORT THIS TO JUSTIFY CHOICE OF GROUPS 
 eststo treatedcounties: quietly estpost summarize $observableslist if treatedgroup == 1
@@ -80,8 +76,6 @@ frame create timeinvariantadjacent
 frame change timeinvariantadjacent
 	cd "$cleaned_dir"
 	use "$time_invariant", clear
-	gen pop60to79 = pop60to64pct + pop65to69pct + pop70to74pct + pop75to79pct
-	gen above80 = pop80to84pct + pop85above
 	foreach var of varlist _all {
 		rename `var' `var'adj
 	}
@@ -91,9 +85,6 @@ frame change paircomparison
 	cd "$cleaned_dir"
 	merge m:1 fips using "$time_invariant"
 	drop if _m == 2
-	gen pop60to79 = pop60to64pct + pop65to69pct + pop70to74pct + pop75to79pct
-	gen above80 = pop80to84pct + pop85above
-	
 	frlink m:1 fipsadjacent, frame(timeinvariantadjacent)
 	foreach observable of varlist $observableslist {
 		frget `observable'adj, from(timeinvariantadjacent)
@@ -119,8 +110,6 @@ save "coloradodidpairs", replace
 
 cd "$cleaned_dir"
 use "$time_invariant"
-gen pop60to79 = pop60to64pct + pop65to69pct + pop70to74pct + pop75to79pct
-gen above80 = pop80to84pct + pop85above
 eststo allcounties: quietly estpost summarize $observableslist
 
 cd "$tables_dir"
@@ -176,5 +165,8 @@ drop if date <= td(25may2021)-7 | date >= td(25may2021)+7
 gen treated = 1 if state=="CO" & date >= td(25may2021)
 replace treated = 0 if treated == .
 
+cd "$est_dir"
 reg fullvaxpct treated i.pairdateid i.fips
+est save coloradoDubeDID_fullvax, replace
 reg dose1pct treated i.pairdateid i.fips
+est save coloradoDubeDID_dose1, replace
