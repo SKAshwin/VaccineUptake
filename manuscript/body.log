@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.1.18)  14 MAY 2022 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.1.18)  14 MAY 2022 19:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -212,7 +212,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 runsystem(texcount -sum -1 body.tex > count.txt)...executed.
 
 
-(./count.txt) (./tables/didsummary.tex
+(./count.txt) (./tables/cross_section.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -220,29 +220,35 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 3.
 )
-Overfull \hbox (22.13397pt too wide) in paragraph at lines 3--40
+Overfull \hbox (205.62556pt too wide) in paragraph at lines 3--40
+ [][] 
+ []
+
+(./tables/didsummary.tex)
+Overfull \hbox (22.13397pt too wide) in paragraph at lines 3--46
  [][] 
  []
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./body.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./body.aux) ) 
 Here is how much of TeX's memory you used:
- 2234 strings out of 492982
- 31862 string characters out of 6134896
- 98804 words of memory out of 5000000
- 5783 multiletter control sequences out of 15000+600000
+ 2238 strings out of 492982
+ 31945 string characters out of 6134896
+ 110812 words of memory out of 5000000
+ 5784 multiletter control sequences out of 15000+600000
  7588 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,31p,271b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on body.pdf (1 page, 36764 bytes).
+ 41i,10n,31p,271b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
+</us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on body.pdf (3 pages, 46750 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 30 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
