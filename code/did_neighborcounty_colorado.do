@@ -124,7 +124,8 @@ import delim "$vaccuptake", varn(1) clear
 
 keep date fips recip_county recip_state administered_dose1_pop_pct administered_dose1_recip_18plusp ///
 	series_complete_pop_pct series_complete_18pluspop_pct ///
-	booster_doses_vax_pct booster_doses_18plus_vax_pct
+	booster_doses_vax_pct booster_doses_18plus_vax_pct ///
+	administered_dose1_recip series_complete_yes census2019
 
 drop if fips == "UNK"
 gen fipsnum = real(fips)
@@ -140,6 +141,8 @@ rename series_complete_pop_pct fullvaxpct
 rename series_complete_18pluspop_pct fullvaxpct_adult
 rename booster_doses_vax_pct boosterpct
 rename booster_doses_18plus_vax_pct boosterpct_adult
+rename administered_dose1_recip dose1cnt
+rename series_complete_yes fullvaxcnt
 
 
 keep if inlist(fips, $treatedlist) | inlist(fips, $untreatedlist)
@@ -151,6 +154,12 @@ rename date_parsed date
 order fips date state county_name
 
 sort date state fips
+xtset fips date
+gen dFullvaxcnt = d.fullvaxcnt
+gen dDose1cnt = d.dose1cnt
+
+gen dFullvaxpct = dFullvaxcnt/census2019 *100
+gen dDose1pct = dDose1cnt/census2019 *100
 
 cd "$cleaned_dir"
 merge 1:m fips date using "coloradodidpairs"
@@ -170,3 +179,6 @@ reg fullvaxpct treated i.pairdateid i.fips
 est save coloradoDubeDID_fullvax, replace
 reg dose1pct treated i.pairdateid i.fips
 est save coloradoDubeDID_dose1, replace
+
+*reg dFullvaxpct treated i.pairdateid i.fips
+*reg dDose1pct treated i.pairdateid i.fips
