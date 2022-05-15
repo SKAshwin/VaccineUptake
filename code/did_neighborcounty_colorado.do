@@ -1,5 +1,6 @@
 frame reset
 macro drop _all
+eststo clear
 global raw_dir "/home/elven/Documents/College/metrics_project/data/raw"
 global cleaned_dir "/home/elven/Documents/College/metrics_project/data/cleaned"
 global reg_ready_dir "/home/elven/Documents/College/metrics_project/data/regression_ready"
@@ -27,13 +28,20 @@ global adjacencymap "county_adjacency2010.dta"
 * Border with Oklahoma
 * Treated: 009
 * Untreated: 025
-
+/*
 global treatedlist "8009, 8099, 8061, 8017, 8063, 8125, 8095, 8115, 8075, 8123"
 global untreated_kansas "20129, 20187, 20075, 20071, 20199, 20181, 20023"
 global untreated_nebraska "31057, 31029, 31135, 31049, 31033, 31105"
 global untreated_oklahoma "40025"
-global untreatedlist "$untreated_kansas, $untreated_nebraska"
-*global untreatedlist "$untreated_kansas, $untreated_nebraska, $untreated_oklahoma"
+global untreatedlist "$untreated_kansas, $untreated_nebraska, $untreated_oklahoma"
+*/
+
+global treatedlist "8009, 8099, 8061, 8017, 8063, 8125, 8095, 8115, 8075, 8123, 8069, 8057, 8107, 8081"
+global untreated_kansas "20129, 20187, 20075, 20071, 20199, 20181, 20023"
+global untreated_nebraska "31057, 31029, 31135, 31049, 31033, 31105"
+global untreated_oklahoma "40025"
+global untreated_wyoming "56037, 56007, 56001, 56021"
+global untreatedlist "$untreated_kansas, $untreated_nebraska, $untreated_oklahoma, $untreated_wyoming"
 
 global observableslist "repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty median_family_income_2020 pop60to79 above80"
 
@@ -113,9 +121,15 @@ use "$time_invariant"
 eststo allcounties: quietly estpost summarize $observableslist
 
 cd "$tables_dir"
+esttab treatedcounties untreatedcounties pairdiff allcounties, ///
+cells("mean(pattern(1 1 1 0) fmt(2)) sd(pattern(0 0 0 1))") ///
+mlabels("Treated" "Untreated" "Pair Differences" "Nationwide SD") replace
+
 esttab treatedcounties untreatedcounties pairdiff allcounties using didsummary.tex, ///
 cells("mean(pattern(1 1 1 0) fmt(2)) sd(pattern(0 0 0 1))") ///
 mlabels("Treated" "Untreated" "Pair Differences" "Nationwide SD") replace
+
+
 
 **** Estimate the actualy DiD
 
@@ -169,16 +183,40 @@ drop countyname
 gen pairiddatestring = pairidstring + string(date,"%td")
 encode pairiddatestring, gen(pairdateid)
 
-drop if date <= td(25may2021)-7 | date >= td(25may2021)+7
+encode state, gen(statecode)
+/*
+frame copy default placebo
+frame change placebo
+	forvalues day = 8/17 {
+		preserve
+		local treatmentdate = td(30apr2021) + `day'
+		local treatmentdate: di %td `treatmentdate'
+		drop if date <= td(`treatmentdate')-7 | date >= td(`treatmentdate')+7
+		di "`treatmentdate'"
+		gen treated = 1 if state=="CO" & date >= td(25may2021)
+		replace treated = 0 if treated == .
+		quietly reg fullvaxpct treated i.pairdateid i.fips
+		di "`_b[treated]'"
+		restore
+	}
+frame change default
+frame drop placebo
+*/
+
+drop if date <= td(25may2021)-10 | date >= td(25may2021)+10
 
 gen treated = 1 if state=="CO" & date >= td(25may2021)
 replace treated = 0 if treated == .
 
 cd "$est_dir"
-reg fullvaxpct treated i.pairdateid i.fips
+eststo fullvax: reg fullvaxpct treated i.pairdateid i.fips, vce(cluster statecode pairid)
 est save coloradoDubeDID_fullvax, replace
-reg dose1pct treated i.pairdateid i.fips
+eststo dose1: reg dose1pct treated i.pairdateid i.fips, vce(cluster statecode pairid)
 est save coloradoDubeDID_dose1, replace
 
-*reg dFullvaxpct treated i.pairdateid i.fips
-*reg dDose1pct treated i.pairdateid i.fips
+eststo dfullvax: reg dFullvaxpct treated i.pairdateid i.fips, vce(cluster statecode pairid)
+eststo ddose1: reg dDose1pct treated i.pairdateid i.fips, vce(cluster statecode pairid)
+
+cd "$tables_dir"
+esttab fullvax dose1 dfullvax ddose1, keep(treated) se
+esttab fullvax dose1 dfullvax ddose1 using didresults.tex, keep(treated) se replace
