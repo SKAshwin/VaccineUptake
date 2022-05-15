@@ -66,7 +66,7 @@ drop if inlist(state, "CT", "NJ", "MN", "OH", "MD", "NY", "OR", "DE", "NM")
 drop if inlist(state, "WA", "KY", "NC", "MA", "ME", "IL", "LA", "NV", "MI")
 drop if inlist(state, "MO", "WV", "AR", "CA")
 
-keep if inlist(state, "KS", "OK", "NE", "TX", "WY", "AZ", "MO", "CO", "WA")
+keep if inlist(state, "KS", "OK", "NE", "TX", "WY", "AZ", "MO", "CO", "IA")
 
 gen treatedgroup = 1 if state == "CO"
 replace treatedgroup = 0 if treatedgroup == .
