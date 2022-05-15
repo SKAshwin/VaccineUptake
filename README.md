@@ -48,3 +48,19 @@ GENERAL NOTES ON FINDINGS:
 * Deaths per capita is actually not predictive of future vaccination
 * Cases per capita is; and positively so, but maybe this is a matter of reflecting more testing and so stronger attitudes towards covid
 * In 30 September, Republican effect weaker, and interestingly Catholic premium also disappears
+
+## Graphs
+
+1. County level cross-section, showing beta coefficients, in two different periods, with state fixed effects. Generated already, but need to add a row for the White Test results. Comment on the beta coefficient sizes etc.
+
+2. Trend graph, showing the change of the partial effects (linear and quadratic). Commentary on the groups entrenching.
+
+3. Pair design summary statistics, showing similarities.
+
+4. Pair design shaded counties
+
+5. Pair design results + Synthetic control results
+
+6. Synthetic control weights
+
+7. Synthetic control graphs (depending on if they count for multiple)
