@@ -13,6 +13,7 @@
 \usepackage{titlesec} % for the title formatting
 \usepackage{setspace} % to set line spacing
 \usepackage[parfill]{parskip} % remove the paragraph indentation
+\usepackage{caption} % used to allow smaller "notes" under graphs/tables besides the main caption
 \usepackage{graphicx}
 
 \titleformat*{\section}{\centering \LARGE}
@@ -32,17 +33,42 @@
 		\wordcount words
 		\section{Introduction}
 		Hello world hi hi hello d
+		
+		\begin{figure}
+			\centering
+			\includegraphics[width=6in]{../graphs/Border_Counties.png}
+			\caption*{\footnotesize{Description of figure}}
+			\caption{Counties in Pair Design}
+			\label{fig:bordercounties}
+		\end{figure}
+		
 		\begin{table}
 			\centering
 			\caption{Cross-Section Regression}
-			\input{tables/cross_section.tex}
+			\centerline{\input{tables/cross_section.tex}}
 			\label{table:crosssection}
 		\end{table}
+		
+		\begin{table}
+			\centering
+			\caption{Coefficient Change Over Time}
+			\centerline{\input{tables/trends.tex}}
+			\label{table:trends}
+		\end{table}
+		
 		\begin{table}
 			\centering
 			\caption{Summary Statistics}
-			\input{tables/didsummary.tex}
+			\centerline{\input{tables/didsummary.tex}}
 			\label{table:didsummary}
 		\end{table}
+	
+		\begin{table}
+			\centering
+			\caption{Effect of Colorado Vaccine Lottery}
+			\centerline{\input{tables/didresults.tex}}
+			\label{table:didresults}
+		\end{table}
 	\end{spacing}
+
 \end{document}
