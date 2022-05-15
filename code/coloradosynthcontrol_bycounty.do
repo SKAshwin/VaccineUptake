@@ -2,9 +2,6 @@ frame reset
 macro drop _all
 global raw_dir "/home/elven/Documents/College/metrics_project/data/raw"
 global cleaned_dir "/home/elven/Documents/College/metrics_project/data/cleaned"
-global reg_ready_dir "/home/elven/Documents/College/metrics_project/data/regression_ready"
-global est_dir "/home/elven/Documents/College/metrics_project/estimates"
-global tables_dir "/home/elven/Documents/College/metrics_project/raw_tables"
 global synth_dir "/home/elven/Documents/College/metrics_project/synth"
 global time_invariant "time_invariant_standardized"
 global vaccuptake "COVID-19_Vaccinations_in_the_United_States_County_Colorado_DID.csv"
@@ -84,6 +81,14 @@ rename median_family_income_2020 medfamilinc
 cd "$synth_dir"
 
 xtset fips date
-allsynth dose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop20to24pct pop25to29pct pop30to34pct pop35to39pct pop40to44pct pop45to49pct pop50to54pct pop55to59pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct, trunit(8013) trperiod(24) bcorrect(merge) gapfigure(bcorrect, save(county_synthcontrolresults_dose1_gph.svg, replace)) keep(county_synthcontrolresults_dose1, replace)
+
+*allsynth dose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop20to24pct pop25to29pct pop30to34pct pop35to39pct pop40to44pct pop45to49pct pop50to54pct pop55to59pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct, trunit(8013) trperiod(24) bcorrect(merge) gapfigure(bcorrect, save(county_synthcontrolresults_dose1_gph.svg, replace)) keep(county_synthcontrolresults_dose1, replace)
+
+log using "synth_output"
 
 allsynth dose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical, stacked(trunits(treatedgroup) trperiods(treatedperiod), clear avgweights(statepopshare) figure(classic, save(county_synthcontrolresults_dose1_gph.svg, replace))) keep(county_synthcontrolresults_dose1, replace)
+
+*allsynth dose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop20to24pct pop25to29pct pop30to34pct pop35to39pct pop40to44pct pop45to49pct pop50to54pct pop55to59pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct, stacked(trunits(treatedgroup) trperiods(treatedperiod), clear avgweights(statepopshare) figure(classic, save(county_synthcontrolresults_dose1_gph.svg, replace))) keep(county_synthcontrolresults_dose1, replace)
+
+translate synth_output.smcl synth_output.log
+translate synth_output.smcl synth_output.pdf
