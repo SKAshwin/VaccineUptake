@@ -1,16 +1,18 @@
-{
-\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
-\begin{tabular}{l*{4}{c}}
-\hline\hline
-            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
-            &\multicolumn{1}{c}{fullvaxpct}&\multicolumn{1}{c}{dose1pct}&\multicolumn{1}{c}{dFullvaxpct}&\multicolumn{1}{c}{dDose1pct}\\
-\hline
-treated     &      0.0315         &       1.696         &     0.00712         &      0.0332         \\
-            &     (0.116)         &     (1.814)         &    (0.0239)         &    (0.0187)         \\
-\hline
-\(N\)       &        1178         &        1178         &        1178         &        1065         \\
-\hline\hline
-\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
-\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
-\end{tabular}
-}
+\begin{minipage}{6.25in}
+	\centering
+	\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l*{4}{c}}
+	\hline\hline
+	            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+	            &\multicolumn{1}{c}{Two Doses}&\multicolumn{1}{c}{One Dose}&\multicolumn{1}{c}{$\Delta \textrm{Two Doses}$}&\multicolumn{1}{c}{$\Delta \textrm{One Dose}$}\\
+	\hline
+	treated     &      0.0315         &       1.696         &     0.00712         &      0.0332         \\
+	            &     (0.116)         &     (1.814)         &    (0.0239)         &    (0.0187)         \\
+	\hline
+	\(N\)       &        1178         &        1178         &        1178         &        1065         \\
+	\hline\hline
+	\end{tabular*}
+	\caption*{\footnotesize{Notes: Standard errors in parentheses, clustered by state and county-pair. Column 1 shows the estimated treatment effect on the percentage of people who received two doses of the vaccine, within seven days of the start of the treatment. Column 2 shows the estimated treatment effect on the percentage of people who received at least one dose of the vaccine. Columns 3 and 4 measure the effect of the treatment on the daily change in the percentage of people who received both doses and one dose of the vaccine respectively. County fixed effects and pair fixed effects are not reported, for brevity.\\
+		\sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}}
+\end{minipage}
+

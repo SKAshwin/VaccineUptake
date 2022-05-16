@@ -1,23 +1,25 @@
-{
-\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
-\begin{tabular}{l*{4}{cc}}
-\hline\hline
-            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
-            &     Treated&   Untreated&Pair Differences&Nationwide SD\\
-            &        mean&        mean&        mean&          sd\\
-\hline
-repvotes2020pct&       72.87&       80.46&        8.65&       16.03\\
-black       &        0.82&        0.72&        0.67&       14.79\\
-fullcollege &       24.75&       24.51&        7.12&        9.54\\
-cases\_per\_capita&        0.04&        0.06&        0.03&        0.02\\
-whiteevangelical&       31.79&       32.67&        6.65&       12.64\\
-catholic    &       13.79&       15.89&        4.45&       10.03\\
-poverty     &       12.81&       11.74&        3.13&        5.78\\
-median\_family\_income\_2020&    68923.79&    69379.73&    11087.17&    16720.16\\
-pop60to79   &       21.72&       21.87&        3.61&        4.58\\
-above80     &        5.37&        5.98&        1.75&        1.50\\
-\hline
-\(N\)       &          14&          18&          62&        3075\\
-\hline\hline
-\end{tabular}
-}
+\begin{minipage}{6.25in}
+	\centering
+	\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+	\def\arraystretch{1.1}
+	\begin{tabular}{l*{4}{cc}}
+	\hline\hline
+	            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+	            &     Treated&   Untreated&Pair Differences&Nationwide SD\\
+	\hline
+	repvotes&       72.87&       80.46&        8.65&       16.03\\
+	black       &        0.82&        0.72&        0.67&       14.79\\
+	fullcollege &       24.75&       24.51&        7.12&        9.54\\
+	casespc&        0.04&        0.06&        0.03&        0.02\\
+	whiteevangelical&       31.79&       32.67&        6.65&       12.64\\
+	catholic    &       13.79&       15.89&        4.45&       10.03\\
+	poverty     &       12.81&       11.74&        3.13&        5.78\\
+	medinc&    68923.79&    69379.73&    11087.17&    16720.16\\
+	pop60to79   &       21.72&       21.87&        3.61&        4.58\\
+	above80     &        5.37&        5.98&        1.75&        1.50\\
+	\hline
+	\(N\)       &          14&          18&          62&        3075\\
+	\hline\hline
+	\end{tabular}
+	\caption*{\footnotesize{Columns 1 and 2 report the average value of the predictive covariates in the treated and untreated groups, corresponding to the Colorado border counties and their neighbors respectively (see Figure \ref{fig:bordercounties}). Column 3 contains the average absolute difference in covariates between two counties along the Colorado border which are connected. Column 4 is the standard deviation of the covariates across the entire nationwide dataset. Covariates are selected as those with the largest standardized effect sizes in Table \ref{table:crosssection}.}}
+\end{minipage}
