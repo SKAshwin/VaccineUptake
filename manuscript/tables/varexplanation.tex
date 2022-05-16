@@ -1,0 +1,24 @@
+\begin{minipage}{6.5in}
+	\centering
+	\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+	\def\arraystretch{1}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lp{0.35\linewidth}p{0.4\linewidth}}
+	\hline\hline
+		&Definition&Justification\\
+		\hline
+		repvotes&Percentage (0-100) of county vote that Donald Trump received in the 2020 election&Aim to measure effect of political affiliation, which affects news consumption and beliefs on the costs and benefits of vaccination\\
+		whiteevangelical&Percentage (0-100) of county identifying as White Evangelical Protestants as of 2020&Aim to measure effect of religion - White Evangelicals are a heavily conservative and Republican-supporting religious group. (CITE)\\
+		catholic&Percentage (0-100) of county identifying as Catholics as of 202&Aim to measure the effect of religion - the Pope has actively extolled the benefits of vaccination (CITE), check effect.\\
+		black&Percentage (0-100) of county who are African-American as of 2020&Due to historical grievances and mistrust of government, African-Americans are known to be less likely to choose to vaccinate. (CITE)\\
+		poverty&Percentage (0-100) of county under the poverty line as of 2019(as defined by the Census)&Those in poverty may have difficulty finding access to vaccines, or more broadly, access to good-quality information on their costs and benefits.\\
+		medincome&Nominal median family income for a family of four, as of 2020&Same reason as above. Poverty variable lets us see if effect is stronger at the low end of the income distribution.\\
+		col&Cost of living as of 2020, as measured by the EPI.&Allows coefficient on medincome to be interpreted as the effect of changes in real median income (holding prices/cost of living fixed)\\
+		pop60to79&Percentage (0-100) of county aged between 60 and 79 in 2019.&Elderly are at greater risk of death and serious illness from COVID-19\\
+		above80&Percentage (0-100) of county aged 80 and above in 2019&See above\\
+		fullcollege&Percentage (0-100) of county who completed at least 4 years of college, averaged 2015-2019&Those with college degrees may be less susceptible to misinformation on the supposed harms of vaccination\\
+		casespc&Total recorded COVID-19 cases as of 1 December 2020, before the start of the vaccination program.&A proxy for how amenable the area is to COVID-19 spread, which would increase the benefit of vaccination against COVID-19\\
+		$\mathbf{rural}$&Vector of dummy variables for each possible score on the 2013 Rural-Urban Continuum Code&More rural areas typically have lower population density and hence less risk of catching COVID-19, and so there are lower benefits to vaccination.\\
+		$\mathbf{state}$&Vector of state fixed effects&Allows for variation in state policy responses that affected COVID-19 vaccination rates\\
+	\hline\hline
+	\end{tabular*}
+\end{minipage}
