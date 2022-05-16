@@ -72,7 +72,7 @@
 			\end{split}
 		\end{equation}
 		
-		Where $\textrm{vaccuptake}_i$ is a measure of vaccine uptake for a county $i$. Definitions for each covariate are listed in Table \ref{table:definition}. The model was estimated for a cross-section of vaccine uptake as of 31 December 2021, and also for vaccine uptake as of 1 June 2021, to see if the effects of the covariates had changed over time. We measured vaccine uptake as the percentage of county residents who had taken at least two doses of the vaccine, and also an alternatively looked at the percentage of county residents who had taken at least one dose of the vaccine, in case effects were substantially different between the two.
+		Where $\textrm{vaccuptake}_i$ is a measure of vaccine uptake for a county $i$. Definitions for each covariate are listed in Table \ref{table:definition}. The model was estimated for a cross-section of vaccine uptake by county as of 31 December 2021, and also for vaccine uptake as of 1 June 2021, to see if the effects of the covariates on uptake had changed over time. We measured vaccine uptake as the percentage of county residents who had taken at least two doses of the vaccine, and also an alternatively looked at the percentage of county residents who had taken at least one dose of the vaccine, in case effects were substantially different between the two.
 		
 		\begin{table}
 			\caption{Variable Definitions}
@@ -80,7 +80,12 @@
 			\label{table:definition}
 		\end{table}
 	
-		As the various covariates having different units and standard deviations, interpreting their relative effect sizes (ie, which variables are "more important" in explaining variation in vaccine up take) can be difficult. I hence also estimated the \textit{beta coefficients} of the model - these are calculated by using the z-score of every variable (defined for a covariate $x_k$, with a sample standard deviation $\hat{\sigma}_k$, as $\frac{x_{ik}-\bar{x}_k}{\hat{\sigma}_k}$)
+		As the various covariates having different units and standard deviations, interpreting their relative effect sizes (ie, which variables are "more important" in explaining variation in vaccine up take) can be difficult. I hence also estimated the \textit{beta coefficients} of the model - these are calculated by using the z-score of every variable (defined for a covariate $x_j$, with a sample standard deviation $\hat{\sigma}_j$, as $z_j := \frac{x_{ij}-\bar{x}_j}{\hat{\sigma}_j}$)) and noticing then that, if Model (\ref{eq:crosssection}) holds, then it is also true that
+		\begin{equation} \label{eq:standardized}
+			z_y=\frac{y_i-\bar{y}}{\hat{\sigma}_y} = \sum_{j=1}^{k} \frac{\hat{\sigma}_j}{\hat{\sigma}_y}\beta_j z_{ij}
+		\end{equation}
+		
+		Hence, we can calculate, for each covariate $x_j$, a beta coefficient $\hat{b}_j := \frac{\hat{\sigma}_j}{\hat{\sigma}_y}\beta_j$, interpreted as the standard deviation change in in $y_i=\textrm{vaccuptake}_i$ (in this context) frome a one standard deviation change in covariate $x_j$. This in a sense standardizes the units across the covariates and makes them more directly comparable (although, not perfectly so, as some covariates are drawn from more-spread-out distributions).
 		
 		\begin{figure}
 			\centering
