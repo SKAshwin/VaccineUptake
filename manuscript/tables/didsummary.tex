@@ -2,7 +2,7 @@
 	\centering
 	\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
 	\def\arraystretch{1.1}
-	\begin{tabular}{l*{4}{cc}}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l*{4}{cc}}
 	\hline\hline
 	            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
 	            &     Treated&   Untreated&Pair Differences&Nationwide SD\\
@@ -20,6 +20,6 @@
 	\hline
 	\(N\)       &          14&          18&          62&        3075\\
 	\hline\hline
-	\end{tabular}
+	\end{tabular*}
 	\caption*{\footnotesize{Columns 1 and 2 report the average value of the predictive covariates in the treated and untreated groups, corresponding to the Colorado border counties and their neighbors respectively (see Figure \ref{fig:bordercounties}). Column 3 contains the average absolute difference in covariates between two counties along the Colorado border which are connected. Column 4 is the standard deviation of the covariates across the entire nationwide dataset. Covariates are selected as those with the largest standardized effect sizes in Table \ref{table:crosssection}.}}
 \end{minipage}

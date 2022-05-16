@@ -4,7 +4,7 @@
 	\def\arraystretch{0.1}
 	\newcommand\Tstrut{\rule{0pt}{2.1ex}}         % = `top' strut
 	\newcommand\Bstrut{\rule[-0.7ex]{0pt}{0pt}} 
-	\begin{tabular}{l*{2}{c}}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l*{2}{c}}
 	\hline\hline
 	            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\Tstrut\Bstrut\\
 	            &\multicolumn{1}{c}{Linear Trends}&\multicolumn{1}{c}{Quadratic Trend}\Bstrut\\
@@ -78,7 +78,7 @@
 	\hline
 	\(N\)       &       33825         &       33825        \Tstrut\Bstrut \\
 	\hline\hline
-	\end{tabular}
+	\end{tabular*}
     \caption*{\footnotesize{Notes:
 		\sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}}
 \end{minipage}

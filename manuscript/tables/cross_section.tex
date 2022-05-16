@@ -1,8 +1,8 @@
-\begin{minipage}{6.25in}
+\begin{minipage}{6.5in}
 	\centering
 	\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
 	\def\arraystretch{1.1}
-	\begin{tabular}{l*{5}{cc}}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l*{5}{cc}}
 	\hline\hline
 				&\multicolumn{3}{c}{December 31 Sample}     & \multicolumn{2}{c}{June 2 Sample}\\
 				\cmidrule{2-4}\cmidrule(l{1ex}r{1ex}){5-6}
@@ -39,7 +39,7 @@
 	\(N\)       &        3075         &        3075&        3075         &        3075         &        3075\\
 	White Test F-Stat&1.274&&52.24\sym{***}&5.16\sym{**}&\\
 	\hline\hline
-	\end{tabular}
+	\end{tabular*}
 	\caption*{\footnotesize{Notes:\\ 
 	\sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}}
 \end{minipage}
