@@ -17,7 +17,8 @@
 \usepackage{booktabs} % used for the lines under the headers in the tables
 \usepackage{multirow} % to allow multiple row option in table formatting
 \usepackage{array} % for struts in formatting table
-\usepackage{fancyhdr} % for moving page number
+\usepackage{fancyhdr} % for moving page number to the bottom right corner
+\usepackage{amsmath}
 \usepackage{graphicx}
 
 \titleformat*{\section}{\centering \LARGE}
@@ -43,6 +44,32 @@
 		\wordcount words
 		\section{Introduction}
 		Hello world hi hi hello d
+		
+		By the end of 2021, only 2\% of people wanted a vaccine and had not yet got it, from survey
+		
+		\section{Data and Methods}
+		\subsection{Data}
+		Regressions were generally done on the county level. Data on vaccination rates across time by county (and by state) were all sourced from the CDC (CITE). A dataset of time-invariant characteristics of each county was also compiled from many sources for 3075 counties in the United States; remaining counties were excluded due to some or all information not being available for them. This includes all US territories (such as Puerto Rico), which do not have presidential voting records, and all counties in Alaska and Hawaii. Utah's counties were also excluded due to spotty COVID-19 case data. Outside of these states, the following counties also had missing records: Bedford and Clifton Forge City, Dukes, Nantucket, Barnstable, and Oglala Lakota County, and Yellowstone National Park (which has no population).
+		
+		2020 election results by county were obtained from the MIT Election Data and Science Lab's Election Returns Dataverse (CITE). Religious breakdowns by county were obtained from the Public Religion Research Institute (PRRI) 2020 census of American Religion (CITE). Education attainment by county, averaged over 2015-2019, was obtained from the US Census Bureau ('the Census'), via the 2015-2019 American Community Survey (CITE). Poverty rates by county in 2019 were obtained from the Census' Small Area Income and Poverty Estimates, which also contained the 2013 Rural-Urban Continuum Code assigned to each county, which classifies counties based on their level of urbanization and proximity to metropolitan areas (CITE explanation). Racial breakdowns by county were obtained from the 2020 Decennial Redestricting Dataset, maintained by the Census (CITE). Age breakdowns by county were obtained from the County Characteristics Resident Population Estimates maintained by the Census (CITE). Median family incomes and costs of living for a family of four were obtained from the Economic Policy Institute's Family Budget Calculatior (CITE).  COVID-19 Cases recorded in each county, as of 1 December 2020, were obtained from the CSSE COVID-19 Data Repository maintained by John Hopkins (CITE). Finally, data mapping each county to every county it borders was obtained (the 'county adjacency dataset') from a dataset maintained by the National Bureau of Economic Research (CITE), originating from a dataset maintained by the Census. 
+		
+		All datasets tagged each county with their Federal Information Processing Standard Publication (FIPS) codes, which was used to merge them together.
+		\subsection{Methods}
+		As mentioned, we do not expect that access to vaccination was, by the end of 2021, limited by access. Instead, vaccination status reflects the willingness of individuals to get vaccinated.
+		
+		The decision on vaccination can reasonably be broken down into its costs and benefits, and beliefs that agents have about them. We would expect, hence that in areas of lower population density, or where COVID would generally spread less quickly, the benefit of vaccination would be lower. Furthermore, as COVID-19 has a much higher fatality rate among older persons (CITE), they would find a much greater benefit to vaccination, and we would expect more vaccination, in counties with more elderly people. As beliefs on vaccination's benefits and supposed harms seem to be affected by, or at least correlated with, religious status, race, and political identity, we also expect these variables.
+		
+		We begin hence by first running the following cross-sectional regression on the national dataset of 3075 counties:
+		
+		\begin{equation} \label{eq:crosssection}
+			\begin{split}
+				vaccuptake_i = &\beta_0 + \beta_1 \textrm{repvotes}_i + \beta_2 \textrm{whiteevangelical}_i + \beta_3 \textrm{catholic}_i \\ 
+				&+ \beta_4 \textrm{black}_i + \beta_5 \textrm{poverty}_i + \beta_6 ln(\textrm{medincome}_i) + \beta_7 ln(\textrm{col}_i) \\ 
+				&+ \beta_8 \textrm{pop60to79}_i + \beta_9 \textrm{above80}_i + \beta_{10} \textrm{fullcollege}_i + \beta_{11} \textrm{casespc}_i \\
+				&+\delta 
+			\end{split}
+		\end{equation}
+		
 		
 		\begin{figure}
 			\centering
