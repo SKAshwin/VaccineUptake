@@ -28,12 +28,17 @@ cd "$cleaned_dir"
 save "time_invariant_standardized", replace
 
 * If you wanna know who got culled
-*. tab county_name if nmis > 2
-*
-*                              Area name |      Freq.     Percent        Cum.
-*----------------------------------------+-----------------------------------
-*                           Bedford city |          1       25.00       25.00
-*                     Clifton Forge city |          1       25.00       50.00
-*                   Oglala Lakota County |          1       25.00       75.00
-*              Yellowstone National Park |          1       25.00      100.00
-*----------------------------------------+-------------------------------
+/*
+. tab county_name if nmis > 0
+
+                              Area name |      Freq.     Percent        Cum.
+----------------------------------------+-----------------------------------
+                           Bedford city |          1       16.67       16.67
+                     Clifton Forge city |          1       16.67       33.33
+                           Dukes County |          1       16.67       50.00
+                       Nantucket County |          1       16.67       66.67
+                   Oglala Lakota County |          1       16.67       83.33
+              Yellowstone National Park |          1       16.67      100.00
+----------------------------------------+-----------------------------------
+                                  Total |          6      100.00
+*/
