@@ -1,79 +1,84 @@
-{
-\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
-\begin{tabular}{l*{2}{c}}
-\hline\hline
-            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
-            &\multicolumn{1}{c}{fullvaxpct}&\multicolumn{1}{c}{fullvaxpct}\\
-\hline
-c.t c.repvotes2020pct&     -0.0323\sym{***}&     -0.0489\sym{***}\\
-            &   (0.00321)         &   (0.00558)         \\
-[1em]
-c.t c.whiteevangelical&     0.00238         &      0.0148         \\
-            &   (0.00515)         &   (0.00792)         \\
-[1em]
-c. c.catholic&      0.0198\sym{***}&      0.0131\sym{*}  \\
-            &   (0.00415)         &   (0.00651)         \\
-[1em]
-c.t c.black &     -0.0112\sym{***}&    -0.00437         \\
-            &   (0.00266)         &   (0.00460)         \\
-[1em]
-c.t c.poverty&    -0.00860         &     -0.0691\sym{***}\\
-            &   (0.00704)         &    (0.0118)         \\
-[1em]
-c.t c.lmedincome&      -0.223         &      -1.213\sym{**} \\
-            &     (0.277)         &     (0.401)         \\
-[1em]
-c.t c.lcol  &       1.087\sym{***}&       2.204\sym{***}\\
-            &     (0.238)         &     (0.466)         \\
-[1em]
-c.t c.pop60to79&     -0.0158\sym{*}  &     -0.0426\sym{***}\\
-            &   (0.00664)         &    (0.0115)         \\
-[1em]
-c.t c.above80&      0.0135         &    -0.00855         \\
-            &    (0.0190)         &    (0.0300)         \\
-[1em]
-c.t c.fullcollege&    -0.00415         &      0.0173\sym{**} \\
-            &   (0.00414)         &   (0.00643)         \\
-[1em]
-c.t c.cases\_per\_capita&       0.417         &       3.850\sym{*}  \\
-            &     (1.271)         &     (1.787)         \\
-[1em]
-c.t2 c.repvotes2020pct&                     &     0.00139\sym{**} \\
-            &                     &  (0.000496)         \\
-[1em]
-c.t2 c.whiteevangelical&                     &    -0.00104         \\
-            &                     &  (0.000745)         \\
-[1em]
-c.t2 c.catholic&                     &    0.000559         \\
-            &                     &  (0.000658)         \\
-[1em]
-c.t2 c.black&                     &   -0.000566         \\
-            &                     &  (0.000459)         \\
-[1em]
-c.t2 c.poverty&                     &     0.00504\sym{***}\\
-            &                     &   (0.00108)         \\
-[1em]
-c.t2 c.lmedincome&                     &      0.0825\sym{*}  \\
-            &                     &    (0.0413)         \\
-[1em]
-c.t2 c.lcol &                     &     -0.0931\sym{*}  \\
-            &                     &    (0.0398)         \\
-[1em]
-c.t2 c.pop60to79&                     &     0.00224\sym{*}  \\
-            &                     &  (0.000975)         \\
-[1em]
-c.t2 c.above80&                     &     0.00183         \\
-            &                     &   (0.00274)         \\
-[1em]
-c.t2 c.fullcollege&                     &    -0.00179\sym{**} \\
-            &                     &  (0.000605)         \\
-[1em]
-c.t2 c.cases\_per\_capita&                     &      -0.286         \\
-            &                     &     (0.156)         \\
-\hline
-\(N\)       &       33825         &       33825         \\
-\hline\hline
-\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
-\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
-\end{tabular}
-}
+\begin{minipage}{6in}
+	\centering
+	\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+	\def\arraystretch{0.1}
+	\newcommand\Tstrut{\rule{0pt}{2ex}}         % = `top' strut
+	\newcommand\Bstrut{\rule[-0.7ex]{0pt}{0pt}} 
+	\begin{tabular}{l*{2}{c}}
+	\hline\hline
+	            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\Tstrut\Bstrut\\
+	            &\multicolumn{1}{c}{Linear Trends}&\multicolumn{1}{c}{Quadratic Trend}\Bstrut\\
+	
+	\hline
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{repvotes}$}&     -0.0323\sym{***}&     -0.0489\sym{***}\Tstrut\\
+	            &   (0.00321)         &   (0.00558)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{whiteevangelical}$}&     0.00238         &      0.0148         \\
+	            &   (0.00515)         &   (0.00792)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{catholic}$}&      0.0198\sym{***}&      0.0131\sym{*}  \\
+	            &   (0.00415)         &   (0.00651)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{black}$}&     -0.0112\sym{***}&    -0.00437         \\
+	            &   (0.00266)         &   (0.00460)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{poverty}$}&    -0.00860         &     -0.0691\sym{***}\\
+	            &   (0.00704)         &    (0.0118)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{lmedincome}$}&      -0.223         &      -1.213\sym{**} \\
+	            &     (0.277)         &     (0.401)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{lcol}$}&       1.087\sym{***}&       2.204\sym{***}\\
+	            &     (0.238)         &     (0.466)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{pop60to79}$}&     -0.0158\sym{*}  &     -0.0426\sym{***}\\
+	            &   (0.00664)         &    (0.0115)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{above80}$}&      0.0135         &    -0.00855         \\
+	            &    (0.0190)         &    (0.0300)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{fullcollege}$}&    -0.00415         &      0.0173\sym{**} \\
+	            &   (0.00414)         &   (0.00643)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t} \cdot \textrm{casespc}$}&       0.417         &       3.850\sym{*}  \\
+	            &     (1.271)         &     (1.787)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{repvotes}$}&                     &     0.00139\sym{**} \\
+	            &                     &  (0.000496)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{whiteevangelical}$}&                     &    -0.00104         \\
+	            &                     &  (0.000745)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{catholic}$}&                     &    0.000559         \\
+	            &                     &  (0.000658)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{black}$}&                     &   -0.000566         \\
+	            &                     &  (0.000459)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{poverty}$}&                     &     0.00504\sym{***}\\
+	            &                     &   (0.00108)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{lmedincome}$}&                     &      0.0825\sym{*}  \\
+	            &                     &    (0.0413)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{lcol}$} &                     &     -0.0931\sym{*}  \\
+	            &                     &    (0.0398)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{pop60to79}$}&                     &     0.00224\sym{*}  \\
+	            &                     &  (0.000975)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{above80}$}&                     &     0.00183         \\
+	            &                     &   (0.00274)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{fullcollege}$}&                     &    -0.00179\sym{**} \\
+	            &                     &  (0.000605)         \\
+	[1em]
+	\multirow{2}{*}{$\textrm{t}^2 \cdot \textrm{casespc}$}&                     &      -0.286         \\
+	            &                     &     (0.156)         \\
+	\hline
+	\(N\)       &       33825         &       33825        \Tstrut\Bstrut \\
+	\hline\hline
+	\end{tabular}
+    \caption*{\footnotesize{Notes:
+		\sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}}
+\end{minipage}
