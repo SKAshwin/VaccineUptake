@@ -91,7 +91,7 @@
 		\begin{equation}
 			\textrm{vaccuptake}_{it} =  \beta_0 + \boldsymbol{\alpha}\cdot\mathbf{x}_{i} + \boldsymbol{\beta}\cdot\mathbf{x}_{i}\cdot t + \boldsymbol{\gamma}\cdot\mathbf{x}_{i}\cdot t^2 + u_i
 		\end{equation}
-		on a panel dataset of observations of vaccine uptake at the start of every month (from May 2021 to March 2021), where $\mathbf{x}_{i}$ is a vector of covariates, using clustered standard errors by county, so as to correct for serial correlation across time in each county. For any covariate $x_j$, we have that
+		on a panel dataset of observations of vaccine uptake at the start of every month (from May 2021 to March 2021), where $\mathbf{x}_{i}$ is a vector of covariates (including the state fixed effects), using clustered standard errors by county, so as to correct for serial correlation across time in each county. For any covariate $x_j$, we have that
 		\begin{equation} \label{eq:trends}
 			\frac{\partial \textrm{vaccineuptake}_{it}}{\partial x_{ij}} = \alpha_j + \beta_jt + \gamma_jt^2
 		\end{equation}
@@ -132,7 +132,6 @@
 		Finally, to further check the robustness of this causal estimate, we utilize a Synthetic Control design, as detailed in (CITE) and used in prior studies on Ohio's vaccine lottery (CITE, CITE, CITE). We collapse our 3075 county level dataset into a state-level dataset, and exclude the 23 other states who had vaccine lotteries in this period (CITE). We construct a synthetic Colorado by taking a weighted average of other states to closely match Colorado on some predictive covariates (see CITE for exact details on the estimation method). We use these weights to see how vaccine uptake would have evolved in the synthetic Colorado (made of untreated states), and take the difference between the synthetic Colorado and the real Colorado's vaccine uptake on day $t$ as the causal impact of the vaccine lottery on day $t$, and test its significance.
 		
 		\section{Results and Discussion}
-		Results from the estimation of Model (\ref{eq:crosssection}) are presented in Table \ref{table:crosssection}.
 		
 		\begin{table}
 			\centering
@@ -141,19 +140,33 @@
 			\label{table:crosssection}
 		\end{table}
 		
+		Results from the estimation of Model (\ref{eq:crosssection}) are presented in Table \ref{table:crosssection}. Our estimates (not to be interpreted causally, but reflecting correlations within the data) match prior work and have the expected sign - Republicans and black individuals are less likely to get vaccinated, and this is reflected on the county level. Counties with older people, or more college graduates, are more likely to get vaccinated. Poverty and income have the expected signs, and are jointly significant (see caption), although individually insignificant likely due to multicollinearity. Places which had more cases per person in 2020 had higher vaccination rates in 2021, as hypothesized that the benefits of vaccination would be higher and more clear when this was true.
+		
+		By comparing beta coefficients, we can identify that by far the factor associated with the biggest effect size on vaccine uptake is the republican vote share in the 2020 election, followed by the number of blacks. These effect sizes seem to grow over time, possibly suggesting an increasing hardening of attitudes towards the vaccine.
+		
 		\begin{table}
 			\centering
 			\caption{Coefficient Change Over Time}
 			\centerline{\input{tables/trends.tex}}
 			\label{table:trends}
 		\end{table}
-	
+		
+		Catholicism was not associated with higher vaccination rates in June, but was by December. The estimation of Model (\ref{eq:trends}), presented in Table \ref{table:trends} affirms this, as in either specification there is an increase in the effect size of Catholicism over time. While we do not have an adequate design to demonstrate this, this may suggest that the Pope's messaging on vaccination (see CITE) has successfully changed attitudes over time. This suggests one way to achieve high vaccination rates across the Untied States: engaging local religious leaders to get them to urge their worshippers to get vaccinated, and to educate them against COVID-19 vaccine related misinformation.
+		
+		Table \ref{table:trends} also affirms that the Republican and black aversion to vaccination is only getting stronger with time (although, at a declining rate for Republicans, by the coefficient on $t^2\cdot \textrm{repvotes}$). This is again suggestion of polarization, and further highlights the need to break into the Republican and black social networks with pro-vaccine messaging.
+		
 		\begin{table}
 			\centering
 			\caption{Effect of Colorado Vaccine Lottery}
 			\centerline{\input{tables/didresults.tex}}
 			\label{table:didresults}
 		\end{table}
+		
+		The focus on social messaging and religious factors is then highlighted by our results on the effects of the Colorado vaccine lottery. Regardless of dependent variable chosen, there is no statistically significant effect of the Colorado vaccine lottery on vaccination rates.
+		
+		
+	
+		
 	\end{spacing}
 
 \end{document}
