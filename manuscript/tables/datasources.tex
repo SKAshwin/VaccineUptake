@@ -1,0 +1,23 @@
+\begin{minipage}{6.5in}
+	\centering
+	\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+	\def\arraystretch{1.1}
+	\small
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.25\linewidth}p{0.6\linewidth}p{0.15\linewidth}}
+		\hline\hline
+		Data&Source&Year\\
+		\hline
+		2020 Election Results&MIT Election Data and Science Lab's Election Returns Dataverse (CITE)&2020\\
+		Religious Affiliation&Public Religion Research Institute 2020 Census of American Religion (CITE)&2020\\
+		Racial Distribution&2020 Decennial Redestricting Dataset, maintained by the US Census Bureau ('the Census') (CITE)&2020\\
+		Age Distribution&County Characteristics Resident Population Estimates, maintained by the Census&2019\\
+		Educational attainment&2015-2019 American Community Survey, maintained by the Census& Averaged 2015-2019\\
+		Poverty rates&As defined by the Census, from the Small Area Income and Poverty Estimates, maintained by the Census&2019\\
+		Rurality&The 2013 Rural-Urban Continuum Code, which classifies how rural counties are based on their level of urbanization and proximity to metropolitan areas (CITE explanation), from the same source as above&2013\\
+		Income and Cost of Living&Median family income and costs of living obtained from the Economic Policy Institutes Family Budget Calculator. Costs of living measure allows us to correct nominal median family income to \textit{real} income instead.&2020\\
+		COVID-19 Cases by 1 December 2020&The CSSE COVID-19 Data Repository maintained by John Hopkins.&2020\\
+		County Adjacency&Mapping of every county in the US to every county it borders, obtained from a dataset maintained by the National Bureau of Economic Research (CITE), originating from a dataset maintained by the Census&N/A\\
+		\hline\hline
+	\end{tabular*}
+	\caption*{\footnotesize{Notes: All datasets tagged each county with their Federal Information Processing Standard Publication (FIPS) codes, which was used to merge them together. All US Territories excluded from the dataset as they lack Presidential voting records. All counties in Alaska and Hawaii excluded due to missing data and different reporting standards (many statistics not reported by county, but other organizational units). Utah's data excluded due to spotty county-level COVID-19 case data in 2020. Outside of these states, the following counties still assigned FIPS codes also had missing records: Bedford and Clifton Forge City, as both were merged into other counties and were non-existent by this time period, Dukes, Nantucket and Barnstable Counties in Massachussets, which had missing vaccination records, Ogala Lakota County in North Dakota, a Native American reservation which remains unorganized and generally lacks data, and Yellowstone National Park, which has no resident population. Final dataset of time-invariant characteristics was exactly 3075 counties. Note that, while not all data is available for 2020, and so some are from shortly before, we expect these time invariant characteristics to not dramatically change year-to-year in each county. As explained later, the regressions using these variables do not interpret their coefficients causally given omitted variable bias, but treat them as best linear predictors.}}
+\end{minipage}

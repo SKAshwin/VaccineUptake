@@ -21,7 +21,7 @@ testparm i.rural_rating
 
 esttab, beta
 esttab fullvax_31Dec fullvax_31Dec dose1_31Dec fullvax_1Jun fullvax_1Jun, ///
-cells("b(pattern(1 0 1 1 0) fmt(2) star) beta(pattern(0 1 0 0 1) fmt(2))" se(pattern(1 0 1 1 0) fmt(2) par)) drop(*.statecode) mlabels("Two Doses, 31 December" "Standardized" "One Dose, 31 December" "Two Doses, 1 June" "Standardized")
+cells("b(pattern(1 0 1 1 0) fmt(2) star) beta(pattern(0 1 0 0 1) fmt(2))" se(pattern(1 0 1 1 0) fmt(2) par)) drop(*.statecode) stats(r2) mlabels("Two Doses, 31 December" "Standardized" "One Dose, 31 December" "Two Doses, 1 June" "Standardized")
 
 cd "$tables_dir"
 esttab fullvax_31Dec fullvax_31Dec dose1_31Dec fullvax_1Jun fullvax_1Jun using cross_section.tex, ///
