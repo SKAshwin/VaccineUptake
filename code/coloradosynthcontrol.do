@@ -64,13 +64,23 @@ cd "$synth_dir"
 
 log using "synth_output", replace
 
-allsynth dose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) bcorrect(merge) gapfigure(bcorrect, save(synthcontrolresults_dose1_gph.svg, replace)) keep(synthcontrolresults_dose1, replace) pvalues
+allsynth dose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) gapfigure(classic, save(synthcontrolresults_dose1_gph.svg, replace)) keep(synthcontrolresults_dose1, replace) pvalues
 
-allsynth fullvax repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) bcorrect(merge) gapfigure(bcorrect, save(synthcontrolresults_fullvax_gph.svg, replace)) keep(synthcontrolresults_fullvax, replace) pvalues
+matrix list e(results)
 
-allsynth dDose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) bcorrect(merge) gapfigure(bcorrect, save(synthcontrolresults_ddose1_gph.svg, replace)) keep(synthcontrolresults_ddose, replace) pvalues
+allsynth fullvax repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) gapfigure(classic, save(synthcontrolresults_fullvax_gph.svg, replace)) keep(synthcontrolresults_fullvax, replace) pvalues
 
-allsynth dFullvaxpct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) bcorrect(merge) gapfigure(bcorrect, save(synthcontrolresults_dfullvax_gph.svg, replace)) keep(synthcontrolresults_dfullvax, replace) pvalues
+matrix list e(results)
+
+allsynth dDose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) gapfigure(classic, save(synthcontrolresults_ddose1_gph.svg, replace)) keep(synthcontrolresults_ddose, replace) pvalues
+
+matrix list e(results)
+
+allsynth dFullvaxpct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) gapfigure(classic, save(synthcontrolresults_dfullvax_gph.svg, replace)) keep(synthcontrolresults_dfullvax, replace) pvalues
+
+matrix list e(results)
+
+log close
 
 translate synth_output.smcl synth_output.log, replace
 translate synth_output.smcl synth_output.pdf, replace

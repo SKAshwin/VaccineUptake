@@ -59,8 +59,8 @@ GENERAL NOTES ON FINDINGS:
 
 4. Pair design shaded counties
 
-5. Pair design results + Synthetic control results
+5. Pair design results
 
-6. Synthetic control weights
+6. Synthetic control results and Synthetic control weights
 
 7. Synthetic control graphs (depending on if they count for multiple)

@@ -3,16 +3,12 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/home/elven/Documents/College/metrics_project/synth/synth_output.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}16 May 2022, 00:32:09
+ {txt}opened on:  {res}17 May 2022, 06:07:44
 {txt}
 {com}. 
-. allsynth dose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) bcorrect(merge) gapfigure(bcorrect, save(synthcontrolresults_dose1_gph.svg, replace)) keep(synthcontrolresults_dose1, replace) pvalues
+. allsynth dose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) gapfigure(classic, save(synthcontrolresults_dose1_gph.svg, replace)) keep(synthcontrolresults_dose1, replace) pvalues
 
 Identifying donor pool...
-
-
-
-Bias-correcting the plain vanilla -synth- estimate for statecode 7
 
 {txt}{hline}
 {res}Synthetic Control Method for Comparative Case Studies
@@ -138,110 +134,107 @@ Estimating synthetic controls using in-space placebo treatments for treated unit
 
 Saving results...
 (1,040 missing values generated)
-(1,040 missing values generated)
-
-Combining data files
 (1,925 observations deleted)
 {res}
 Treated unit (statecode == 7) results:
 
 {txt}
-      {c TLC}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c TRC}
-      {c |} {res}statec~e    t        gap     gap_bc      rmspe   r~e_rank   rmspe_bc   r~c_rank          p       p_bc    N   unique_W {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1926. {c |} {res}       7    0   1.795999   1.775765          .          .          .          .          .          .   26          1 {txt}{c |}
-1927. {c |} {res}       7    1   1.667999   1.708312          .          .          .          .          .          .   26          1 {txt}{c |}
-1928. {c |} {res}       7    2   1.752999   1.686119          .          .          .          .          .          .   26          1 {txt}{c |}
-1929. {c |} {res}       7    3   1.878402   2.090436          .          .          .          .          .          .   26          1 {txt}{c |}
-1930. {c |} {res}       7    4   1.923399   2.026577          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1931. {c |} {res}       7    5   1.982999   2.555014          .          .          .          .          .          .   26          1 {txt}{c |}
-1932. {c |} {res}       7    6   1.953401   3.081003          .          .          .          .          .          .   26          1 {txt}{c |}
-1933. {c |} {res}       7    7   1.998401   3.303289          .          .          .          .          .          .   26          1 {txt}{c |}
-1934. {c |} {res}       7    8   1.932598    3.38656          .          .          .          .          .          .   26          1 {txt}{c |}
-1935. {c |} {res}       7    9   2.002199   3.622003          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1936. {c |} {res}       7   10   2.048002   4.047136          .          .          .          .          .          .   26          1 {txt}{c |}
-1937. {c |} {res}       7   11      2.043   4.125448          .          .          .          .          .          .   26          1 {txt}{c |}
-1938. {c |} {res}       7   12   1.981399   4.269667          .          .          .          .          .          .   26          1 {txt}{c |}
-1939. {c |} {res}       7   13   2.019801   4.551363          .          .          .          .          .          .   26          1 {txt}{c |}
-1940. {c |} {res}       7   14     1.9394   4.814228          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1941. {c |} {res}       7   15   1.878598   4.782872          .          .          .          .          .          .   26          1 {txt}{c |}
-1942. {c |} {res}       7   16   1.948199   5.210133          .          .          .          .          .          .   26          1 {txt}{c |}
-1943. {c |} {res}       7   17     1.9424   5.222083          .          .          .          .          .          .   26          1 {txt}{c |}
-1944. {c |} {res}       7   18   1.861201   5.055832          .          .          .          .          .          .   26          1 {txt}{c |}
-1945. {c |} {res}       7   19   1.930001   5.360954          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1946. {c |} {res}       7   20   1.854602   5.473272          .          .          .          .          .          .   26          1 {txt}{c |}
-1947. {c |} {res}       7   21     1.8988   5.413963          .          .          .          .          .          .   26          1 {txt}{c |}
-1948. {c |} {res}       7   22   1.893002   5.751052          .          .          .          .          .          .   26          1 {txt}{c |}
-1949. {c |} {res}       7   23   1.917599   5.802018          .          .          .          .          .          .   26          1 {txt}{c |}
-1950. {c |} {res}       7   24     1.9626   5.921918          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1951. {c |} {res}       7   25   1.931399   5.820775          .          .          .          .          .          .   26          1 {txt}{c |}
-1952. {c |} {res}       7   26     1.9314   6.264202          .          .          .          .          .          .   26          1 {txt}{c |}
-1953. {c |} {res}       7   27      1.901   6.341355          .          .          .          .          .          .   26          1 {txt}{c |}
-1954. {c |} {res}       7   28   2.050999   6.782124          .          .          .          .          .          .   26          1 {txt}{c |}
-1955. {c |} {res}       7   29   2.009801   6.705701          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1956. {c |} {res}       7   30   2.128599   6.776867          .          .          .          .          .          .   26          1 {txt}{c |}
-1957. {c |} {res}       7   31   2.248201   6.922553          .          .          .          .          .          .   26          1 {txt}{c |}
-1958. {c |} {res}       7   32   2.272799   7.025689          .          .          .          .          .          .   26          1 {txt}{c |}
-1959. {c |} {res}       7   33   2.347401   7.392618          .          .          .          .          .          .   26          1 {txt}{c |}
-1960. {c |} {res}       7   34      2.417   7.687443          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1961. {c |} {res}       7   35   2.436599   8.068161          .          .          .          .          .          .   26          1 {txt}{c |}
-1962. {c |} {res}       7   36   2.455399   8.001535          .          .          .          .          .          .   26          1 {txt}{c |}
-1963. {c |} {res}       7   37   2.544601   8.269383          .          .          .          .          .          .   26          1 {txt}{c |}
-1964. {c |} {res}       7   38   2.544599     8.3998          .          .          .          .          .          .   26          1 {txt}{c |}
-1965. {c |} {res}       7   39   2.564202   8.583223          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1966. {c |} {res}       7   40   2.583801   8.779877    1.57744         11   2.447019          5   .4230769   .1923077   26          1 {txt}{c |}
-1967. {c |} {res}       7   41      2.728   9.063047   1.667932         10   2.527213          5   .3846154   .1923077   26          1 {txt}{c |}
-1968. {c |} {res}       7   42   2.747602   9.300322    1.70655         10   2.600049          5   .3846154   .1923077   26          1 {txt}{c |}
-1969. {c |} {res}       7   43   2.772197   9.396327   1.733878         10   2.650712          5   .3846154   .1923077   26          1 {txt}{c |}
-1970. {c |} {res}       7   44   2.841799   9.580304   1.768741         10   2.703275          5   .3846154   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1971. {c |} {res}       7   45     2.7918   9.478877    1.78089         10    2.72809          5   .3846154   .1923077   26          1 {txt}{c |}
-1972. {c |} {res}       7   46   2.861403   9.763128   1.802849         10   2.770618          5   .3846154   .1923077   26          1 {txt}{c |}
-1973. {c |} {res}       7   47   2.935998   9.927704   1.832092          9   2.815373          5   .3461539   .1923077   26          1 {txt}{c |}
-1974. {c |} {res}       7   48   2.880999   9.917784   1.846437          9   2.849488          5   .3461539   .1923077   26          1 {txt}{c |}
-1975. {c |} {res}       7   49   2.955602   10.12987   1.868201          9   2.890277          5   .3461539   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1976. {c |} {res}       7   50   2.875199   9.984899   1.875939          9   2.915235          5   .3461539   .1923077   26          1 {txt}{c |}
-1977. {c |} {res}       7   51   2.975202   10.25361   1.893906          9   2.950418          5   .3461539   .1923077   26          1 {txt}{c |}
-1978. {c |} {res}       7   52     2.8948   10.12722   1.900531          9     2.9739          5   .3461539   .1923077   26          1 {txt}{c |}
-1979. {c |} {res}       7   53   2.894799   10.12388   1.906209          9   2.993873          5   .3461539   .1923077   26          1 {txt}{c |}
-1980. {c |} {res}       7   54   3.014401   10.28751   1.922264          8   3.018252          5   .3076923   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1981. {c |} {res}       7   55   2.989798   10.40118    1.93413          8   3.044248          5   .3076923   .1923077   26          1 {txt}{c |}
-1982. {c |} {res}       7   56   2.959399   10.41128   1.942086          9   3.067579          5   .3461539   .1923077   26          1 {txt}{c |}
-1983. {c |} {res}       7   57   2.933999   10.32637   1.947194          9   3.085213          5   .3461539   .1923077   26          1 {txt}{c |}
-1984. {c |} {res}       7   58   2.954403   10.59709   1.953257          9   3.110453          5   .3461539   .1923077   26          1 {txt}{c |}
-1985. {c |} {res}       7   59   2.979001   10.70265   1.960439          8   3.136739          6   .3076923   .2307692   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1986. {c |} {res}       7   60      3.024   10.88272   1.969976          8   3.166396          6   .3076923   .2307692   26          1 {txt}{c |}
-1987. {c |} {res}       7   61   3.023998   10.88091   1.978647          7     3.1933          6   .2692308   .2307692   26          1 {txt}{c |}
-1988. {c |} {res}       7   62   3.018999   10.95021   1.986252          7   3.219954          6   .2692308   .2307692   26          1 {txt}{c |}
-1989. {c |} {res}       7   63   3.044402    11.1459   1.994741          7   3.250105          6   .2692308   .2307692   26          1 {txt}{c |}
-1990. {c |} {res}       7   64   3.044401   11.20351    2.00255          7   3.279479          6   .2692308   .2307692   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1991. {c |} {res}       7   65   3.089398   11.36243   2.012267          7   3.310972          6   .2692308   .2307692   26          1 {txt}{c |}
-1992. {c |} {res}       7   66   3.063999   11.23714   2.019896          7   3.336802          6   .2692308   .2307692   26          1 {txt}{c |}
-1993. {c |} {res}       7   67     3.0894   11.36921   2.028299          7   3.364174          6   .2692308   .2307692   26          1 {txt}{c |}
-1994. {c |} {res}       7   68      3.109   11.63178   2.037113          7   3.396267          6   .2692308   .2307692   26          1 {txt}{c |}
-1995. {c |} {res}       7   69   3.134403    11.7566   2.046588          7   3.429311          6   .2692308   .2307692   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1996. {c |} {res}       7   70   3.134399    11.7042   2.055452          8   3.458963          6   .3076923   .2307692   26          1 {txt}{c |}
-1997. {c |} {res}       7   71   3.134398   11.65226   2.063762          8   3.485559          6   .3076923   .2307692   26          1 {txt}{c |}
-1998. {c |} {res}       7   72   3.179399   11.81531   2.073602          8   3.514225          6   .3076923   .2307692   26          1 {txt}{c |}
-1999. {c |} {res}       7   73     3.1548   11.83617   2.081781          8   3.541664          6   .3076923   .2307692   26          1 {txt}{c |}
-2000. {c |} {res}       7   74     3.1548   11.84547   2.089493          8   3.567735          6   .3076923   .2307692   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-2001. {c |} {res}       7   75   3.199803   12.10579   2.098653          8   3.597856          6   .3076923   .2307692   26          1 {txt}{c |}
-2002. {c |} {res}       7   76   3.199799   12.05568   2.107317          8   3.625309          6   .3076923   .2307692   26          1 {txt}{c |}
-      {c BLC}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c BRC}
+      {c TLC}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c TRC}
+      {c |} {res}statec~e    t        gap      rmspe   rmspe_~k          p    N   unique_W {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1926. {c |} {res}       7    0   1.795999          .          .          .   26          1 {txt}{c |}
+1927. {c |} {res}       7    1   1.667999          .          .          .   26          1 {txt}{c |}
+1928. {c |} {res}       7    2   1.752999          .          .          .   26          1 {txt}{c |}
+1929. {c |} {res}       7    3   1.878402          .          .          .   26          1 {txt}{c |}
+1930. {c |} {res}       7    4   1.923399          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1931. {c |} {res}       7    5   1.982999          .          .          .   26          1 {txt}{c |}
+1932. {c |} {res}       7    6   1.953401          .          .          .   26          1 {txt}{c |}
+1933. {c |} {res}       7    7   1.998401          .          .          .   26          1 {txt}{c |}
+1934. {c |} {res}       7    8   1.932598          .          .          .   26          1 {txt}{c |}
+1935. {c |} {res}       7    9   2.002199          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1936. {c |} {res}       7   10   2.048002          .          .          .   26          1 {txt}{c |}
+1937. {c |} {res}       7   11      2.043          .          .          .   26          1 {txt}{c |}
+1938. {c |} {res}       7   12   1.981399          .          .          .   26          1 {txt}{c |}
+1939. {c |} {res}       7   13   2.019801          .          .          .   26          1 {txt}{c |}
+1940. {c |} {res}       7   14     1.9394          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1941. {c |} {res}       7   15   1.878598          .          .          .   26          1 {txt}{c |}
+1942. {c |} {res}       7   16   1.948199          .          .          .   26          1 {txt}{c |}
+1943. {c |} {res}       7   17     1.9424          .          .          .   26          1 {txt}{c |}
+1944. {c |} {res}       7   18   1.861201          .          .          .   26          1 {txt}{c |}
+1945. {c |} {res}       7   19   1.930001          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1946. {c |} {res}       7   20   1.854602          .          .          .   26          1 {txt}{c |}
+1947. {c |} {res}       7   21     1.8988          .          .          .   26          1 {txt}{c |}
+1948. {c |} {res}       7   22   1.893002          .          .          .   26          1 {txt}{c |}
+1949. {c |} {res}       7   23   1.917599          .          .          .   26          1 {txt}{c |}
+1950. {c |} {res}       7   24     1.9626          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1951. {c |} {res}       7   25   1.931399          .          .          .   26          1 {txt}{c |}
+1952. {c |} {res}       7   26     1.9314          .          .          .   26          1 {txt}{c |}
+1953. {c |} {res}       7   27      1.901          .          .          .   26          1 {txt}{c |}
+1954. {c |} {res}       7   28   2.050999          .          .          .   26          1 {txt}{c |}
+1955. {c |} {res}       7   29   2.009801          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1956. {c |} {res}       7   30   2.128599          .          .          .   26          1 {txt}{c |}
+1957. {c |} {res}       7   31   2.248201          .          .          .   26          1 {txt}{c |}
+1958. {c |} {res}       7   32   2.272799          .          .          .   26          1 {txt}{c |}
+1959. {c |} {res}       7   33   2.347401          .          .          .   26          1 {txt}{c |}
+1960. {c |} {res}       7   34      2.417          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1961. {c |} {res}       7   35   2.436599          .          .          .   26          1 {txt}{c |}
+1962. {c |} {res}       7   36   2.455399          .          .          .   26          1 {txt}{c |}
+1963. {c |} {res}       7   37   2.544601          .          .          .   26          1 {txt}{c |}
+1964. {c |} {res}       7   38   2.544599          .          .          .   26          1 {txt}{c |}
+1965. {c |} {res}       7   39   2.564202          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1966. {c |} {res}       7   40   2.583801    1.57744         11   .4230769   26          1 {txt}{c |}
+1967. {c |} {res}       7   41      2.728   1.667932         10   .3846154   26          1 {txt}{c |}
+1968. {c |} {res}       7   42   2.747602    1.70655         10   .3846154   26          1 {txt}{c |}
+1969. {c |} {res}       7   43   2.772197   1.733878         10   .3846154   26          1 {txt}{c |}
+1970. {c |} {res}       7   44   2.841799   1.768741         10   .3846154   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1971. {c |} {res}       7   45     2.7918    1.78089         10   .3846154   26          1 {txt}{c |}
+1972. {c |} {res}       7   46   2.861403   1.802849         10   .3846154   26          1 {txt}{c |}
+1973. {c |} {res}       7   47   2.935998   1.832092          9   .3461539   26          1 {txt}{c |}
+1974. {c |} {res}       7   48   2.880999   1.846437          9   .3461539   26          1 {txt}{c |}
+1975. {c |} {res}       7   49   2.955602   1.868201          9   .3461539   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1976. {c |} {res}       7   50   2.875199   1.875939          9   .3461539   26          1 {txt}{c |}
+1977. {c |} {res}       7   51   2.975202   1.893906          9   .3461539   26          1 {txt}{c |}
+1978. {c |} {res}       7   52     2.8948   1.900531          9   .3461539   26          1 {txt}{c |}
+1979. {c |} {res}       7   53   2.894799   1.906209          9   .3461539   26          1 {txt}{c |}
+1980. {c |} {res}       7   54   3.014401   1.922264          8   .3076923   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1981. {c |} {res}       7   55   2.989798    1.93413          8   .3076923   26          1 {txt}{c |}
+1982. {c |} {res}       7   56   2.959399   1.942086          9   .3461539   26          1 {txt}{c |}
+1983. {c |} {res}       7   57   2.933999   1.947194          9   .3461539   26          1 {txt}{c |}
+1984. {c |} {res}       7   58   2.954403   1.953257          9   .3461539   26          1 {txt}{c |}
+1985. {c |} {res}       7   59   2.979001   1.960439          8   .3076923   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1986. {c |} {res}       7   60      3.024   1.969976          8   .3076923   26          1 {txt}{c |}
+1987. {c |} {res}       7   61   3.023998   1.978647          7   .2692308   26          1 {txt}{c |}
+1988. {c |} {res}       7   62   3.018999   1.986252          7   .2692308   26          1 {txt}{c |}
+1989. {c |} {res}       7   63   3.044402   1.994741          7   .2692308   26          1 {txt}{c |}
+1990. {c |} {res}       7   64   3.044401    2.00255          7   .2692308   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1991. {c |} {res}       7   65   3.089398   2.012267          7   .2692308   26          1 {txt}{c |}
+1992. {c |} {res}       7   66   3.063999   2.019896          7   .2692308   26          1 {txt}{c |}
+1993. {c |} {res}       7   67     3.0894   2.028299          7   .2692308   26          1 {txt}{c |}
+1994. {c |} {res}       7   68      3.109   2.037113          7   .2692308   26          1 {txt}{c |}
+1995. {c |} {res}       7   69   3.134403   2.046588          7   .2692308   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1996. {c |} {res}       7   70   3.134399   2.055452          8   .3076923   26          1 {txt}{c |}
+1997. {c |} {res}       7   71   3.134398   2.063762          8   .3076923   26          1 {txt}{c |}
+1998. {c |} {res}       7   72   3.179399   2.073602          8   .3076923   26          1 {txt}{c |}
+1999. {c |} {res}       7   73     3.1548   2.081781          8   .3076923   26          1 {txt}{c |}
+2000. {c |} {res}       7   74     3.1548   2.089493          8   .3076923   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+2001. {c |} {res}       7   75   3.199803   2.098653          8   .3076923   26          1 {txt}{c |}
+2002. {c |} {res}       7   76   3.199799   2.107317          8   .3076923   26          1 {txt}{c |}
+      {c BLC}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c BRC}
 {res}
 {cmd:________________________________}
 
@@ -252,13 +245,92 @@ Treated unit (statecode == 7) results:
 {hline}
 {txt}
 {com}. 
-. allsynth fullvax repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) bcorrect(merge) gapfigure(bcorrect, save(synthcontrolresults_fullvax_gph.svg, replace)) keep(synthcontrolresults_fullvax, replace) pvalues
+. matrix list e(results)
+{res}
+{txt}e(results)[77,4]
+            t        Gap    RMSPE_p   Unique_W
+ 0 {res}         0  1.7959988          .          1
+{txt} 1 {res}         1  1.6679988          .          1
+{txt} 2 {res}         2  1.7529992          .          1
+{txt} 3 {res}         3  1.8784022          .          1
+{txt} 4 {res}         4  1.9233994          .          1
+{txt} 5 {res}         5  1.9829993          .          1
+{txt} 6 {res}         6  1.9534014          .          1
+{txt} 7 {res}         7  1.9984008          .          1
+{txt} 8 {res}         8  1.9325978          .          1
+{txt} 9 {res}         9  2.0021994          .          1
+{txt}10 {res}        10  2.0480015          .          1
+{txt}11 {res}        11  2.0430005          .          1
+{txt}12 {res}        12  1.9813994          .          1
+{txt}13 {res}        13  2.0198007          .          1
+{txt}14 {res}        14  1.9393998          .          1
+{txt}15 {res}        15  1.8785985          .          1
+{txt}16 {res}        16  1.9481986          .          1
+{txt}17 {res}        17  1.9424003          .          1
+{txt}18 {res}        18  1.8612014          .          1
+{txt}19 {res}        19  1.9300015          .          1
+{txt}20 {res}        20  1.8546025          .          1
+{txt}21 {res}        21  1.8987999          .          1
+{txt}22 {res}        22  1.8930017          .          1
+{txt}23 {res}        23  1.9175986          .          1
+{txt}24 {res}        24  1.9625996          .          1
+{txt}25 {res}        25  1.9313991          .          1
+{txt}26 {res}        26  1.9313998          .          1
+{txt}27 {res}        27  1.9010004          .          1
+{txt}28 {res}        28  2.0509992          .          1
+{txt}29 {res}        29  2.0098014          .          1
+{txt}30 {res}        30  2.1285994          .          1
+{txt}31 {res}        31  2.2482014          .          1
+{txt}32 {res}        32   2.272799          .          1
+{txt}33 {res}        33  2.3474007          .          1
+{txt}34 {res}        34  2.4169996          .          1
+{txt}35 {res}        35  2.4365993          .          1
+{txt}36 {res}        36  2.4553988          .          1
+{txt}37 {res}        37  2.5446012          .          1
+{txt}38 {res}        38  2.5445993          .          1
+{txt}39 {res}        39  2.5642018          .          1
+{txt}40 {res}        40  2.5838006  .42307693          1
+{txt}41 {res}        41  2.7279999  .38461539          1
+{txt}42 {res}        42  2.7476025  .38461539          1
+{txt}43 {res}        43  2.7721975  .38461539          1
+{txt}44 {res}        44   2.841799  .38461539          1
+{txt}45 {res}        45  2.7917998  .38461539          1
+{txt}46 {res}        46  2.8614025  .38461539          1
+{txt}47 {res}        47  2.9359984  .34615386          1
+{txt}48 {res}        48  2.8809991  .34615386          1
+{txt}49 {res}        49  2.9556019  .34615386          1
+{txt}50 {res}        50  2.8751993  .34615386          1
+{txt}51 {res}        51  2.9752016  .34615386          1
+{txt}52 {res}        52  2.8947997  .34615386          1
+{txt}53 {res}        53   2.894799  .34615386          1
+{txt}54 {res}        54   3.014401  .30769232          1
+{txt}55 {res}        55  2.9897983  .30769232          1
+{txt}56 {res}        56  2.9593995  .34615386          1
+{txt}57 {res}        57  2.9339991  .34615386          1
+{txt}58 {res}        58  2.9544027  .34615386          1
+{txt}59 {res}        59   2.979001  .30769232          1
+{txt}60 {res}        60  3.0240004  .30769232          1
+{txt}61 {res}        61  3.0239985  .26923078          1
+{txt}62 {res}        62  3.0189986  .26923078          1
+{txt}63 {res}        63  3.0444019  .26923078          1
+{txt}64 {res}        64  3.0444009  .26923078          1
+{txt}65 {res}        65  3.0893981  .26923078          1
+{txt}66 {res}        66  3.0639987  .26923078          1
+{txt}67 {res}        67  3.0894001  .26923078          1
+{txt}68 {res}        68      3.109  .26923078          1
+{txt}69 {res}        69  3.1344032  .26923078          1
+{txt}70 {res}        70  3.1343994  .30769232          1
+{txt}71 {res}        71  3.1343975  .30769232          1
+{txt}72 {res}        72  3.1793995  .30769232          1
+{txt}73 {res}        73  3.1547999  .30769232          1
+{txt}74 {res}        74  3.1547999  .30769232          1
+{txt}75 {res}        75  3.1998031  .30769232          1
+{txt}76 {res}        76  3.1997993  .30769232          1
+{reset}
+{com}. 
+. allsynth fullvax repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) gapfigure(classic, save(synthcontrolresults_fullvax_gph.svg, replace)) keep(synthcontrolresults_fullvax, replace) pvalues
 
 Identifying donor pool...
-
-
-
-Bias-correcting the plain vanilla -synth- estimate for statecode 7
 
 {txt}{hline}
 {res}Synthetic Control Method for Comparative Case Studies
@@ -384,110 +456,107 @@ Estimating synthetic controls using in-space placebo treatments for treated unit
 
 Saving results...
 (1,040 missing values generated)
-(1,040 missing values generated)
-
-Combining data files
 (1,925 observations deleted)
 {res}
 Treated unit (statecode == 7) results:
 
 {txt}
-      {c TLC}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c TRC}
-      {c |} {res}statec~e    t        gap     gap_bc      rmspe   r~e_rank   rmspe_bc   r~c_rank          p       p_bc    N   unique_W {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1926. {c |} {res}       7    0      .2316   7.578515          .          .          .          .          .          .   26          1 {txt}{c |}
-1927. {c |} {res}       7    1   .2660009   7.114801          .          .          .          .          .          .   26          1 {txt}{c |}
-1928. {c |} {res}       7    2   .4756998   6.731262          .          .          .          .          .          .   26          1 {txt}{c |}
-1929. {c |} {res}       7    3   .6662006   6.791915          .          .          .          .          .          .   26          1 {txt}{c |}
-1930. {c |} {res}       7    4   .8446992   6.698419          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1931. {c |} {res}       7    5   .8996994   6.497786          .          .          .          .          .          .   26          1 {txt}{c |}
-1932. {c |} {res}       7    6   .8789003   6.478991          .          .          .          .          .          .   26          1 {txt}{c |}
-1933. {c |} {res}       7    7     1.1325   6.759116          .          .          .          .          .          .   26          1 {txt}{c |}
-1934. {c |} {res}       7    8     1.2664   6.531877          .          .          .          .          .          .   26          1 {txt}{c |}
-1935. {c |} {res}       7    9     1.3572   6.143378          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1936. {c |} {res}       7   10   1.430501   6.156705          .          .          .          .          .          .   26          1 {txt}{c |}
-1937. {c |} {res}       7   11     1.5073    6.03652          .          .          .          .          .          .   26          1 {txt}{c |}
-1938. {c |} {res}       7   12   1.416799   5.662984          .          .          .          .          .          .   26          1 {txt}{c |}
-1939. {c |} {res}       7   13   1.277198   5.279618          .          .          .          .          .          .   26          1 {txt}{c |}
-1940. {c |} {res}       7   14   1.319701   4.786708          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1941. {c |} {res}       7   15   1.276898   4.005605          .          .          .          .          .          .   26          1 {txt}{c |}
-1942. {c |} {res}       7   16   1.476499   3.914366          .          .          .          .          .          .   26          1 {txt}{c |}
-1943. {c |} {res}       7   17     1.6747   4.083821          .          .          .          .          .          .   26          1 {txt}{c |}
-1944. {c |} {res}       7   18   1.724699    3.69693          .          .          .          .          .          .   26          1 {txt}{c |}
-1945. {c |} {res}       7   19   1.702102   3.521761          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1946. {c |} {res}       7   20   1.796699   3.500467          .          .          .          .          .          .   26          1 {txt}{c |}
-1947. {c |} {res}       7   21   1.880299     3.2716          .          .          .          .          .          .   26          1 {txt}{c |}
-1948. {c |} {res}       7   22   1.906399    2.82024          .          .          .          .          .          .   26          1 {txt}{c |}
-1949. {c |} {res}       7   23   2.033699   2.592845          .          .          .          .          .          .   26          1 {txt}{c |}
-1950. {c |} {res}       7   24   2.124199   2.573316          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1951. {c |} {res}       7   25     2.2183   2.939141          .          .          .          .          .          .   26          1 {txt}{c |}
-1952. {c |} {res}       7   26   2.270499    3.44255          .          .          .          .          .          .   26          1 {txt}{c |}
-1953. {c |} {res}       7   27     2.2132   3.752155          .          .          .          .          .          .   26          1 {txt}{c |}
-1954. {c |} {res}       7   28     2.2411    3.79559          .          .          .          .          .          .   26          1 {txt}{c |}
-1955. {c |} {res}       7   29   2.217899   3.860952          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1956. {c |} {res}       7   30     2.2615   4.087705          .          .          .          .          .          .   26          1 {txt}{c |}
-1957. {c |} {res}       7   31   2.374402   4.382715          .          .          .          .          .          .   26          1 {txt}{c |}
-1958. {c |} {res}       7   32   2.344499   4.355224          .          .          .          .          .          .   26          1 {txt}{c |}
-1959. {c |} {res}       7   33     2.3961   4.604013          .          .          .          .          .          .   26          1 {txt}{c |}
-1960. {c |} {res}       7   34   2.399598   4.857583          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1961. {c |} {res}       7   35     2.4109   5.133873          .          .          .          .          .          .   26          1 {txt}{c |}
-1962. {c |} {res}       7   36   2.414402   5.405509          .          .          .          .          .          .   26          1 {txt}{c |}
-1963. {c |} {res}       7   37   2.301098   5.406707          .          .          .          .          .          .   26          1 {txt}{c |}
-1964. {c |} {res}       7   38   2.391599   5.678711          .          .          .          .          .          .   26          1 {txt}{c |}
-1965. {c |} {res}       7   39     2.3131   5.700305          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1966. {c |} {res}       7   40     2.2836   5.821169   1.608016         12   1.299142          9   .4615385   .3461539   26          1 {txt}{c |}
-1967. {c |} {res}       7   41   2.313798   6.285264    1.62942         12   1.406845          6   .4615385   .2307692   26          1 {txt}{c |}
-1968. {c |} {res}       7   42   2.201199   6.206377   1.584301         12   1.430153          6   .4615385   .2307692   26          1 {txt}{c |}
-1969. {c |} {res}       7   43   2.239898   6.324265   1.574991         13   1.455966          6         .5   .2307692   26          1 {txt}{c |}
-1970. {c |} {res}       7   44     2.2794   6.386051   1.580413         13   1.477475          6         .5   .2307692   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1971. {c |} {res}       7   45     2.1793   6.310689   1.561092         13     1.4857          6         .5   .2307692   26          1 {txt}{c |}
-1972. {c |} {res}       7   46   2.278602   6.651335   1.566791         13   1.515758          6         .5   .2307692   26          1 {txt}{c |}
-1973. {c |} {res}       7   47   2.166699   6.575444   1.551891         13   1.533492          5         .5   .1923077   26          1 {txt}{c |}
-1974. {c |} {res}       7   48   2.156699   6.859795   1.538822         13   1.563558          5         .5   .1923077   26          1 {txt}{c |}
-1975. {c |} {res}       7   49   2.171098   6.955491   1.530287         13    1.59268          5         .5   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1976. {c |} {res}       7   50     2.2516   7.125115   1.533285         13   1.624832          5         .5   .1923077   26          1 {txt}{c |}
-1977. {c |} {res}       7   51   2.139001   6.938279    1.52308         13    1.64323          5         .5   .1923077   26          1 {txt}{c |}
-1978. {c |} {res}       7   52      2.287   7.186336   1.529982         13    1.66913          5         .5   .1923077   26          1 {txt}{c |}
-1979. {c |} {res}       7   53   2.325701    7.26894    1.53983         13   1.694601          5         .5   .1923077   26          1 {txt}{c |}
-1980. {c |} {res}       7   54     2.3504   7.624736   1.550739         13   1.730219          5         .5   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1981. {c |} {res}       7   55   2.405998   7.907773   1.565381         13   1.771919          5         .5   .1923077   26          1 {txt}{c |}
-1982. {c |} {res}       7   56   2.470999   8.292495   1.584051         13   1.822769          5         .5   .1923077   26          1 {txt}{c |}
-1983. {c |} {res}       7   57     2.4353   8.237117   1.597645         13    1.86602          6         .5   .2307692   26          1 {txt}{c |}
-1984. {c |} {res}       7   58   2.516599   8.404164   1.616343         13   1.910327          6         .5   .2307692   26          1 {txt}{c |}
-1985. {c |} {res}       7   59   2.524301   8.407607   1.633769         13   1.950314          6         .5   .2307692   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1986. {c |} {res}       7   60   2.531202   8.690216   1.650047         13   1.995315          6         .5   .2307692   26          1 {txt}{c |}
-1987. {c |} {res}       7   61   2.555299   8.994803   1.666564         13   2.045611          7         .5   .2692308   26          1 {txt}{c |}
-1988. {c |} {res}       7   62     2.5954   9.187088   1.684414         13   2.097362          7         .5   .2692308   26          1 {txt}{c |}
-1989. {c |} {res}       7   63   2.637101   9.192966   1.703579         13   2.144973          7         .5   .2692308   26          1 {txt}{c |}
-1990. {c |} {res}       7   64   2.661901   9.403211   1.722833         13    2.19477          7         .5   .2692308   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1991. {c |} {res}       7   65   2.734802   9.584457   1.745271         13   2.245812          7         .5   .2692308   26          1 {txt}{c |}
-1992. {c |} {res}       7   66   2.793799   9.716014   1.769772         13   2.296678          7         .5   .2692308   26          1 {txt}{c |}
-1993. {c |} {res}       7   67     2.7937   9.697321   1.792517         12   2.343414          7   .4615385   .2692308   26          1 {txt}{c |}
-1994. {c |} {res}       7   68     2.7595    9.68169   1.811674         12   2.386527          7   .4615385   .2692308   26          1 {txt}{c |}
-1995. {c |} {res}       7   69   2.841501   9.826703   1.834275         13    2.43038          7         .5   .2692308   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1996. {c |} {res}       7   70     2.8004   10.00366   1.853111         13   2.475744          7         .5   .2692308   26          1 {txt}{c |}
-1997. {c |} {res}       7   71   2.900302   10.24513   1.876257         13   2.524131          7         .5   .2692308   26          1 {txt}{c |}
-1998. {c |} {res}       7   72   2.907998   10.29413   1.898419         13   2.570755          7         .5   .2692308   26          1 {txt}{c |}
-1999. {c |} {res}       7   73   2.832899   10.22884   1.915367         13   2.613125          7         .5   .2692308   26          1 {txt}{c |}
-2000. {c |} {res}       7   74     2.9328    10.2932   1.936421         12   2.654521          7   .4615385   .2692308   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-2001. {c |} {res}       7   75   2.932698   10.34999     1.9563         12   2.694865          7   .4615385   .2692308   26          1 {txt}{c |}
-2002. {c |} {res}       7   76   2.932601   10.26407     1.9751         12   2.731193          7   .4615385   .2692308   26          1 {txt}{c |}
-      {c BLC}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c BRC}
+      {c TLC}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c TRC}
+      {c |} {res}statec~e    t        gap      rmspe   rmspe_~k          p    N   unique_W {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1926. {c |} {res}       7    0      .2316          .          .          .   26          1 {txt}{c |}
+1927. {c |} {res}       7    1   .2660009          .          .          .   26          1 {txt}{c |}
+1928. {c |} {res}       7    2   .4756998          .          .          .   26          1 {txt}{c |}
+1929. {c |} {res}       7    3   .6662006          .          .          .   26          1 {txt}{c |}
+1930. {c |} {res}       7    4   .8446992          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1931. {c |} {res}       7    5   .8996994          .          .          .   26          1 {txt}{c |}
+1932. {c |} {res}       7    6   .8789003          .          .          .   26          1 {txt}{c |}
+1933. {c |} {res}       7    7     1.1325          .          .          .   26          1 {txt}{c |}
+1934. {c |} {res}       7    8     1.2664          .          .          .   26          1 {txt}{c |}
+1935. {c |} {res}       7    9     1.3572          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1936. {c |} {res}       7   10   1.430501          .          .          .   26          1 {txt}{c |}
+1937. {c |} {res}       7   11     1.5073          .          .          .   26          1 {txt}{c |}
+1938. {c |} {res}       7   12   1.416799          .          .          .   26          1 {txt}{c |}
+1939. {c |} {res}       7   13   1.277198          .          .          .   26          1 {txt}{c |}
+1940. {c |} {res}       7   14   1.319701          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1941. {c |} {res}       7   15   1.276898          .          .          .   26          1 {txt}{c |}
+1942. {c |} {res}       7   16   1.476499          .          .          .   26          1 {txt}{c |}
+1943. {c |} {res}       7   17     1.6747          .          .          .   26          1 {txt}{c |}
+1944. {c |} {res}       7   18   1.724699          .          .          .   26          1 {txt}{c |}
+1945. {c |} {res}       7   19   1.702102          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1946. {c |} {res}       7   20   1.796699          .          .          .   26          1 {txt}{c |}
+1947. {c |} {res}       7   21   1.880299          .          .          .   26          1 {txt}{c |}
+1948. {c |} {res}       7   22   1.906399          .          .          .   26          1 {txt}{c |}
+1949. {c |} {res}       7   23   2.033699          .          .          .   26          1 {txt}{c |}
+1950. {c |} {res}       7   24   2.124199          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1951. {c |} {res}       7   25     2.2183          .          .          .   26          1 {txt}{c |}
+1952. {c |} {res}       7   26   2.270499          .          .          .   26          1 {txt}{c |}
+1953. {c |} {res}       7   27     2.2132          .          .          .   26          1 {txt}{c |}
+1954. {c |} {res}       7   28     2.2411          .          .          .   26          1 {txt}{c |}
+1955. {c |} {res}       7   29   2.217899          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1956. {c |} {res}       7   30     2.2615          .          .          .   26          1 {txt}{c |}
+1957. {c |} {res}       7   31   2.374402          .          .          .   26          1 {txt}{c |}
+1958. {c |} {res}       7   32   2.344499          .          .          .   26          1 {txt}{c |}
+1959. {c |} {res}       7   33     2.3961          .          .          .   26          1 {txt}{c |}
+1960. {c |} {res}       7   34   2.399598          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1961. {c |} {res}       7   35     2.4109          .          .          .   26          1 {txt}{c |}
+1962. {c |} {res}       7   36   2.414402          .          .          .   26          1 {txt}{c |}
+1963. {c |} {res}       7   37   2.301098          .          .          .   26          1 {txt}{c |}
+1964. {c |} {res}       7   38   2.391599          .          .          .   26          1 {txt}{c |}
+1965. {c |} {res}       7   39     2.3131          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1966. {c |} {res}       7   40     2.2836   1.608016         12   .4615385   26          1 {txt}{c |}
+1967. {c |} {res}       7   41   2.313798    1.62942         12   .4615385   26          1 {txt}{c |}
+1968. {c |} {res}       7   42   2.201199   1.584301         12   .4615385   26          1 {txt}{c |}
+1969. {c |} {res}       7   43   2.239898   1.574991         13         .5   26          1 {txt}{c |}
+1970. {c |} {res}       7   44     2.2794   1.580413         13         .5   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1971. {c |} {res}       7   45     2.1793   1.561092         13         .5   26          1 {txt}{c |}
+1972. {c |} {res}       7   46   2.278602   1.566791         13         .5   26          1 {txt}{c |}
+1973. {c |} {res}       7   47   2.166699   1.551891         13         .5   26          1 {txt}{c |}
+1974. {c |} {res}       7   48   2.156699   1.538822         13         .5   26          1 {txt}{c |}
+1975. {c |} {res}       7   49   2.171098   1.530287         13         .5   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1976. {c |} {res}       7   50     2.2516   1.533285         13         .5   26          1 {txt}{c |}
+1977. {c |} {res}       7   51   2.139001    1.52308         13         .5   26          1 {txt}{c |}
+1978. {c |} {res}       7   52      2.287   1.529982         13         .5   26          1 {txt}{c |}
+1979. {c |} {res}       7   53   2.325701    1.53983         13         .5   26          1 {txt}{c |}
+1980. {c |} {res}       7   54     2.3504   1.550739         13         .5   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1981. {c |} {res}       7   55   2.405998   1.565381         13         .5   26          1 {txt}{c |}
+1982. {c |} {res}       7   56   2.470999   1.584051         13         .5   26          1 {txt}{c |}
+1983. {c |} {res}       7   57     2.4353   1.597645         13         .5   26          1 {txt}{c |}
+1984. {c |} {res}       7   58   2.516599   1.616343         13         .5   26          1 {txt}{c |}
+1985. {c |} {res}       7   59   2.524301   1.633769         13         .5   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1986. {c |} {res}       7   60   2.531202   1.650047         13         .5   26          1 {txt}{c |}
+1987. {c |} {res}       7   61   2.555299   1.666564         13         .5   26          1 {txt}{c |}
+1988. {c |} {res}       7   62     2.5954   1.684414         13         .5   26          1 {txt}{c |}
+1989. {c |} {res}       7   63   2.637101   1.703579         13         .5   26          1 {txt}{c |}
+1990. {c |} {res}       7   64   2.661901   1.722833         13         .5   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1991. {c |} {res}       7   65   2.734802   1.745271         13         .5   26          1 {txt}{c |}
+1992. {c |} {res}       7   66   2.793799   1.769772         13         .5   26          1 {txt}{c |}
+1993. {c |} {res}       7   67     2.7937   1.792517         12   .4615385   26          1 {txt}{c |}
+1994. {c |} {res}       7   68     2.7595   1.811674         12   .4615385   26          1 {txt}{c |}
+1995. {c |} {res}       7   69   2.841501   1.834275         13         .5   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1996. {c |} {res}       7   70     2.8004   1.853111         13         .5   26          1 {txt}{c |}
+1997. {c |} {res}       7   71   2.900302   1.876257         13         .5   26          1 {txt}{c |}
+1998. {c |} {res}       7   72   2.907998   1.898419         13         .5   26          1 {txt}{c |}
+1999. {c |} {res}       7   73   2.832899   1.915367         13         .5   26          1 {txt}{c |}
+2000. {c |} {res}       7   74     2.9328   1.936421         12   .4615385   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+2001. {c |} {res}       7   75   2.932698     1.9563         12   .4615385   26          1 {txt}{c |}
+2002. {c |} {res}       7   76   2.932601     1.9751         12   .4615385   26          1 {txt}{c |}
+      {c BLC}{hline 10}{c -}{hline 4}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c BRC}
 {res}
 {cmd:________________________________}
 
@@ -498,13 +567,92 @@ Treated unit (statecode == 7) results:
 {hline}
 {txt}
 {com}. 
-. allsynth dDose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) bcorrect(merge) gapfigure(bcorrect, save(synthcontrolresults_ddose1_gph.svg, replace)) keep(synthcontrolresults_ddose, replace) pvalues
+. matrix list e(results)
+{res}
+{txt}e(results)[77,4]
+            t        Gap    RMSPE_p   Unique_W
+ 0 {res}         0  .23159997          .          1
+{txt} 1 {res}         1  .26600093          .          1
+{txt} 2 {res}         2  .47569984          .          1
+{txt} 3 {res}         3  .66620058          .          1
+{txt} 4 {res}         4   .8446992          .          1
+{txt} 5 {res}         5  .89969939          .          1
+{txt} 6 {res}         6  .87890029          .          1
+{txt} 7 {res}         7  1.1324997          .          1
+{txt} 8 {res}         8  1.2663997          .          1
+{txt} 9 {res}         9     1.3572          .          1
+{txt}10 {res}        10  1.4305012          .          1
+{txt}11 {res}        11  1.5073005          .          1
+{txt}12 {res}        12  1.4167994          .          1
+{txt}13 {res}        13  1.2771983          .          1
+{txt}14 {res}        14  1.3197007          .          1
+{txt}15 {res}        15  1.2768977          .          1
+{txt}16 {res}        16  1.4764992          .          1
+{txt}17 {res}        17  1.6747003          .          1
+{txt}18 {res}        18  1.7246989          .          1
+{txt}19 {res}        19  1.7021019          .          1
+{txt}20 {res}        20  1.7966988          .          1
+{txt}21 {res}        21  1.8802989          .          1
+{txt}22 {res}        22  1.9063987          .          1
+{txt}23 {res}        23  2.0336988          .          1
+{txt}24 {res}        24  2.1241994          .          1
+{txt}25 {res}        25  2.2182996          .          1
+{txt}26 {res}        26  2.2704985          .          1
+{txt}27 {res}        27  2.2131996          .          1
+{txt}28 {res}        28  2.2411001          .          1
+{txt}29 {res}        29  2.2178991          .          1
+{txt}30 {res}        30  2.2615004          .          1
+{txt}31 {res}        31  2.3744018          .          1
+{txt}32 {res}        32  2.3444991          .          1
+{txt}33 {res}        33     2.3961          .          1
+{txt}34 {res}        34  2.3995984          .          1
+{txt}35 {res}        35  2.4108999          .          1
+{txt}36 {res}        36  2.4144018          .          1
+{txt}37 {res}        37  2.3010979          .          1
+{txt}38 {res}        38  2.3915989          .          1
+{txt}39 {res}        39  2.3130999          .          1
+{txt}40 {res}        40  2.2835999  .46153846          1
+{txt}41 {res}        41   2.313798  .46153846          1
+{txt}42 {res}        42  2.2011986  .46153846          1
+{txt}43 {res}        43  2.2398984         .5          1
+{txt}44 {res}        44  2.2793996         .5          1
+{txt}45 {res}        45  2.1792996         .5          1
+{txt}46 {res}        46  2.2786019         .5          1
+{txt}47 {res}        47  2.1666987         .5          1
+{txt}48 {res}        48  2.1566989         .5          1
+{txt}49 {res}        49  2.1710978         .5          1
+{txt}50 {res}        50  2.2516003         .5          1
+{txt}51 {res}        51  2.1390009         .5          1
+{txt}52 {res}        52  2.2870004         .5          1
+{txt}53 {res}        53  2.3257005         .5          1
+{txt}54 {res}        54  2.3504004         .5          1
+{txt}55 {res}        55  2.4059982         .5          1
+{txt}56 {res}        56  2.4709988         .5          1
+{txt}57 {res}        57  2.4352996         .5          1
+{txt}58 {res}        58  2.5165987         .5          1
+{txt}59 {res}        59  2.5243011         .5          1
+{txt}60 {res}        60  2.5312023         .5          1
+{txt}61 {res}        61   2.555299         .5          1
+{txt}62 {res}        62  2.5954001         .5          1
+{txt}63 {res}        63  2.6371009         .5          1
+{txt}64 {res}        64  2.6619012         .5          1
+{txt}65 {res}        65   2.734802         .5          1
+{txt}66 {res}        66  2.7937994         .5          1
+{txt}67 {res}        67  2.7936995  .46153846          1
+{txt}68 {res}        68     2.7595  .46153846          1
+{txt}69 {res}        69  2.8415012         .5          1
+{txt}70 {res}        70  2.8003998         .5          1
+{txt}71 {res}        71  2.9003017         .5          1
+{txt}72 {res}        72  2.9079981         .5          1
+{txt}73 {res}        73  2.8328991         .5          1
+{txt}74 {res}        74  2.9328001  .46153846          1
+{txt}75 {res}        75  2.9326982  .46153846          1
+{txt}76 {res}        76  2.9326015  .46153846          1
+{reset}
+{com}. 
+. allsynth dDose1pct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) gapfigure(classic, save(synthcontrolresults_ddose1_gph.svg, replace)) keep(synthcontrolresults_ddose, replace) pvalues
 
 Identifying donor pool...
-
-
-
-Bias-correcting the plain vanilla -synth- estimate for statecode 7
 
 {txt}{hline}
 {res}Synthetic Control Method for Comparative Case Studies
@@ -630,110 +778,107 @@ Estimating synthetic controls using in-space placebo treatments for treated unit
 
 Saving results...
 (1,040 missing values generated)
-(1,040 missing values generated)
-
-Combining data files
 (1,925 observations deleted)
 {res}
 Treated unit (statecode == 7) results:
 
 {txt}
-      {c TLC}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c TRC}
-      {c |} {res}statec~e    t         gap      gap_bc      rmspe   r~e_rank   rmspe_bc   r~c_rank          p       p_bc    N   unique_W {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1926. {c |} {res}       7    0    .0007786   -.0019439          .          .          .          .          .          .   26          1 {txt}{c |}
-1927. {c |} {res}       7    1   -.0006055   -.0015792          .          .          .          .          .          .   26          1 {txt}{c |}
-1928. {c |} {res}       7    2    .0011665    .0023252          .          .          .          .          .          .   26          1 {txt}{c |}
-1929. {c |} {res}       7    3    .0014706     .002977          .          .          .          .          .          .   26          1 {txt}{c |}
-1930. {c |} {res}       7    4    .0003334    .0003931          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1931. {c |} {res}       7    5    .0007936    .0051019          .          .          .          .          .          .   26          1 {txt}{c |}
-1932. {c |} {res}       7    6   -.0003839    .0056935          .          .          .          .          .          .   26          1 {txt}{c |}
-1933. {c |} {res}       7    7    .0007246    .0034606          .          .          .          .          .          .   26          1 {txt}{c |}
-1934. {c |} {res}       7    8     .000315    .0026307          .          .          .          .          .          .   26          1 {txt}{c |}
-1935. {c |} {res}       7    9    .0000965     .001974          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1936. {c |} {res}       7   10    .0005285    .0030195          .          .          .          .          .          .   26          1 {txt}{c |}
-1937. {c |} {res}       7   11   -.0000459    .0013483          .          .          .          .          .          .   26          1 {txt}{c |}
-1938. {c |} {res}       7   12   -.0000526     .001618          .          .          .          .          .          .   26          1 {txt}{c |}
-1939. {c |} {res}       7   13   -.0002017    .0031197          .          .          .          .          .          .   26          1 {txt}{c |}
-1940. {c |} {res}       7   14   -.0002772    .0022626          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1941. {c |} {res}       7   15   -.0005424    .0015863          .          .          .          .          .          .   26          1 {txt}{c |}
-1942. {c |} {res}       7   16     .000219    .0021384          .          .          .          .          .          .   26          1 {txt}{c |}
-1943. {c |} {res}       7   17    .0000916    .0006182          .          .          .          .          .          .   26          1 {txt}{c |}
-1944. {c |} {res}       7   18   -.0004129   -.0004321          .          .          .          .          .          .   26          1 {txt}{c |}
-1945. {c |} {res}       7   19    .0002534    .0016038          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1946. {c |} {res}       7   20    .0000682    .0025151          .          .          .          .          .          .   26          1 {txt}{c |}
-1947. {c |} {res}       7   21   -.0000557    .0013495          .          .          .          .          .          .   26          1 {txt}{c |}
-1948. {c |} {res}       7   22    .0002364    .0024751          .          .          .          .          .          .   26          1 {txt}{c |}
-1949. {c |} {res}       7   23    .0004696    .0011127          .          .          .          .          .          .   26          1 {txt}{c |}
-1950. {c |} {res}       7   24    .0002208    .0005217          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1951. {c |} {res}       7   25   -.0001328    .0008773          .          .          .          .          .          .   26          1 {txt}{c |}
-1952. {c |} {res}       7   26     .000293    .0024575          .          .          .          .          .          .   26          1 {txt}{c |}
-1953. {c |} {res}       7   27    .0001138    .0030049          .          .          .          .          .          .   26          1 {txt}{c |}
-1954. {c |} {res}       7   28    .0004656    .0017616          .          .          .          .          .          .   26          1 {txt}{c |}
-1955. {c |} {res}       7   29    .0006288    .0012105          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1956. {c |} {res}       7   30     .000944    .0002053          .          .          .          .          .          .   26          1 {txt}{c |}
-1957. {c |} {res}       7   31    .0012311    .0018876          .          .          .          .          .          .   26          1 {txt}{c |}
-1958. {c |} {res}       7   32    .0005529     .001816          .          .          .          .          .          .   26          1 {txt}{c |}
-1959. {c |} {res}       7   33    .0007204    .0048175          .          .          .          .          .          .   26          1 {txt}{c |}
-1960. {c |} {res}       7   34    .0008615    .0034769          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1961. {c |} {res}       7   35    .0006532    .0027253          .          .          .          .          .          .   26          1 {txt}{c |}
-1962. {c |} {res}       7   36    .0004215    .0016236          .          .          .          .          .          .   26          1 {txt}{c |}
-1963. {c |} {res}       7   37    .0007277    .0028523          .          .          .          .          .          .   26          1 {txt}{c |}
-1964. {c |} {res}       7   38    .0007845    .0014769          .          .          .          .          .          .   26          1 {txt}{c |}
-1965. {c |} {res}       7   39    .0002779    .0022819          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1966. {c |} {res}       7   40    .0002925    .0024094   .2467607          7   .9495273          1   .2692308   .0384615   26          1 {txt}{c |}
-1967. {c |} {res}       7   41    .0004592    .0024419   .4274532          5   .9624298          1   .1923077   .0384615   26          1 {txt}{c |}
-1968. {c |} {res}       7   42    .0005462     .001805   .5717819          5   .8192555          2   .1923077   .0769231   26          1 {txt}{c |}
-1969. {c |} {res}       7   43    .0006291     .001682   .7142354          2   .7301254          2   .0769231   .0769231   26          1 {txt}{c |}
-1970. {c |} {res}       7   44    .0002881    .0007687   .6192657          3   .6034327          2   .1153846   .0769231   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1971. {c |} {res}       7   45    .0001655    .0008741   .5292234          4   .5236874          2   .1538462   .0769231   26          1 {txt}{c |}
-1972. {c |} {res}       7   46    .0001567    .0005473   .4637328          4    .455874          2   .1538462   .0769231   26          1 {txt}{c |}
-1973. {c |} {res}       7   47    .0004317    .0019955   .4729544          3   .4803018          2   .1153846   .0769231   26          1 {txt}{c |}
-1974. {c |} {res}       7   48    .0002398    .0013616   .4388295          4   .4606266          2   .1538462   .0769231   26          1 {txt}{c |}
-1975. {c |} {res}       7   49    .0002445     .001415   .4121906          3   .4473123          2   .1153846   .0769231   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1976. {c |} {res}       7   50    .0000191    .0011611   .3748146          5   .4266933          2   .1923077   .0769231   26          1 {txt}{c |}
-1977. {c |} {res}       7   51    .0001787     .000783   .3512565          5   .3994919          2   .1923077   .0769231   26          1 {txt}{c |}
-1978. {c |} {res}       7   52    .0000481    .0001297   .3247496          5   .3689733          2   .1923077   .0769231   26          1 {txt}{c |}
-1979. {c |} {res}       7   53    .0001049    .0005697   .3038188          6   .3464097          5   .2307692   .1923077   26          1 {txt}{c |}
-1980. {c |} {res}       7   54    .0000947    .0011004   .2852875          6   .3365203          5   .2307692   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1981. {c |} {res}       7   55    3.35e-06     .000937    .267459          6    .324463          5   .2307692   .1923077   26          1 {txt}{c |}
-1982. {c |} {res}       7   56    .0001905    .0012103   .2578829          6   .3194712          5   .2307692   .1923077   26          1 {txt}{c |}
-1983. {c |} {res}       7   57    .0001942    .0007414   .2495969          6   .3067182          5   .2307692   .1923077   26          1 {txt}{c |}
-1984. {c |} {res}       7   58    .0001017    .0008566   .2380313          6   .2968913          5   .2307692   .1923077   26          1 {txt}{c |}
-1985. {c |} {res}       7   59    .0000901    .0003265   .2272999          6   .2829184          5   .2307692   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1986. {c |} {res}       7   60   -1.09e-06    .0007584   .2164762          7    .273926          6   .2692308   .2307692   26          1 {txt}{c |}
-1987. {c |} {res}       7   61    .0001114    .0013902   .2082641          7   .2758448          6   .2692308   .2307692   26          1 {txt}{c |}
-1988. {c |} {res}       7   62    .0000585    .0013274    .199638          7   .2763818          5   .2692308   .1923077   26          1 {txt}{c |}
-1989. {c |} {res}       7   63    .0000907    .0012092   .1923083          7   .2748314          5   .2692308   .1923077   26          1 {txt}{c |}
-1990. {c |} {res}       7   64    .0002718    .0009974   .1931428          7   .2703465          5   .2692308   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1991. {c |} {res}       7   65    .0000522    .0008701   .1860171          7   .2647117          5   .2692308   .1923077   26          1 {txt}{c |}
-1992. {c |} {res}       7   66    .0001391    .0005271   .1811956          7   .2565909          5   .2692308   .1923077   26          1 {txt}{c |}
-1993. {c |} {res}       7   67    .0001381    .0009133   .1766904          7   .2522993          5   .2692308   .1923077   26          1 {txt}{c |}
-1994. {c |} {res}       7   68    .0001509    .0011921   .1728627          7   .2516145          5   .2692308   .1923077   26          1 {txt}{c |}
-1995. {c |} {res}       7   69     .000183    .0012292   .1703193          7   .2514658          5   .2692308   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1996. {c |} {res}       7   70    .0001434    .0010494   .1667392          8   .2491648          5   .3076923   .1923077   26          1 {txt}{c |}
-1997. {c |} {res}       7   71    .0001884    .0005514   .1647284          8   .2429325          5   .3076923   .1923077   26          1 {txt}{c |}
-1998. {c |} {res}       7   72    .0000778     .000694   .1602653          8   .2379581          5   .3076923   .1923077   26          1 {txt}{c |}
-1999. {c |} {res}       7   73    .0001478    .0004576   .1574053          9   .2319667          5   .3461539   .1923077   26          1 {txt}{c |}
-2000. {c |} {res}       7   74    .0000756    .0006456   .1533788          9    .227287          5   .3461539   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-2001. {c |} {res}       7   75    .0001334     .001072   .1505444          9   .2261953          5   .3461539   .1923077   26          1 {txt}{c |}
-2002. {c |} {res}       7   76    .0000914     .000669   .1471276          9   .2220602          6   .3461539   .2307692   26          1 {txt}{c |}
-      {c BLC}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c BRC}
+      {c TLC}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c TRC}
+      {c |} {res}statec~e    t         gap      rmspe   rmspe_~k          p    N   unique_W {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1926. {c |} {res}       7    0    .0007786          .          .          .   26          1 {txt}{c |}
+1927. {c |} {res}       7    1   -.0006055          .          .          .   26          1 {txt}{c |}
+1928. {c |} {res}       7    2    .0011665          .          .          .   26          1 {txt}{c |}
+1929. {c |} {res}       7    3    .0014706          .          .          .   26          1 {txt}{c |}
+1930. {c |} {res}       7    4    .0003334          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1931. {c |} {res}       7    5    .0007936          .          .          .   26          1 {txt}{c |}
+1932. {c |} {res}       7    6   -.0003839          .          .          .   26          1 {txt}{c |}
+1933. {c |} {res}       7    7    .0007246          .          .          .   26          1 {txt}{c |}
+1934. {c |} {res}       7    8     .000315          .          .          .   26          1 {txt}{c |}
+1935. {c |} {res}       7    9    .0000965          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1936. {c |} {res}       7   10    .0005285          .          .          .   26          1 {txt}{c |}
+1937. {c |} {res}       7   11   -.0000459          .          .          .   26          1 {txt}{c |}
+1938. {c |} {res}       7   12   -.0000526          .          .          .   26          1 {txt}{c |}
+1939. {c |} {res}       7   13   -.0002017          .          .          .   26          1 {txt}{c |}
+1940. {c |} {res}       7   14   -.0002772          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1941. {c |} {res}       7   15   -.0005424          .          .          .   26          1 {txt}{c |}
+1942. {c |} {res}       7   16     .000219          .          .          .   26          1 {txt}{c |}
+1943. {c |} {res}       7   17    .0000916          .          .          .   26          1 {txt}{c |}
+1944. {c |} {res}       7   18   -.0004129          .          .          .   26          1 {txt}{c |}
+1945. {c |} {res}       7   19    .0002534          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1946. {c |} {res}       7   20    .0000682          .          .          .   26          1 {txt}{c |}
+1947. {c |} {res}       7   21   -.0000557          .          .          .   26          1 {txt}{c |}
+1948. {c |} {res}       7   22    .0002364          .          .          .   26          1 {txt}{c |}
+1949. {c |} {res}       7   23    .0004696          .          .          .   26          1 {txt}{c |}
+1950. {c |} {res}       7   24    .0002208          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1951. {c |} {res}       7   25   -.0001328          .          .          .   26          1 {txt}{c |}
+1952. {c |} {res}       7   26     .000293          .          .          .   26          1 {txt}{c |}
+1953. {c |} {res}       7   27    .0001138          .          .          .   26          1 {txt}{c |}
+1954. {c |} {res}       7   28    .0004656          .          .          .   26          1 {txt}{c |}
+1955. {c |} {res}       7   29    .0006288          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1956. {c |} {res}       7   30     .000944          .          .          .   26          1 {txt}{c |}
+1957. {c |} {res}       7   31    .0012311          .          .          .   26          1 {txt}{c |}
+1958. {c |} {res}       7   32    .0005529          .          .          .   26          1 {txt}{c |}
+1959. {c |} {res}       7   33    .0007204          .          .          .   26          1 {txt}{c |}
+1960. {c |} {res}       7   34    .0008615          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1961. {c |} {res}       7   35    .0006532          .          .          .   26          1 {txt}{c |}
+1962. {c |} {res}       7   36    .0004215          .          .          .   26          1 {txt}{c |}
+1963. {c |} {res}       7   37    .0007277          .          .          .   26          1 {txt}{c |}
+1964. {c |} {res}       7   38    .0007845          .          .          .   26          1 {txt}{c |}
+1965. {c |} {res}       7   39    .0002779          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1966. {c |} {res}       7   40    .0002925   .2467607          7   .2692308   26          1 {txt}{c |}
+1967. {c |} {res}       7   41    .0004592   .4274532          5   .1923077   26          1 {txt}{c |}
+1968. {c |} {res}       7   42    .0005462   .5717819          5   .1923077   26          1 {txt}{c |}
+1969. {c |} {res}       7   43    .0006291   .7142354          2   .0769231   26          1 {txt}{c |}
+1970. {c |} {res}       7   44    .0002881   .6192657          3   .1153846   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1971. {c |} {res}       7   45    .0001655   .5292234          4   .1538462   26          1 {txt}{c |}
+1972. {c |} {res}       7   46    .0001567   .4637328          4   .1538462   26          1 {txt}{c |}
+1973. {c |} {res}       7   47    .0004317   .4729544          3   .1153846   26          1 {txt}{c |}
+1974. {c |} {res}       7   48    .0002398   .4388295          4   .1538462   26          1 {txt}{c |}
+1975. {c |} {res}       7   49    .0002445   .4121906          3   .1153846   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1976. {c |} {res}       7   50    .0000191   .3748146          5   .1923077   26          1 {txt}{c |}
+1977. {c |} {res}       7   51    .0001787   .3512565          5   .1923077   26          1 {txt}{c |}
+1978. {c |} {res}       7   52    .0000481   .3247496          5   .1923077   26          1 {txt}{c |}
+1979. {c |} {res}       7   53    .0001049   .3038188          6   .2307692   26          1 {txt}{c |}
+1980. {c |} {res}       7   54    .0000947   .2852875          6   .2307692   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1981. {c |} {res}       7   55    3.35e-06    .267459          6   .2307692   26          1 {txt}{c |}
+1982. {c |} {res}       7   56    .0001905   .2578829          6   .2307692   26          1 {txt}{c |}
+1983. {c |} {res}       7   57    .0001942   .2495969          6   .2307692   26          1 {txt}{c |}
+1984. {c |} {res}       7   58    .0001017   .2380313          6   .2307692   26          1 {txt}{c |}
+1985. {c |} {res}       7   59    .0000901   .2272999          6   .2307692   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1986. {c |} {res}       7   60   -1.09e-06   .2164762          7   .2692308   26          1 {txt}{c |}
+1987. {c |} {res}       7   61    .0001114   .2082641          7   .2692308   26          1 {txt}{c |}
+1988. {c |} {res}       7   62    .0000585    .199638          7   .2692308   26          1 {txt}{c |}
+1989. {c |} {res}       7   63    .0000907   .1923083          7   .2692308   26          1 {txt}{c |}
+1990. {c |} {res}       7   64    .0002718   .1931428          7   .2692308   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1991. {c |} {res}       7   65    .0000522   .1860171          7   .2692308   26          1 {txt}{c |}
+1992. {c |} {res}       7   66    .0001391   .1811956          7   .2692308   26          1 {txt}{c |}
+1993. {c |} {res}       7   67    .0001381   .1766904          7   .2692308   26          1 {txt}{c |}
+1994. {c |} {res}       7   68    .0001509   .1728627          7   .2692308   26          1 {txt}{c |}
+1995. {c |} {res}       7   69     .000183   .1703193          7   .2692308   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1996. {c |} {res}       7   70    .0001434   .1667392          8   .3076923   26          1 {txt}{c |}
+1997. {c |} {res}       7   71    .0001884   .1647284          8   .3076923   26          1 {txt}{c |}
+1998. {c |} {res}       7   72    .0000778   .1602653          8   .3076923   26          1 {txt}{c |}
+1999. {c |} {res}       7   73    .0001478   .1574053          9   .3461539   26          1 {txt}{c |}
+2000. {c |} {res}       7   74    .0000756   .1533788          9   .3461539   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+2001. {c |} {res}       7   75    .0001334   .1505444          9   .3461539   26          1 {txt}{c |}
+2002. {c |} {res}       7   76    .0000914   .1471276          9   .3461539   26          1 {txt}{c |}
+      {c BLC}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c BRC}
 {res}
 {cmd:________________________________}
 
@@ -744,13 +889,92 @@ Treated unit (statecode == 7) results:
 {hline}
 {txt}
 {com}. 
-. allsynth dFullvaxpct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) bcorrect(merge) gapfigure(bcorrect, save(synthcontrolresults_dfullvax_gph.svg, replace)) keep(synthcontrolresults_dfullvax, replace) pvalues
+. matrix list e(results)
+{res}
+{txt}e(results)[77,4]
+             t         Gap     RMSPE_p    Unique_W
+ 0 {res}          0    .0007786           .           1
+{txt} 1 {res}          1  -.00060548           .           1
+{txt} 2 {res}          2   .00116648           .           1
+{txt} 3 {res}          3   .00147059           .           1
+{txt} 4 {res}          4   .00033343           .           1
+{txt} 5 {res}          5   .00079364           .           1
+{txt} 6 {res}          6  -.00038386           .           1
+{txt} 7 {res}          7    .0007246           .           1
+{txt} 8 {res}          8   .00031501           .           1
+{txt} 9 {res}          9   .00009651           .           1
+{txt}10 {res}         10    .0005285           .           1
+{txt}11 {res}         11  -.00004594           .           1
+{txt}12 {res}         12  -.00005261           .           1
+{txt}13 {res}         13  -.00020168           .           1
+{txt}14 {res}         14  -.00027716           .           1
+{txt}15 {res}         15  -.00054243           .           1
+{txt}16 {res}         16   .00021903           .           1
+{txt}17 {res}         17   .00009157           .           1
+{txt}18 {res}         18  -.00041288           .           1
+{txt}19 {res}         19   .00025344           .           1
+{txt}20 {res}         20   .00006819           .           1
+{txt}21 {res}         21  -.00005567           .           1
+{txt}22 {res}         22   .00023642           .           1
+{txt}23 {res}         23   .00046957           .           1
+{txt}24 {res}         24   .00022085           .           1
+{txt}25 {res}         25  -.00013285           .           1
+{txt}26 {res}         26   .00029304           .           1
+{txt}27 {res}         27   .00011384           .           1
+{txt}28 {res}         28    .0004656           .           1
+{txt}29 {res}         29    .0006288           .           1
+{txt}30 {res}         30   .00094397           .           1
+{txt}31 {res}         31   .00123108           .           1
+{txt}32 {res}         32   .00055285           .           1
+{txt}33 {res}         33   .00072041           .           1
+{txt}34 {res}         34   .00086154           .           1
+{txt}35 {res}         35   .00065321           .           1
+{txt}36 {res}         36   .00042146           .           1
+{txt}37 {res}         37   .00072774           .           1
+{txt}38 {res}         38    .0007845           .           1
+{txt}39 {res}         39   .00027789           .           1
+{txt}40 {res}         40   .00029248   .26923078           1
+{txt}41 {res}         41   .00045916    .1923077           1
+{txt}42 {res}         42   .00054616    .1923077           1
+{txt}43 {res}         43   .00062909   .07692308           1
+{txt}44 {res}         44   .00028808   .11538462           1
+{txt}45 {res}         45    .0001655   .15384616           1
+{txt}46 {res}         46   .00015665   .15384616           1
+{txt}47 {res}         47   .00043167   .11538462           1
+{txt}48 {res}         48   .00023977   .15384616           1
+{txt}49 {res}         49    .0002445   .11538462           1
+{txt}50 {res}         50   .00001912    .1923077           1
+{txt}51 {res}         51    .0001787    .1923077           1
+{txt}52 {res}         52   .00004807    .1923077           1
+{txt}53 {res}         53   .00010486   .23076923           1
+{txt}54 {res}         54   .00009466   .23076923           1
+{txt}55 {res}         55   3.347e-06   .23076923           1
+{txt}56 {res}         56   .00019048   .23076923           1
+{txt}57 {res}         57   .00019415   .23076923           1
+{txt}58 {res}         58   .00010173   .23076923           1
+{txt}59 {res}         59   .00009007   .23076923           1
+{txt}60 {res}         60  -1.090e-06   .26923078           1
+{txt}61 {res}         61   .00011142   .26923078           1
+{txt}62 {res}         62   .00005847   .26923078           1
+{txt}63 {res}         63   .00009069   .26923078           1
+{txt}64 {res}         64   .00027184   .26923078           1
+{txt}65 {res}         65   .00005225   .26923078           1
+{txt}66 {res}         66   .00013913   .26923078           1
+{txt}67 {res}         67   .00013815   .26923078           1
+{txt}68 {res}         68    .0001509   .26923078           1
+{txt}69 {res}         69   .00018296   .26923078           1
+{txt}70 {res}         70   .00014342   .30769232           1
+{txt}71 {res}         71   .00018841   .30769232           1
+{txt}72 {res}         72   .00007777   .30769232           1
+{txt}73 {res}         73   .00014781   .34615386           1
+{txt}74 {res}         74   .00007558   .34615386           1
+{txt}75 {res}         75   .00013341   .34615386           1
+{txt}76 {res}         76   .00009145   .34615386           1
+{reset}
+{com}. 
+. allsynth dFullvaxpct repvotes2020pct black fullcollege cases_per_capita whiteevangelical catholic poverty medfamilinc pop0to4pct pop5to9pct pop10to14pct pop15to19pct pop60to64pct pop65to69pct pop70to74pct pop75to79pct pop80to84pct pop85abovepct, trunit(7) trperiod(40) gapfigure(classic, save(synthcontrolresults_dfullvax_gph.svg, replace)) keep(synthcontrolresults_dfullvax, replace) pvalues
 
 Identifying donor pool...
-
-
-
-Bias-correcting the plain vanilla -synth- estimate for statecode 7
 
 {txt}{hline}
 {res}Synthetic Control Method for Comparative Case Studies
@@ -876,110 +1100,107 @@ Estimating synthetic controls using in-space placebo treatments for treated unit
 
 Saving results...
 (1,040 missing values generated)
-(1,040 missing values generated)
-
-Combining data files
 (1,925 observations deleted)
 {res}
 Treated unit (statecode == 7) results:
 
 {txt}
-      {c TLC}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c TRC}
-      {c |} {res}statec~e    t         gap      gap_bc      rmspe   r~e_rank   rmspe_bc   r~c_rank          p       p_bc    N   unique_W {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1926. {c |} {res}       7    0    .0014715   -.0007904          .          .          .          .          .          .   26          1 {txt}{c |}
-1927. {c |} {res}       7    1    .0013001   -.0031084          .          .          .          .          .          .   26          1 {txt}{c |}
-1928. {c |} {res}       7    2    .0030955   -.0023124          .          .          .          .          .          .   26          1 {txt}{c |}
-1929. {c |} {res}       7    3    .0024101     .001396          .          .          .          .          .          .   26          1 {txt}{c |}
-1930. {c |} {res}       7    4    .0011166   -.0011862          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1931. {c |} {res}       7    5    .0006814   -.0035259          .          .          .          .          .          .   26          1 {txt}{c |}
-1932. {c |} {res}       7    6    .0005246    .0018267          .          .          .          .          .          .   26          1 {txt}{c |}
-1933. {c |} {res}       7    7    .0022039    .0012505          .          .          .          .          .          .   26          1 {txt}{c |}
-1934. {c |} {res}       7    8    .0018816   -.0007764          .          .          .          .          .          .   26          1 {txt}{c |}
-1935. {c |} {res}       7    9    .0020931   -.0036921          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1936. {c |} {res}       7   10    .0004411    .0003839          .          .          .          .          .          .   26          1 {txt}{c |}
-1937. {c |} {res}       7   11    .0009442   -.0016024          .          .          .          .          .          .   26          1 {txt}{c |}
-1938. {c |} {res}       7   12   -.0006011    -.002262          .          .          .          .          .          .   26          1 {txt}{c |}
-1939. {c |} {res}       7   13   -.0009758   -.0037102          .          .          .          .          .          .   26          1 {txt}{c |}
-1940. {c |} {res}       7   14    .0005478   -.0056942          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1941. {c |} {res}       7   15    .0001879   -.0053592          .          .          .          .          .          .   26          1 {txt}{c |}
-1942. {c |} {res}       7   16    .0029045   -.0007221          .          .          .          .          .          .   26          1 {txt}{c |}
-1943. {c |} {res}       7   17    .0023465    .0009737          .          .          .          .          .          .   26          1 {txt}{c |}
-1944. {c |} {res}       7   18    .0001289   -.0034337          .          .          .          .          .          .   26          1 {txt}{c |}
-1945. {c |} {res}       7   19    .0011551   -.0007893          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1946. {c |} {res}       7   20    .0005739    .0004067          .          .          .          .          .          .   26          1 {txt}{c |}
-1947. {c |} {res}       7   21    .0008006   -.0043715          .          .          .          .          .          .   26          1 {txt}{c |}
-1948. {c |} {res}       7   22    .0005609   -.0040053          .          .          .          .          .          .   26          1 {txt}{c |}
-1949. {c |} {res}       7   23    .0020943   -.0008989          .          .          .          .          .          .   26          1 {txt}{c |}
-1950. {c |} {res}       7   24    .0013521    .0021542          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1951. {c |} {res}       7   25     .001503     .000971          .          .          .          .          .          .   26          1 {txt}{c |}
-1952. {c |} {res}       7   26    .0009919    .0068117          .          .          .          .          .          .   26          1 {txt}{c |}
-1953. {c |} {res}       7   27   -.0008515    .0030617          .          .          .          .          .          .   26          1 {txt}{c |}
-1954. {c |} {res}       7   28    .0014259    .0035307          .          .          .          .          .          .   26          1 {txt}{c |}
-1955. {c |} {res}       7   29   -.0003293   -.0012736          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1956. {c |} {res}       7   30    .0005571    .0028467          .          .          .          .          .          .   26          1 {txt}{c |}
-1957. {c |} {res}       7   31    .0014392    .0048078          .          .          .          .          .          .   26          1 {txt}{c |}
-1958. {c |} {res}       7   32   -.0000707   -5.40e-08          .          .          .          .          .          .   26          1 {txt}{c |}
-1959. {c |} {res}       7   33    .0005057     .001972          .          .          .          .          .          .   26          1 {txt}{c |}
-1960. {c |} {res}       7   34     .000237    .0038411          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1961. {c |} {res}       7   35    .0003181    .0026726          .          .          .          .          .          .   26          1 {txt}{c |}
-1962. {c |} {res}       7   36    .0000125    .0011848          .          .          .          .          .          .   26          1 {txt}{c |}
-1963. {c |} {res}       7   37    .0005541    .0023855          .          .          .          .          .          .   26          1 {txt}{c |}
-1964. {c |} {res}       7   38     .000479    .0022479          .          .          .          .          .          .   26          1 {txt}{c |}
-1965. {c |} {res}       7   39   -.0000889    .0010236          .          .          .          .          .          .   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1966. {c |} {res}       7   40   -.0000436    .0014116   .0011023         26    .242287         10          1   .3846154   26          1 {txt}{c |}
-1967. {c |} {res}       7   41   -.0001271     .002589   .0052314         25   .5286711          8   .9615384   .3076923   26          1 {txt}{c |}
-1968. {c |} {res}       7   42   -.0001318    .0008512   .0068442         25   .3818182          8   .9615384   .3076923   26          1 {txt}{c |}
-1969. {c |} {res}       7   43    .0002639    .0015339   .0152248         24   .3578847          9   .9230769   .3461539   26          1 {txt}{c |}
-1970. {c |} {res}       7   44      .00034    .0007829   .0255873         23   .3012122          9   .8846154   .3461539   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1971. {c |} {res}       7   45    .0002204    .0009861   .0260173         23   .2707187          9   .8846154   .3461539   26          1 {txt}{c |}
-1972. {c |} {res}       7   46    .0001759    .0011573   .0248619         23   .2553124         10   .8846154   .3846154   26          1 {txt}{c |}
-1973. {c |} {res}       7   47   -.0000253    .0014191   .0218004         24   .2540088         10   .9230769   .3846154   26          1 {txt}{c |}
-1974. {c |} {res}       7   48   -.0001915    .0016353   .0217409         24   .2619181         10   .9230769   .3846154   26          1 {txt}{c |}
-1975. {c |} {res}       7   49    .0001605    .0019933   .0210607         24   .2840395          8   .9230769   .3076923   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1976. {c |} {res}       7   50    .0004393    .0017049   .0293188         24   .2903501          8   .9230769   .3076923   26          1 {txt}{c |}
-1977. {c |} {res}       7   51    .0006813    .0000208   .0492992         21   .2661586          9   .8076923   .3461539   26          1 {txt}{c |}
-1978. {c |} {res}       7   52    .0007675    .0002273   .0717754         19   .2461682          9   .7307692   .3461539   26          1 {txt}{c |}
-1979. {c |} {res}       7   53    .0003762    .0009603   .0725096         19   .2365938         11   .7307692   .4230769   26          1 {txt}{c |}
-1980. {c |} {res}       7   54    .0007372    .0049974   .0886835         17   .4232756          8   .6538461   .3076923   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1981. {c |} {res}       7   55    .0007172    .0030209   .1017786         16   .4661778          8   .6153846   .3076923   26          1 {txt}{c |}
-1982. {c |} {res}       7   56    .0007653     .003586   .1157663         15   .5307389          7   .5769231   .2692308   26          1 {txt}{c |}
-1983. {c |} {res}       7   57    .0004054    .0004113   .1146294         15   .5023962          7   .5769231   .2692308   26          1 {txt}{c |}
-1984. {c |} {res}       7   58     .000794    .0028765   .1278335         15   .5289071          6   .5769231   .2307692   26          1 {txt}{c |}
-1985. {c |} {res}       7   59    .0006713    .0013066   .1345035         14   .5128419          6   .5384616   .2307692   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1986. {c |} {res}       7   60     .000209    .0013766   .1293048         14   .4993934          7   .5384616   .2692308   26          1 {txt}{c |}
-1987. {c |} {res}       7   61      .00033    .0024938   .1262971         14   .5110685          6   .5384616   .2307692   26          1 {txt}{c |}
-1988. {c |} {res}       7   62     .000478    .0023863   .1265661         14   .5189543          6   .5384616   .2307692   26          1 {txt}{c |}
-1989. {c |} {res}       7   63    .0004464    .0019216   .1261073         14    .516039          5   .5384616   .1923077   26          1 {txt}{c |}
-1990. {c |} {res}       7   64    .0006746    .0011897   .1316169         14   .5022814          5   .5384616   .1923077   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1991. {c |} {res}       7   65     .000543    .0016226   .1331296         14   .4952766          5   .5384616   .1923077   26          1 {txt}{c |}
-1992. {c |} {res}       7   66     .000186    .0005692   .1289416         14   .4783923          5   .5384616   .1923077   26          1 {txt}{c |}
-1993. {c |} {res}       7   67    .0002025       .0003    .125186         14   .4616978          5   .5384616   .1923077   26          1 {txt}{c |}
-1994. {c |} {res}       7   68    .0005038     .002214   .1259438         14   .4663301          5   .5384616   .1923077   26          1 {txt}{c |}
-1995. {c |} {res}       7   69     .000336    .0014638   .1239277         14   .4594712          4   .5384616   .1538462   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-1996. {c |} {res}       7   70    .0003061    .0013649   .1216826         14   .4519569          4   .5384616   .1538462   26          1 {txt}{c |}
-1997. {c |} {res}       7   71    .0002378    .0010711   .1189049         14   .4421924          4   .5384616   .1538462   26          1 {txt}{c |}
-1998. {c |} {res}       7   72    .0002785    .0008604   .1166642         13   .4315204          4         .5   .1538462   26          1 {txt}{c |}
-1999. {c |} {res}       7   73    .0001392    .0002508   .1135633         13   .4190537          4         .5   .1538462   26          1 {txt}{c |}
-2000. {c |} {res}       7   74    .0001077    .0001178   .1105108         13    .407129          4         .5   .1538462   26          1 {txt}{c |}
-      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
-2001. {c |} {res}       7   75    .0001987     .001254   .1080766         14   .4011314          4   .5384616   .1538462   26          1 {txt}{c |}
-2002. {c |} {res}       7   76    .0000188    .0001225   .1051612         14   .3903393          4   .5384616   .1538462   26          1 {txt}{c |}
-      {c BLC}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c BRC}
+      {c TLC}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c TRC}
+      {c |} {res}statec~e    t         gap      rmspe   rmspe_~k          p    N   unique_W {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1926. {c |} {res}       7    0    .0014715          .          .          .   26          1 {txt}{c |}
+1927. {c |} {res}       7    1    .0013001          .          .          .   26          1 {txt}{c |}
+1928. {c |} {res}       7    2    .0030955          .          .          .   26          1 {txt}{c |}
+1929. {c |} {res}       7    3    .0024101          .          .          .   26          1 {txt}{c |}
+1930. {c |} {res}       7    4    .0011166          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1931. {c |} {res}       7    5    .0006814          .          .          .   26          1 {txt}{c |}
+1932. {c |} {res}       7    6    .0005246          .          .          .   26          1 {txt}{c |}
+1933. {c |} {res}       7    7    .0022039          .          .          .   26          1 {txt}{c |}
+1934. {c |} {res}       7    8    .0018816          .          .          .   26          1 {txt}{c |}
+1935. {c |} {res}       7    9    .0020931          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1936. {c |} {res}       7   10    .0004411          .          .          .   26          1 {txt}{c |}
+1937. {c |} {res}       7   11    .0009442          .          .          .   26          1 {txt}{c |}
+1938. {c |} {res}       7   12   -.0006011          .          .          .   26          1 {txt}{c |}
+1939. {c |} {res}       7   13   -.0009758          .          .          .   26          1 {txt}{c |}
+1940. {c |} {res}       7   14    .0005478          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1941. {c |} {res}       7   15    .0001879          .          .          .   26          1 {txt}{c |}
+1942. {c |} {res}       7   16    .0029045          .          .          .   26          1 {txt}{c |}
+1943. {c |} {res}       7   17    .0023465          .          .          .   26          1 {txt}{c |}
+1944. {c |} {res}       7   18    .0001289          .          .          .   26          1 {txt}{c |}
+1945. {c |} {res}       7   19    .0011551          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1946. {c |} {res}       7   20    .0005739          .          .          .   26          1 {txt}{c |}
+1947. {c |} {res}       7   21    .0008006          .          .          .   26          1 {txt}{c |}
+1948. {c |} {res}       7   22    .0005609          .          .          .   26          1 {txt}{c |}
+1949. {c |} {res}       7   23    .0020943          .          .          .   26          1 {txt}{c |}
+1950. {c |} {res}       7   24    .0013521          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1951. {c |} {res}       7   25     .001503          .          .          .   26          1 {txt}{c |}
+1952. {c |} {res}       7   26    .0009919          .          .          .   26          1 {txt}{c |}
+1953. {c |} {res}       7   27   -.0008515          .          .          .   26          1 {txt}{c |}
+1954. {c |} {res}       7   28    .0014259          .          .          .   26          1 {txt}{c |}
+1955. {c |} {res}       7   29   -.0003293          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1956. {c |} {res}       7   30    .0005571          .          .          .   26          1 {txt}{c |}
+1957. {c |} {res}       7   31    .0014392          .          .          .   26          1 {txt}{c |}
+1958. {c |} {res}       7   32   -.0000707          .          .          .   26          1 {txt}{c |}
+1959. {c |} {res}       7   33    .0005057          .          .          .   26          1 {txt}{c |}
+1960. {c |} {res}       7   34     .000237          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1961. {c |} {res}       7   35    .0003181          .          .          .   26          1 {txt}{c |}
+1962. {c |} {res}       7   36    .0000125          .          .          .   26          1 {txt}{c |}
+1963. {c |} {res}       7   37    .0005541          .          .          .   26          1 {txt}{c |}
+1964. {c |} {res}       7   38     .000479          .          .          .   26          1 {txt}{c |}
+1965. {c |} {res}       7   39   -.0000889          .          .          .   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1966. {c |} {res}       7   40   -.0000436   .0011023         26          1   26          1 {txt}{c |}
+1967. {c |} {res}       7   41   -.0001271   .0052314         25   .9615384   26          1 {txt}{c |}
+1968. {c |} {res}       7   42   -.0001318   .0068442         25   .9615384   26          1 {txt}{c |}
+1969. {c |} {res}       7   43    .0002639   .0152248         24   .9230769   26          1 {txt}{c |}
+1970. {c |} {res}       7   44      .00034   .0255873         23   .8846154   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1971. {c |} {res}       7   45    .0002204   .0260173         23   .8846154   26          1 {txt}{c |}
+1972. {c |} {res}       7   46    .0001759   .0248619         23   .8846154   26          1 {txt}{c |}
+1973. {c |} {res}       7   47   -.0000253   .0218004         24   .9230769   26          1 {txt}{c |}
+1974. {c |} {res}       7   48   -.0001915   .0217409         24   .9230769   26          1 {txt}{c |}
+1975. {c |} {res}       7   49    .0001605   .0210607         24   .9230769   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1976. {c |} {res}       7   50    .0004393   .0293188         24   .9230769   26          1 {txt}{c |}
+1977. {c |} {res}       7   51    .0006813   .0492992         21   .8076923   26          1 {txt}{c |}
+1978. {c |} {res}       7   52    .0007675   .0717754         19   .7307692   26          1 {txt}{c |}
+1979. {c |} {res}       7   53    .0003762   .0725096         19   .7307692   26          1 {txt}{c |}
+1980. {c |} {res}       7   54    .0007372   .0886835         17   .6538461   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1981. {c |} {res}       7   55    .0007172   .1017786         16   .6153846   26          1 {txt}{c |}
+1982. {c |} {res}       7   56    .0007653   .1157663         15   .5769231   26          1 {txt}{c |}
+1983. {c |} {res}       7   57    .0004054   .1146294         15   .5769231   26          1 {txt}{c |}
+1984. {c |} {res}       7   58     .000794   .1278335         15   .5769231   26          1 {txt}{c |}
+1985. {c |} {res}       7   59    .0006713   .1345035         14   .5384616   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1986. {c |} {res}       7   60     .000209   .1293048         14   .5384616   26          1 {txt}{c |}
+1987. {c |} {res}       7   61      .00033   .1262971         14   .5384616   26          1 {txt}{c |}
+1988. {c |} {res}       7   62     .000478   .1265661         14   .5384616   26          1 {txt}{c |}
+1989. {c |} {res}       7   63    .0004464   .1261073         14   .5384616   26          1 {txt}{c |}
+1990. {c |} {res}       7   64    .0006746   .1316169         14   .5384616   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1991. {c |} {res}       7   65     .000543   .1331296         14   .5384616   26          1 {txt}{c |}
+1992. {c |} {res}       7   66     .000186   .1289416         14   .5384616   26          1 {txt}{c |}
+1993. {c |} {res}       7   67    .0002025    .125186         14   .5384616   26          1 {txt}{c |}
+1994. {c |} {res}       7   68    .0005038   .1259438         14   .5384616   26          1 {txt}{c |}
+1995. {c |} {res}       7   69     .000336   .1239277         14   .5384616   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+1996. {c |} {res}       7   70    .0003061   .1216826         14   .5384616   26          1 {txt}{c |}
+1997. {c |} {res}       7   71    .0002378   .1189049         14   .5384616   26          1 {txt}{c |}
+1998. {c |} {res}       7   72    .0002785   .1166642         13         .5   26          1 {txt}{c |}
+1999. {c |} {res}       7   73    .0001392   .1135633         13         .5   26          1 {txt}{c |}
+2000. {c |} {res}       7   74    .0001077   .1105108         13         .5   26          1 {txt}{c |}
+      {c LT}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c RT}
+2001. {c |} {res}       7   75    .0001987   .1080766         14   .5384616   26          1 {txt}{c |}
+2002. {c |} {res}       7   76    .0000188   .1051612         14   .5384616   26          1 {txt}{c |}
+      {c BLC}{hline 10}{c -}{hline 4}{c -}{hline 11}{c -}{hline 10}{c -}{hline 10}{c -}{hline 10}{c -}{hline 4}{c -}{hline 10}{c BRC}
 {res}
 {cmd:________________________________}
 
@@ -990,30 +1211,94 @@ Treated unit (statecode == 7) results:
 {hline}
 {txt}
 {com}. 
-. translate synth_output.smcl synth_output.log, replace
-{txt}{p 0 4 2}
-(file {bf}
-synth_output.log{rm}
-not found)
-{p_end}
-{p 0 4 2}
-file {bf}
-synth_output.log{rm}
-saved as
-.log
-format
-{p_end}
-
-{com}. translate synth_output.smcl synth_output.pdf, replace
-{txt}{p 0 4 2}
-file {bf}
-synth_output.pdf{rm}
-saved as
-PDF
-format
-{p_end}
-
+. matrix list e(results)
+{res}
+{txt}e(results)[77,4]
+             t         Gap     RMSPE_p    Unique_W
+ 0 {res}          0   .00147152           .           1
+{txt} 1 {res}          1   .00130009           .           1
+{txt} 2 {res}          2   .00309547           .           1
+{txt} 3 {res}          3    .0024101           .           1
+{txt} 4 {res}          4   .00111659           .           1
+{txt} 5 {res}          5   .00068135           .           1
+{txt} 6 {res}          6   .00052456           .           1
+{txt} 7 {res}          7   .00220392           .           1
+{txt} 8 {res}          8   .00188161           .           1
+{txt} 9 {res}          9   .00209308           .           1
+{txt}10 {res}         10   .00044113           .           1
+{txt}11 {res}         11   .00094416           .           1
+{txt}12 {res}         12  -.00060114           .           1
+{txt}13 {res}         13  -.00097577           .           1
+{txt}14 {res}         14   .00054781           .           1
+{txt}15 {res}         15   .00018787           .           1
+{txt}16 {res}         16   .00290453           .           1
+{txt}17 {res}         17   .00234649           .           1
+{txt}18 {res}         18   .00012892           .           1
+{txt}19 {res}         19   .00115515           .           1
+{txt}20 {res}         20   .00057392           .           1
+{txt}21 {res}         21   .00080062           .           1
+{txt}22 {res}         22   .00056093           .           1
+{txt}23 {res}         23   .00209428           .           1
+{txt}24 {res}         24   .00135207           .           1
+{txt}25 {res}         25   .00150296           .           1
+{txt}26 {res}         26   .00099189           .           1
+{txt}27 {res}         27  -.00085152           .           1
+{txt}28 {res}         28   .00142595           .           1
+{txt}29 {res}         29  -.00032934           .           1
+{txt}30 {res}         30   .00055707           .           1
+{txt}31 {res}         31   .00143919           .           1
+{txt}32 {res}         32  -.00007072           .           1
+{txt}33 {res}         33   .00050573           .           1
+{txt}34 {res}         34   .00023701           .           1
+{txt}35 {res}         35   .00031811           .           1
+{txt}36 {res}         36   .00001254           .           1
+{txt}37 {res}         37   .00055411           .           1
+{txt}38 {res}         38   .00047903           .           1
+{txt}39 {res}         39   -.0000889           .           1
+{txt}40 {res}         40   -.0000436           1           1
+{txt}41 {res}         41  -.00012706   .96153843           1
+{txt}42 {res}         42  -.00013179   .96153843           1
+{txt}43 {res}         43   .00026386   .92307693           1
+{txt}44 {res}         44   .00034004   .88461536           1
+{txt}45 {res}         45   .00022042   .88461536           1
+{txt}46 {res}         46   .00017586   .88461536           1
+{txt}47 {res}         47  -.00002527   .92307693           1
+{txt}48 {res}         48  -.00019151   .92307693           1
+{txt}49 {res}         49   .00016052   .92307693           1
+{txt}50 {res}         50   .00043932   .92307693           1
+{txt}51 {res}         51   .00068126   .80769229           1
+{txt}52 {res}         52   .00076747   .73076922           1
+{txt}53 {res}         53    .0003762   .73076922           1
+{txt}54 {res}         54   .00073724   .65384614           1
+{txt}55 {res}         55   .00071718   .61538464           1
+{txt}56 {res}         56    .0007653   .57692307           1
+{txt}57 {res}         57   .00040544   .57692307           1
+{txt}58 {res}         58   .00079399   .57692307           1
+{txt}59 {res}         59   .00067125   .53846157           1
+{txt}60 {res}         60   .00020902   .53846157           1
+{txt}61 {res}         61   .00032999   .53846157           1
+{txt}62 {res}         62   .00047803   .53846157           1
+{txt}63 {res}         63   .00044644   .53846157           1
+{txt}64 {res}         64    .0006746   .53846157           1
+{txt}65 {res}         65     .000543   .53846157           1
+{txt}66 {res}         66   .00018598   .53846157           1
+{txt}67 {res}         67   .00020255   .53846157           1
+{txt}68 {res}         68   .00050381   .53846157           1
+{txt}69 {res}         69   .00033602   .53846157           1
+{txt}70 {res}         70   .00030612   .53846157           1
+{txt}71 {res}         71   .00023783   .53846157           1
+{txt}72 {res}         72   .00027848          .5           1
+{txt}73 {res}         73    .0001392          .5           1
+{txt}74 {res}         74   .00010769          .5           1
+{txt}75 {res}         75   .00019867   .53846157           1
+{txt}76 {res}         76   .00001879   .53846157           1
+{reset}
 {com}. 
-{txt}end of do-file
-
-{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/home/elven/Documents/College/metrics_project/synth/synth_output.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}17 May 2022, 06:23:56
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

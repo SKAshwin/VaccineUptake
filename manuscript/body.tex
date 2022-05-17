@@ -107,7 +107,7 @@
 		\begin{figure}
 			\centering
 			\includegraphics[width=6in]{../graphs/Border_Counties.png}
-			\caption*{\footnotesize{Oklahoma, Kansas, Nebraska and Wyoming did not have vaccine lotteries over this period (CITE). New Mexico did, and hence counties bordering New Mexico are excluded from this regression. Utah is excluded from the dataset due to missing data on some covariates. Each county-pair in the pair design dataset consists of one county in Colorado (in dark grey), and one county in an untreated state (in light grey).}}
+			\caption*{\footnotesize{Oklahoma, Kansas, Nebraska and Wyoming did not have vaccine lotteries over this period (CITE). New Mexico did, and hence counties bordering New Mexico are excluded from this regression. Utah is excluded from the dataset due to missing data on some covariates. Each county-pair in the pair design dataset consists of one county in Colorado (in dark grey), and one county in an untreated state (in light grey). County-pairs were matched using the NBER county adjacency dataset.}}
 			\caption{Counties in Pair Design}
 			\label{fig:bordercounties}
 		\end{figure}
@@ -127,9 +127,11 @@
 			\textrm{vaccuptake}_{ipt} = \alpha + \beta \textrm{treated}_{it} + \phi_i + \tau_{pt} + u_{ipt}
 		\end{equation}
 		
-		$i$ is a specific county, $p$ is a county-pair it belongs to, and $t$ is the day in the panel. $\tau_{pt}$ is a pair-specific time fixed effect (shocks beside the lottery happen to both members of a pair) , and $\phi_i$ is a county fixed account (accounting for initial differences). $\textrm{treated}_{it}=1$ if the county $i$ is in Colorado, and $t$ is after 25 May. $\beta$, the effect of the vaccine lottery on vaccine uptake, is consistently estimated if $Cov(\textrm{treated}_{it}, u_{itp})=0$ - shocks which only affect one county in the pair.
+		$i$ is a specific county, $p$ is a county-pair it belongs to, and $t$ is the day in the panel. $\tau_{pt}$ is a pair-specific time fixed effect (shocks beside the lottery happen to both members of a pair) , and $\phi_i$ is a county fixed account (accounting for initial differences). $\textrm{treated}_{it}=1$ if the county $i$ is in Colorado, and $t$ is after 25 May. $\beta$, the effect of the vaccine lottery on vaccine uptake, is consistently estimated if $Cov(\textrm{treated}_{it}, u_{itp})=0$ - ie, if some other shocks occurred to Colorado counties without affecting the paired counties, after 25 May.
 		
 		Finally, to further check the robustness of this causal estimate, we utilize a Synthetic Control design, as detailed in (CITE) and used in prior studies on Ohio's vaccine lottery (CITE, CITE, CITE). We collapse our 3075 county level dataset into a state-level dataset, and exclude the 23 other states who had vaccine lotteries in this period (CITE). We construct a synthetic Colorado by taking a weighted average of other states to closely match Colorado on some predictive covariates (see CITE for exact details on the estimation method). We use these weights to see how vaccine uptake would have evolved in the synthetic Colorado (made of untreated states), and take the difference between the synthetic Colorado and the real Colorado's vaccine uptake on day $t$ as the causal impact of the vaccine lottery on day $t$, and test its significance.
+		
+		% more Synth Control exposition once you get the words for it
 		
 		\section{Results and Discussion}
 		
@@ -147,13 +149,13 @@
 		\begin{table}
 			\centering
 			\caption{Coefficient Change Over Time}
-			\centerline{\input{tables/trends.tex}}
+			\input{tables/trends.tex}
 			\label{table:trends}
 		\end{table}
 		
 		Catholicism was not associated with higher vaccination rates in June, but was by December. The estimation of Model (\ref{eq:trends}), presented in Table \ref{table:trends} affirms this, as in either specification there is an increase in the effect size of Catholicism over time. While we do not have an adequate design to demonstrate this, this may suggest that the Pope's messaging on vaccination (see CITE) has successfully changed attitudes over time. This suggests one way to achieve high vaccination rates across the Untied States: engaging local religious leaders to get them to urge their worshippers to get vaccinated, and to educate them against COVID-19 vaccine related misinformation.
 		
-		Table \ref{table:trends} also affirms that the Republican and black aversion to vaccination is only getting stronger with time (although, at a declining rate for Republicans, by the coefficient on $t^2\cdot \textrm{repvotes}$). This is again suggestion of polarization, and further highlights the need to break into the Republican and black social networks with pro-vaccine messaging.
+		Table \ref{table:trends} also affirms that the Republican and black aversion to vaccination is only getting stronger with time (although, at a declining rate for Republicans, by the coefficient on $t^2\cdot \textrm{repvotes}$). This is again suggestive of polarization, and further highlights the need to break into the Republican and black social networks with pro-vaccine messaging.
 		
 		\begin{table}
 			\centering
@@ -162,8 +164,17 @@
 			\label{table:didresults}
 		\end{table}
 		
-		The focus on social messaging and religious factors is then highlighted by our results on the effects of the Colorado vaccine lottery. Regardless of dependent variable chosen, there is no statistically significant effect of the Colorado vaccine lottery on vaccination rates.
+		The focus on social messaging and religious factors is then highlighted by our results on the effects of the Colorado vaccine lottery. Regardless of dependent variable chosen, there is no statistically significant effect of the Colorado vaccine lottery on vaccination rates. This is conclusion is supported by our alternative method using a Synthetic Control. Across all days the vaccine lottery was in effect, the gap between Colorado's actual vaccine uptake and the vaccine uptake in the synthetic control was not statistically different from 0, regardless of what measure of vaccine uptake was used.
 		
+		\begin{table}
+			\caption{Synthetic Control Results}
+			\input{tables/synthcontrolresults.tex}
+		\end{table}
+		
+		Our results here are consistent with the broader literature - though the pair design is novel for this topic - which generally finds that such lotteries had either no effect or very small or positive (and negative!) effects on vaccination. If non-vaccination is largely driven by false beliefs on supposed extreme health dangers of the vaccine, or a simple mistrust of the government, offering financial rewards may not overcome these perceived costs of vaccination.
+		
+		\section{Conclusion}
+		In conclusion
 		
 	
 		
