@@ -32,7 +32,7 @@
 
 % For citation
 \usepackage[backend=biber, bibencoding=utf8, style=apa, natbib]{biblatex}
-\addbibresource{body.bib}
+\addbibresource{Vaccine Uptake Project.bib}
 
 
 \begin{document}
@@ -49,7 +49,7 @@
 		\wordcount words
 		\pagebreak
 		\section{Introduction}
-		By the end of 2021, only 2\% of people wanted a vaccine and had not yet got it (CITE). Differences in vaccine uptake is hence likely due to to personal choice. Existing research has highlighted correlations in vaccine uptake by factors such as race and party affiliation (CITE). Causal studies have focused on the effect of media consumption (CITE), finding that Fox News consumption causally reduces vaccine uptake.
+		By the end of 2021, only 2\% of people wanted a vaccine and had not yet got it (\cite{kff_kff_2022}). Differences in vaccine uptake is hence likely due to to personal choice. Existing research has highlighted correlations in vaccine uptake by factors such as race and party affiliation (\cite{viswanath_individual_2021}). Causal studies have focused on the effect of media consumption (\cite{pinna_cable_2021}), finding that Fox News consumption causally reduces vaccine uptake.
 		
 		We aim to explain cross-country variation in uptake based on an implicit model of agents forming beliefs on the costs and benefits of vaccination, and then aim to test the impact of financial incentives, to suggest future policy interventions to increase uptake across the US.
 		
@@ -62,10 +62,10 @@
 			\label{table:datasources}
 		\end{table}
 	
-		Regressions were generally done on the county level. Data on vaccination rates across time by county (and by state) were all sourced from the CDC (CITE). A dataset of time-invariant characteristics of each county was also compiled for 3075 counties in the United States. Data sources and details on excluded counties are reported in Table \ref{table:datasources}.
+		Regressions were generally done on the county level. Data on vaccination rates across time by county (and by state) were all sourced from the CDC (\cite{cdc_covid-19_2022}). A dataset of time-invariant characteristics of each county was also compiled for 3075 counties in the United States. Data sources and details on excluded counties are reported in Table \ref{table:datasources}.
 		
 		\subsection{Methods}
-		The decision on vaccination can reasonably be broken down into its costs and benefits, and beliefs that agents have about them. We expect that in areas of lower population density, or where COVID would generally spread less quickly, the benefit of vaccination would be lower. As COVID-19's fatality rate rises sharply with age (CITE), we would expect more vaccination in counties with more elderly (who benefit more). As beliefs on vaccination's benefits and supposed harms seem to be affected by religious status, race, and political identity, we also expect these variables to be explanatory.
+		The decision on vaccination can reasonably be broken down into its costs and benefits, and beliefs that agents have about them. We expect that in areas of lower population density, or where COVID would generally spread less quickly, the benefit of vaccination would be lower. As COVID-19's fatality rate rises sharply with age (\cite{levin_assessing_2020}), we would expect more vaccination in counties with more elderly (who benefit more). As beliefs on vaccination's benefits and supposed harms seem to be affected by religious status, race, and political identity, we also expect these variables to be explanatory.
 		
 		We first run the following regression on the cross-sectional dataset of 3075 counties:
 		
@@ -107,7 +107,7 @@
 		
 		We cannot interpret any of the coefficients estimated above as estimates of the \textit{causal impact} of the covariates on vaccine uptake. That would assume exogeneity (and strict exogeneity in the panel Model (\ref{eq:trends})), which is unlikely to be satisfied; for example, we cannot conclude, if the coefficient on $ln(\textrm{medincome})$ is positive, that increasing incomes would increase vaccine uptake. Higher incomes may simply correlate with being more informed, an unobserved variable, and so being less susceptible to vaccine misinformations. This would lead to omitted variable bias, biasing the coefficient on $ln(\textrm{medincome})$ upwards. Coefficients simply reflect correlations in the data, which are at best suggestive.
 		
-		To answer part (b), however, we need to find out what \textit{causes} vaccine uptake to increase. We hence turn our attention to a policy many states attempted in 2021: vaccine lotteries. We will focus in particular on Colorado's "Colorado Comeback Cash" program, where all those who had received at least one dose of the vaccine were eligible for a weekly \$1 million dollar lottery (CITE). The program began on May 25, and ran to June 30 (CITE).
+		To answer part (b), however, we need to find out what \textit{causes} vaccine uptake to increase. We hence turn our attention to a policy many states attempted in 2021: vaccine lotteries. We will focus in particular on Colorado's "Colorado Comeback Cash" program, where all those who had received at least one dose of the vaccine were eligible for a weekly \$1 million dollar lottery (\cite{murphy_colorado_2021}). The program began on May 25, and ran to June 30 (\cite{thirumurthy_association_2022}).
 		
 		\begin{figure}
 			\centering
@@ -117,7 +117,7 @@
 			\label{fig:bordercounties}
 		\end{figure}
 		
-		To evaluate the effect of the vaccine lottery, we use a design inspired by Dube (2010) (CITE). We pick counties in Colorado which border counties in states which did not have vaccine lotteries across this period (see Figure \ref{fig:bordercounties}). We reason that these counties are similar to counties they share a border with - most things which affect one county in any period $t$ will probably also affect a paired county across the state border. Table \ref{table:didsummary} compares the selected border counties on some selected covariates; within each county-pair, differences in covariate values are generally within one standard deviation of the covariate.
+		To evaluate the effect of the vaccine lottery, we use a design inspired by \citet{dube_minimum_2010}. We pick counties in Colorado which border counties in states which did not have vaccine lotteries across this period (see Figure \ref{fig:bordercounties}). We reason that these counties are similar to counties they share a border with - most things which affect one county in any period $t$ will probably also affect a paired county across the state border. Table \ref{table:didsummary} compares the selected border counties on some selected covariates; within each county-pair, differences in covariate values are generally within one standard deviation of the covariate.
 		
 		\begin{table}
 			\centering
@@ -134,7 +134,7 @@
 		
 		$i$ is a specific county, $p$ is a county-pair it belongs to, and $t$ is the day in the panel. $\tau_{pt}$ is a pair-specific time fixed effect (shocks beside the lottery happen to both members of a pair) , and $\phi_i$ is a county fixed account (accounting for initial differences). $\textrm{treated}_{it}=1$ if the county $i$ is in Colorado, and $t$ is after 25 May. $\beta$, the effect of the vaccine lottery on vaccine uptake, is consistently estimated if $Cov(\textrm{treated}_{it}, u_{itp})=0$ - ie, if no shocks systematically occured to Colorado counties without affecting the paired counties, after 25 May. We also estimate an alternative model including a $\gamma t\cdot\textrm{treated}_{it}$ term, allowing the effect of the vaccine lottery to change linearly with time over the 10 days post-treatment.
 		
-		Finally, to further check the robustness of this causal estimate, we utilize a Synthetic Control design, as detailed in (CITE) and used in prior studies on Ohio's vaccine lottery (CITE, CITE, CITE). We collapse our 3075 county level dataset into a state-level dataset, and exclude the 23 other states who had vaccine lotteries in this period (CITE). We construct a synthetic Colorado by taking a weighted average of other states to closely match Colorado on some predictive covariates (we use the results of estimating Model (\ref{eq:standardized}) to gauge which covariates are most important in explaining variation in vaccine uptake). We use these weights to see how vaccine uptake would have evolved in the synthetic Colorado (made of untreated states), and take the difference between the synthetic Colorado and the real Colorado's vaccine uptake on day $t$ as the causal impact of the vaccine lottery on day $t$, and test its significance.
+		Finally, to further check the robustness of this causal estimate, we utilize a Synthetic Control design, as detailed in (\cite{abadie_using_2021}) and used in prior studies on Ohio's vaccine lottery (\cite{lang_did_2022}). We collapse our 3075 county level dataset into a state-level dataset, and exclude the 23 other states who had vaccine lotteries in this period (\cite{thirumurthy_association_2022}). We construct a synthetic Colorado by taking a weighted average of other states to closely match Colorado on some predictive covariates (we use the results of estimating Model (\ref{eq:standardized}) to gauge which covariates are most important in explaining variation in vaccine uptake). We use these weights to see how vaccine uptake would have evolved in the synthetic Colorado (made of untreated states), and take the difference between the synthetic Colorado and the real Colorado's vaccine uptake on day $t$ as the causal impact of the vaccine lottery on day $t$, and test its significance.
 		
 		\section{Results and Discussion}
 		
@@ -156,7 +156,7 @@
 			\label{table:trends}
 		\end{table}
 		
-		Catholicism was not associated with higher vaccination rates in June, but was by December. The estimation of Model (\ref{eq:trends}), presented in Table \ref{table:trends} affirms this, as in either specification there is an increase in the effect size of Catholicism over time. While we do not have an adequate design to demonstrate this, this may suggest that the Pope's messaging on vaccination (see CITE) has successfully changed attitudes over time. This suggests one way to achieve high vaccination rates across the Untied States: engaging local religious leaders to get them to urge their worshippers to get vaccinated, and to educate them against COVID-19 vaccine related misinformation.
+		Catholicism was not associated with higher vaccination rates in June, but was by December. The estimation of Model (\ref{eq:trends}), presented in Table \ref{table:trends} affirms this, as in either specification there is an increase in the effect size of Catholicism over time. While we do not have an adequate design to demonstrate this, this may suggest that the Pope's messaging on vaccination (see \citet{gawel_effects_2021}) has successfully changed attitudes over time. This suggests one way to achieve high vaccination rates across the Untied States: engaging local religious leaders to get them to urge their worshippers to get vaccinated, and to educate them against COVID-19 vaccine related misinformation.
 		
 		Table \ref{table:trends} also affirms that the Republican and black aversion to vaccination is only getting stronger with time (although, at a declining rate for Republicans, by the coefficient on $t^2\cdot \textrm{repvotes}$). This is again suggestive of polarization, and further highlights the need to break into the Republican and black social networks with pro-vaccine messaging.
 		
@@ -180,6 +180,9 @@
 		Variation in vaccine uptake across the United States is explainable, largely, by variation in political and religious affiliations and race; We have also found that racial, religious and political polarization is only increasing in time; we argue that this is suggestive of the impact of social influence on vaccine uptake. While data limitations prevent us from directly testing the importance of social messaging, this is line with prior literature.
 		
 		We were able to construct two designs to plausibly consistently estimate the treatment effect of the vaccine lottery program in Colorado, and find no significant effect. Given that financial incentives seem ineffective at raising vaccine uptake, focus needs to be on social messaging; the increasing vaccine uptake in counties with more Catholics over time may suggest that messaging from religious leaders can be effective.
+		
+		\pagebreak
+		\printbibliography
 		
 	\end{spacing}
 

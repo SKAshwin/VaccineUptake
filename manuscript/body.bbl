@@ -1,0 +1,1220 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{abadie_using_2021}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{da499bff747c5f6cd0ec9185c820ba4d}
+      \strng{fullhash}{da499bff747c5f6cd0ec9185c820ba4d}
+      \strng{bibnamehash}{da499bff747c5f6cd0ec9185c820ba4d}
+      \strng{authorbibnamehash}{da499bff747c5f6cd0ec9185c820ba4d}
+      \strng{authornamehash}{da499bff747c5f6cd0ec9185c820ba4d}
+      \strng{authorfullhash}{da499bff747c5f6cd0ec9185c820ba4d}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Probably because of their interpretability and transparent nature, synthetic controls have become widely applied in empirical research in economics and the social sciences. This article aims to provide practical guidance to researchers employing synthetic control methods. The article starts with an overview and an introduction to synthetic control estimation. The main sections discuss the advantages of the synthetic control framework as a research design, and describe the settings where synthetic controls provide reliable estimates and those where they may fail. The article closes with a discussion of recent extensions, related methods, and avenues for future research. ({JEL} B41, C32, C54, E23, F15, O47)}
+      \field{day}{1}
+      \field{issn}{0022-0515}
+      \field{journaltitle}{Journal of Economic Literature}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{2}
+      \field{shortjournal}{Journal of Economic Literature}
+      \field{shorttitle}{Using Synthetic Controls}
+      \field{title}{Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects}
+      \field{urlday}{11}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{volume}{59}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{391\bibrangedash 425}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.1257/jel.20191450
+      \endverb
+      \verb{file}
+      \verb Abadie - 2021 - Using Synthetic Controls Feasibility, Data Requir.pdf:/home/elven/Zotero/storage/BNDDXXDG/Abadie - 2021 - Using Synthetic Controls Feasibility, Data Requir.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aeaweb.org/doi/10.1257/jel.20191450
+      \endverb
+      \verb{url}
+      \verb https://pubs.aeaweb.org/doi/10.1257/jel.20191450
+      \endverb
+    \endentry
+    \entry{bokemper_persuading_2021}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=aceb8eecf74481f897e0039420ce8ab7}{%
+           family={Bokemper},
+           familyi={B\bibinitperiod},
+           given={Scott\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c0a1e3eb4d38c4a2992b12f5ea1cc42b}{%
+           family={Gerber},
+           familyi={G\bibinitperiod},
+           given={Alan\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c24751381729c2e357bcce21203888d5}{%
+           family={Omer},
+           familyi={O\bibinitperiod},
+           given={Saad\bibnamedelima B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3264c1f6b0e263fa4ebbde86ff1c8785}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Gregory\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f5893fa2cf84221f91e6f414e7450938}
+      \strng{fullhash}{2d2728a9a6e1748ab21f793daa3bb4ee}
+      \strng{bibnamehash}{2d2728a9a6e1748ab21f793daa3bb4ee}
+      \strng{authorbibnamehash}{2d2728a9a6e1748ab21f793daa3bb4ee}
+      \strng{authornamehash}{f5893fa2cf84221f91e6f414e7450938}
+      \strng{authorfullhash}{2d2728a9a6e1748ab21f793daa3bb4ee}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{7}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{month}{12}
+      \field{note}{Publisher: Proceedings of the National Academy of Sciences}
+      \field{number}{49}
+      \field{shorttitle}{Persuading {US} White evangelicals to vaccinate for {COVID}-19}
+      \field{title}{Persuading {US} White evangelicals to vaccinate for {COVID}-19: Testing message effectiveness in fall 2020 and spring 2021}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{volume}{118}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e2114762118}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1073/pnas.2114762118
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/elven/Zotero/storage/ZCYU6DGB/Bokemper et al. - 2021 - Persuading US White evangelicals to vaccinate for .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.pnas.org/doi/10.1073/pnas.2114762118
+      \endverb
+      \verb{url}
+      \verb https://www.pnas.org/doi/10.1073/pnas.2114762118
+      \endverb
+    \endentry
+    \entry{burki_increasing_2021}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=89f286404dab9f1dff9e0c28d43613aa}{%
+           family={Burki},
+           familyi={B\bibinitperiod},
+           given={Talha},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{89f286404dab9f1dff9e0c28d43613aa}
+      \strng{fullhash}{89f286404dab9f1dff9e0c28d43613aa}
+      \strng{bibnamehash}{89f286404dab9f1dff9e0c28d43613aa}
+      \strng{authorbibnamehash}{89f286404dab9f1dff9e0c28d43613aa}
+      \strng{authornamehash}{89f286404dab9f1dff9e0c28d43613aa}
+      \strng{authorfullhash}{89f286404dab9f1dff9e0c28d43613aa}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{1473-3099, 1474-4457}
+      \field{journaltitle}{The Lancet Infectious Diseases}
+      \field{month}{11}
+      \field{note}{Publisher: Elsevier}
+      \field{number}{11}
+      \field{shortjournal}{The Lancet Infectious Diseases}
+      \field{title}{Increasing {COVID}-19 vaccine uptake in Black Americans}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{volume}{21}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1500\bibrangedash 1501}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1016/S1473-3099(21)00637-X
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/elven/Zotero/storage/VLS4682S/Burki - 2021 - Increasing COVID-19 vaccine uptake in Black Americ.pdf:application/pdf;Snapshot:/home/elven/Zotero/storage/VN4TFR5C/fulltext.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(21)00637-X/fulltext
+      \endverb
+      \verb{url}
+      \verb https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(21)00637-X/fulltext
+      \endverb
+    \endentry
+    \entry{cdc_covid-19_2022}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b451ae487bde3a3338f110920744afa8}{%
+           family={{CDC}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b451ae487bde3a3338f110920744afa8}
+      \strng{fullhash}{b451ae487bde3a3338f110920744afa8}
+      \strng{bibnamehash}{b451ae487bde3a3338f110920744afa8}
+      \strng{authorbibnamehash}{b451ae487bde3a3338f110920744afa8}
+      \strng{authornamehash}{b451ae487bde3a3338f110920744afa8}
+      \strng{authorfullhash}{b451ae487bde3a3338f110920744afa8}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Overall {US} {COVID}-19 Vaccine administration and vaccine equity data at county level. Data represents all vaccine partners including jurisdictional partner clinics, retail pharmacies, long-term care facilities, dialysis centers, Federal Emergency Management Agency and Health Resources and Services Administration partner sites, and federal entity facilities.}
+      \field{langid}{english}
+      \field{title}{{COVID}-19 Vaccinations in the United States,County {|} Data {|} Centers for Disease Control and Prevention}
+      \field{titleaddon}{Data.{CDC}.gov}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/elven/Zotero/storage/GP4KVUNL/data.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-County/8xkx-amqh
+      \endverb
+      \verb{url}
+      \verb https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-County/8xkx-amqh
+      \endverb
+    \endentry
+    \entry{census_county_2019}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9e150a2b8f77e55bbb1c616c3edc8a64}{%
+           family={Census},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \strng{fullhash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \strng{bibnamehash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \strng{authorbibnamehash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \strng{authornamehash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \strng{authorfullhash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This page features Vintage 2019 population estimates by age, sex, race, and Hispanic origin.}
+      \field{note}{Section: Government}
+      \field{shorttitle}{County Population by Characteristics}
+      \field{title}{County Population by Characteristics: 2010-2019}
+      \field{titleaddon}{Census.gov}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/elven/Zotero/storage/M89KVFTF/2010s-counties-detail.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html
+      \endverb
+      \verb{url}
+      \verb https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html
+      \endverb
+    \endentry
+    \entry{census_p1_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9e150a2b8f77e55bbb1c616c3edc8a64}{%
+           family={Census},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \strng{fullhash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \strng{bibnamehash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \strng{authorbibnamehash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \strng{authornamehash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \strng{authorfullhash}{9e150a2b8f77e55bbb1c616c3edc8a64}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{P1: {RACE} - Census Bureau Table}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb P1\: Census Bureau Table:/home/elven/Zotero/storage/Y8W3PJKZ/table.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://data.census.gov/cedsci/table?q=P1%3A%20RACE%20county&tid=DECENNIALPL2020.P1
+      \endverb
+      \verb{url}
+      \verb https://data.census.gov/cedsci/table?q=P1%3A%20RACE%20county&tid=DECENNIALPL2020.P1
+      \endverb
+    \endentry
+    \entry{cssegis_covid-19_2022}{software}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=4c9edf63d867c8cfaf0c4e24d0c2d3ae}{%
+           family={{CSSEGIS}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c9edf63d867c8cfaf0c4e24d0c2d3ae}
+      \strng{fullhash}{4c9edf63d867c8cfaf0c4e24d0c2d3ae}
+      \strng{bibnamehash}{4c9edf63d867c8cfaf0c4e24d0c2d3ae}
+      \strng{authorbibnamehash}{4c9edf63d867c8cfaf0c4e24d0c2d3ae}
+      \strng{authornamehash}{4c9edf63d867c8cfaf0c4e24d0c2d3ae}
+      \strng{authorfullhash}{4c9edf63d867c8cfaf0c4e24d0c2d3ae}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Novel Coronavirus ({COVID}-19) Cases, provided by {JHU} {CSSE}}
+      \field{day}{16}
+      \field{month}{5}
+      \field{note}{original-date: 2020-02-04T22:03:53Z}
+      \field{title}{{COVID}-19 Data Repository by the Center for Systems Science and Engineering ({CSSE}) at Johns Hopkins University}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/CSSEGISandData/COVID-19
+      \endverb
+      \verb{url}
+      \verb https://github.com/CSSEGISandData/COVID-19
+      \endverb
+      \keyw{2019-ncov,coronavirus,covid-19,csse,engineering,jhu,johns-hopkins-university,systems-science}
+    \endentry
+    \entry{dube_minimum_2010}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=806312e86adad46015daebe215cb2c39}{%
+           family={Dube},
+           familyi={D\bibinitperiod},
+           given={Arindrajit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a4c6a90230ee1433a9a48236b1442011}{%
+           family={Lester},
+           familyi={L\bibinitperiod},
+           given={T.\bibnamedelimi William},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1c3fe015d34b5591836f431ee1d7fcb3}{%
+           family={Reich},
+           familyi={R\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6a778cb7c4aad590812f7e0d2e98c00}
+      \strng{fullhash}{20251947bf9d205aa480498c903fe0e1}
+      \strng{bibnamehash}{20251947bf9d205aa480498c903fe0e1}
+      \strng{authorbibnamehash}{20251947bf9d205aa480498c903fe0e1}
+      \strng{authornamehash}{d6a778cb7c4aad590812f7e0d2e98c00}
+      \strng{authorfullhash}{20251947bf9d205aa480498c903fe0e1}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We use policy discontinuities at state borders to identify the effects of minimum wages on earnings and employment in restaurants and other low-wage sectors. Our approach generalizes the case study method by considering all local differences in minimum wage policies between 1990 and 2006. We compare all contiguous county pairs in the United States that straddle a state border and find no adverse employment effects. We show that traditional approaches that do not account for local economic conditions tend to produce spurious negative effects due to spatial heterogeneities in employment trends that are unrelated to minimum wage policies. Our findings are robust to allowing for long-term effects of minimum wage changes.}
+      \field{day}{1}
+      \field{issn}{0034-6535}
+      \field{journaltitle}{The Review of Economics and Statistics}
+      \field{month}{11}
+      \field{number}{4}
+      \field{shortjournal}{The Review of Economics and Statistics}
+      \field{title}{Minimum Wage Effects Across State Borders: Estimates Using Contiguous Counties}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{volume}{92}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{945\bibrangedash 964}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1162/REST_a_00039
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/REST_a_00039
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/REST_a_00039
+      \endverb
+    \endentry
+    \entry{epi_family_2020}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=713e97de0bcd11109cb374e0a8360727}{%
+           family={{EPI}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{713e97de0bcd11109cb374e0a8360727}
+      \strng{fullhash}{713e97de0bcd11109cb374e0a8360727}
+      \strng{bibnamehash}{713e97de0bcd11109cb374e0a8360727}
+      \strng{authorbibnamehash}{713e97de0bcd11109cb374e0a8360727}
+      \strng{authornamehash}{713e97de0bcd11109cb374e0a8360727}
+      \strng{authorfullhash}{713e97de0bcd11109cb374e0a8360727}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{EPI}\textquoteright{}s Family Budget Calculator measures the income a family needs in order to attain a modest yet adequate standard of living. Compared with the federal poverty line and the Supplemental Poverty Measure, {EPI}\textquoteright{}s family budgets provide a more accurate and complete measure of economic security in America. The Family Budget Map offers a view of cost of living for a two-parent, two-child family across the United States at the county level.}
+      \field{langid}{american}
+      \field{title}{Family Budget Map}
+      \field{titleaddon}{Economic Policy Institute}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/elven/Zotero/storage/ZPN6NJDA/budget-map.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.epi.org/resources/budget/budget-map/
+      \endverb
+      \verb{url}
+      \verb https://www.epi.org/resources/budget/budget-map/
+      \endverb
+    \endentry
+    \entry{usda_ers_usda_2019-1}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=dbd3c354d5c0063c68b97e393c741275}{%
+           family={{ERS}},
+           familyi={E\bibinitperiod},
+           given={{USDA}},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dbd3c354d5c0063c68b97e393c741275}
+      \strng{fullhash}{dbd3c354d5c0063c68b97e393c741275}
+      \strng{bibnamehash}{dbd3c354d5c0063c68b97e393c741275}
+      \strng{authorbibnamehash}{dbd3c354d5c0063c68b97e393c741275}
+      \strng{authornamehash}{dbd3c354d5c0063c68b97e393c741275}
+      \strng{authorfullhash}{dbd3c354d5c0063c68b97e393c741275}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{USDA} {ERS} - Documentation}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb USDA ERS - Documentation:/home/elven/Zotero/storage/8U7LVAGJ/documentation.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/documentation/
+      \endverb
+      \verb{url}
+      \verb https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/documentation/
+      \endverb
+    \endentry
+    \entry{usda_ers_usda_2019}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=dbd3c354d5c0063c68b97e393c741275}{%
+           family={{ERS}},
+           familyi={E\bibinitperiod},
+           given={{USDA}},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dbd3c354d5c0063c68b97e393c741275}
+      \strng{fullhash}{dbd3c354d5c0063c68b97e393c741275}
+      \strng{bibnamehash}{dbd3c354d5c0063c68b97e393c741275}
+      \strng{authorbibnamehash}{dbd3c354d5c0063c68b97e393c741275}
+      \strng{authornamehash}{dbd3c354d5c0063c68b97e393c741275}
+      \strng{authorfullhash}{dbd3c354d5c0063c68b97e393c741275}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{USDA} {ERS} - Download Data}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/
+      \endverb
+      \verb{url}
+      \verb https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/
+      \endverb
+    \endentry
+    \entry{gawel_effects_2021}{article}{}
+      \name{author}{8}{}{%
+        {{uniquename=0,uniquepart=base,hash=352247aa672ce9dbddf54c0d0e2ab014}{%
+           family={Gawe\l{}},
+           familyi={G\bibinitperiod},
+           given={Arkadiusz},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9788d384f948dc6c5b577bb6e83a8412}{%
+           family={Ma\'{n}dziuk},
+           familyi={M\bibinitperiod},
+           given={Marzena},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=81a61f5e97b4cedcec15c9bc8da59017}{%
+           family={\.{Z}mudzi\'{n}ski},
+           familyi={\.{Z}\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1c37cb50330f0fb6d5c6e3b649fd85d8}{%
+           family={Gosek},
+           familyi={G\bibinitperiod},
+           given={Ma\l{}gorzata},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=880c049c2aca0165a9ea2ba657975210}{%
+           family={Krawczyk-Suszek},
+           familyi={K\bibinithyphendelim S\bibinitperiod},
+           given={Marlena},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f928bed08e614ab09a49aba7f322adf9}{%
+           family={Pisarski},
+           familyi={P\bibinitperiod},
+           given={Mariusz},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=255f1d9725127bfdeea1b1b6c66840f0}{%
+           family={Adamski},
+           familyi={A\bibinitperiod},
+           given={Andrzej},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ce8168703f81d6b30df5f6d83f3718a2}{%
+           family={Cyganik},
+           familyi={C\bibinitperiod},
+           given={Weronika},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3121c70cf91d65c74e97248b508114b1}
+      \strng{fullhash}{5b776265ebfc85d483d5a0074d40ea03}
+      \strng{bibnamehash}{1257c0a47405508b72b2e5e0f79b5c12}
+      \strng{authorbibnamehash}{1257c0a47405508b72b2e5e0f79b5c12}
+      \strng{authornamehash}{3121c70cf91d65c74e97248b508114b1}
+      \strng{authorfullhash}{5b776265ebfc85d483d5a0074d40ea03}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper is interdisciplinary and combines the research perspective of medical studies with that of media and social communication studies and theological studies. The main goal of this article is to determine [from arguments on all sides of the issue] whether, and to what extent, statements issued by a religious authority can be used as an argument in the {COVID}-19 vaccination campaign. The authors also want to \x{fb01}nd answers to the questions of how the pope\textquoteright{}s comments affect public opinion when they concern the sphere of secular and everyday life, including issues related to health care. The main method used in this study is desktop research and the analysis of the Roman Catholic Church\textquoteright{}s teaching on vaccination and on the types and signi\x{fb01}cance of the pope\textquoteright{}s statements on various topics. The auxiliary methods are sentiment analysis and network analysis made in the open source software Gephi. The authors are strongly interested in the communication and media aspect of the analyzed situation. Pope Francis\textquoteright{} voice on the {COVID}-19 vaccination has certainly been noticed and registered worldwide, but the effectiveness of his message and direct impact on Catholics\textquoteright{} decisions to accept or refuse the {COVID}-19 vaccination is quite questionable and would require further precise research. Comparing this to the regularities known from political marketing, one would think that the pope\textquoteright{}s statement would not convince the \x{fb01}rm opponents of vaccination.}
+      \field{day}{16}
+      \field{issn}{2076-393X}
+      \field{journaltitle}{Vaccines}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{Vaccines}
+      \field{title}{Effects of Pope Francis\textquoteright{} Religious Authority and Media Coverage on Twitter User\textquoteright{}s Attitudes toward {COVID}-19 Vaccination}
+      \field{urlday}{7}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1487}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/vaccines9121487
+      \endverb
+      \verb{file}
+      \verb Gawe\l{} et al. - 2021 - Effects of Pope Francis\textquoteright{} Religious Authority and M.pdf:/home/elven/Zotero/storage/WP2SFS3T/Gawe\l{} et al. - 2021 - Effects of Pope Francis\textquoteright{} Religious Authority and M.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2076-393X/9/12/1487
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2076-393X/9/12/1487
+      \endverb
+    \endentry
+    \entry{kff_kff_2022}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5adb7364dd84ebce7afb0abd3aedfded}{%
+           family={{KFF}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{5adb7364dd84ebce7afb0abd3aedfded}
+      \strng{fullhash}{5adb7364dd84ebce7afb0abd3aedfded}
+      \strng{bibnamehash}{5adb7364dd84ebce7afb0abd3aedfded}
+      \strng{authorbibnamehash}{5adb7364dd84ebce7afb0abd3aedfded}
+      \strng{authornamehash}{5adb7364dd84ebce7afb0abd3aedfded}
+      \strng{authorfullhash}{5adb7364dd84ebce7afb0abd3aedfded}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using a combination of surveys and focus groups, the {KFF} {COVID}-19 Vaccine Monitor will track the dynamic nature of public reactions as vaccine development unfolds, including vaccine confidence and {$\dots$}}
+      \field{day}{4}
+      \field{langid}{american}
+      \field{month}{5}
+      \field{title}{{KFF} {COVID}-19 Vaccine Monitor Dashboard}
+      \field{titleaddon}{{KFF}}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/elven/Zotero/storage/G3946HVB/kff-covid-19-vaccine-monitor-dashboard.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.kff.org/coronavirus-covid-19/dashboard/kff-covid-19-vaccine-monitor-dashboard/
+      \endverb
+      \verb{url}
+      \verb https://www.kff.org/coronavirus-covid-19/dashboard/kff-covid-19-vaccine-monitor-dashboard/
+      \endverb
+    \endentry
+    \entry{mit_election_data_and_science_lab_county_2022}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2e102b9abc102579e1075fcbb89a2354}{%
+           family={Lab},
+           familyi={L\bibinitperiod},
+           given={{MIT}\bibnamedelimb Election\bibnamedelimb Data\bibnamedelimb \{and\}\bibnamedelima Science},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim \~S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard Dataverse}%
+      }
+      \strng{namehash}{2e102b9abc102579e1075fcbb89a2354}
+      \strng{fullhash}{2e102b9abc102579e1075fcbb89a2354}
+      \strng{bibnamehash}{2e102b9abc102579e1075fcbb89a2354}
+      \strng{authorbibnamehash}{2e102b9abc102579e1075fcbb89a2354}
+      \strng{authornamehash}{2e102b9abc102579e1075fcbb89a2354}
+      \strng{authorfullhash}{2e102b9abc102579e1075fcbb89a2354}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This dataset contains county-level returns for presidential elections from 2000 to 2020.}
+      \field{day}{18}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{note}{Type: dataset}
+      \field{title}{County Presidential Election Returns 2000-2020}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.7910/DVN/VOQCHQ
+      \endverb
+      \verb{file}
+      \verb Snapshot:/home/elven/Zotero/storage/VH42MI5X/dataset.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ
+      \endverb
+      \verb{url}
+      \verb https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ
+      \endverb
+      \keyw{Social Sciences}
+    \endentry
+    \entry{lang_did_2022}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=606f66a039d3fa3f70ff89740c24bdee}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d7e881183177e72386bbb79846ab43d0}{%
+           family={Esbenshade},
+           familyi={E\bibinitperiod},
+           given={Lief},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5afa8630e0334da35e76ea0a86a392c1}{%
+           family={Willer},
+           familyi={W\bibinitperiod},
+           given={Robb},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0963792f716026499c66026f2ae5f314}
+      \strng{fullhash}{d59d38847f81eae127585e98631a5e09}
+      \strng{bibnamehash}{d59d38847f81eae127585e98631a5e09}
+      \strng{authorbibnamehash}{d59d38847f81eae127585e98631a5e09}
+      \strng{authornamehash}{0963792f716026499c66026f2ae5f314}
+      \strng{authorfullhash}{d59d38847f81eae127585e98631a5e09}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Overcoming vaccine hesitancy is critical to containing the {COVID}-19 pandemic in the United States. To increase vaccination rates, the State of Ohio launched a million dollar lottery in May 2021. Following a pre-registered analysis, we estimate the effects of Ohio\textquoteright{}s lottery program Vax-a-Million on {COVID}-19 vaccination rates by comparing it to a \textquotedblleft{}synthetic control\textquotedblright{} composed of eight other states. We find a statistically insignificant 1.3\% decrease in the full vaccination rate in Ohio at the end of the lottery period. We investigate the robustness of our conclusion to model specifications through a multiverse analysis of 216 possible models, including longer time periods and alternative vaccination measures. The majority (88\%) find small negative effects in line with the results of our pre-registered model. While our results are most consistent with a decrease in vaccination rate, they do not allow a firm conclusion on whether the lottery increased or decreased vaccine uptake.}
+      \field{day}{7}
+      \field{issn}{2052-2630, 2052-2649}
+      \field{journaltitle}{Journal of Experimental Political Science}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{note}{Publisher: Cambridge University Press}
+      \field{shorttitle}{Did Ohio\textquoteright{}s Vaccine Lottery Increase Vaccination Rates?}
+      \field{title}{Did Ohio\textquoteright{}s Vaccine Lottery Increase Vaccination Rates? A Pre-Registered, Synthetic Control Study}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 19}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1017/XPS.2021.32
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/elven/Zotero/storage/DYZYZAG2/Lang et al. - 2022 - Did Ohio\textquoteright{}s Vaccine Lottery Increase Vaccination Ra.pdf:application/pdf;Snapshot:/home/elven/Zotero/storage/HFRBKQ93/07720E0BB974962FE4547FF2BCC71CAC.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/did-ohios-vaccine-lottery-increase-vaccination-rates-a-preregistered-synthetic-control-study/07720E0BB974962FE4547FF2BCC71CAC
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/did-ohios-vaccine-lottery-increase-vaccination-rates-a-preregistered-synthetic-control-study/07720E0BB974962FE4547FF2BCC71CAC
+      \endverb
+      \keyw{{COVID}-19,lotteries,multiverse analysis,synthetic control,vaccination,vaccine confidence,vaccine hesitancy}
+    \endentry
+    \entry{levin_assessing_2020}{article}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=ccdf22f29f3a1065183179027947c3c9}{%
+           family={Levin},
+           familyi={L\bibinitperiod},
+           given={Andrew\bibnamedelima T.},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dad2b362bef3e8fd1e4b85b2ce97ed25}{%
+           family={Hanage},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=10f47b34926858a14439dfeb803ba63f}{%
+           family={Owusu-Boaitey},
+           familyi={O\bibinithyphendelim B\bibinitperiod},
+           given={Nana},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b294c9af27c0484a2c5284cb38f7f3ce}{%
+           family={Cochran},
+           familyi={C\bibinitperiod},
+           given={Kensington\bibnamedelima B.},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f2c19b363b7875773fa4dbe41e3449be}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={Seamus\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ca099880bebab52cf8be21e75c4e15d0}{%
+           family={Meyerowitz-Katz},
+           familyi={M\bibinithyphendelim K\bibinitperiod},
+           given={Gideon},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{13652ec2e130a4b2574d9271e5e58145}
+      \strng{fullhash}{bc8fa9dcb0057719fdcce2da1ed6502d}
+      \strng{bibnamehash}{bc8fa9dcb0057719fdcce2da1ed6502d}
+      \strng{authorbibnamehash}{bc8fa9dcb0057719fdcce2da1ed6502d}
+      \strng{authornamehash}{13652ec2e130a4b2574d9271e5e58145}
+      \strng{authorfullhash}{bc8fa9dcb0057719fdcce2da1ed6502d}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Determine age-specific infection fatality rates for {COVID}-19 to inform public health policies and communications that help protect vulnerable age groups. Studies of {COVID}-19 prevalence were collected by conducting an online search of published articles, preprints, and government reports that were publicly disseminated prior to 18 September 2020. The systematic review encompassed 113 studies, of which 27 studies (covering 34 geographical locations) satisfied the inclusion criteria and were included in the meta-analysis. Age-specific {IFRs} were computed using the prevalence data in conjunction with reported fatalities 4\x{00a0}weeks after the midpoint date of the study, reflecting typical lags in fatalities and reporting. Meta-regression procedures in Stata were used to analyze the infection fatality rate ({IFR}) by age. Our analysis finds a exponential relationship between age and {IFR} for {COVID}-19. The estimated age-specific {IFR} is very low for children and younger adults (e.g., 0.002\% at age 10 and 0.01\% at age 25) but increases progressively to 0.4\% at age 55, 1.4\% at age 65, 4.6\% at age 75, and 15\% at age 85. Moreover, our results indicate that about 90\% of the variation in population {IFR} across geographical locations reflects differences in the age composition of the population and the extent to which relatively vulnerable age groups were exposed to the virus. These results indicate that {COVID}-19 is hazardous not only for the elderly but also for middle-aged adults, for whom the infection fatality rate is two orders of magnitude greater than the annualized risk of a fatal automobile accident and far more dangerous than seasonal influenza. Moreover, the overall {IFR} for {COVID}-19 should not be viewed as a fixed parameter but as intrinsically linked to the age-specific pattern of infections. Consequently, public health measures to mitigate infections in older adults could substantially decrease total deaths.}
+      \field{day}{1}
+      \field{issn}{1573-7284}
+      \field{journaltitle}{European Journal of Epidemiology}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{Eur J Epidemiol}
+      \field{shorttitle}{Assessing the age specificity of infection fatality rates for {COVID}-19}
+      \field{title}{Assessing the age specificity of infection fatality rates for {COVID}-19: systematic review, meta-analysis, and public policy implications}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{volume}{35}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1123\bibrangedash 1138}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s10654-020-00698-1
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/elven/Zotero/storage/T9QVUFRA/Levin et al. - 2020 - Assessing the age specificity of infection fatalit.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10654-020-00698-1
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10654-020-00698-1
+      \endverb
+      \keyw{{COVID}-19,Infection-fatality rate,Infection-fatality ratio,Meta-regression,{SARS}-{CoV}-2,Systematic review}
+    \endentry
+    \entry{murphy_colorado_2021}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=cdef8f51277e1e52139a1753a94a51d8}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={Chuck},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cdef8f51277e1e52139a1753a94a51d8}
+      \strng{fullhash}{cdef8f51277e1e52139a1753a94a51d8}
+      \strng{bibnamehash}{cdef8f51277e1e52139a1753a94a51d8}
+      \strng{authorbibnamehash}{cdef8f51277e1e52139a1753a94a51d8}
+      \strng{authornamehash}{cdef8f51277e1e52139a1753a94a51d8}
+      \strng{authorfullhash}{cdef8f51277e1e52139a1753a94a51d8}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{month}{5}
+      \field{title}{Colorado Vaccine Drawing Isn't A Lottery, And You Might Already Be Entered {|} Colorado Public Radio}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Colorado Vaccine Drawing Isn't A Lottery, And You Might Already Be Entered | Colorado Public Radio:/home/elven/Zotero/storage/JAAWABPR/colorado-vaccine-lottery-no-its-a-drawing-how-to-enter.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cpr.org/2021/05/25/colorado-vaccine-lottery-no-its-a-drawing-how-to-enter/
+      \endverb
+      \verb{url}
+      \verb https://www.cpr.org/2021/05/25/colorado-vaccine-lottery-no-its-a-drawing-how-to-enter/
+      \endverb
+    \endentry
+    \entry{nber_county_2010}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2622a524237befbbd1073a1fa3977ca6}{%
+           family={{NBER}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{2622a524237befbbd1073a1fa3977ca6}
+      \strng{fullhash}{2622a524237befbbd1073a1fa3977ca6}
+      \strng{bibnamehash}{2622a524237befbbd1073a1fa3977ca6}
+      \strng{authorbibnamehash}{2622a524237befbbd1073a1fa3977ca6}
+      \strng{authornamehash}{2622a524237befbbd1073a1fa3977ca6}
+      \strng{authorfullhash}{2622a524237befbbd1073a1fa3977ca6}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Census offers county adjacency files for identifying which counties are neighbors. The fipscounty variable in these files can be linked to Census {SF}1 2010 880 5-Digit {ZIP} Code Tabulation Area-State-County sf12010880us1 {SAS}, Stata, or {CSV} files by creating a fipscounty variable from the state and county variables in the {SF}1 files. {ZIP} Codes are created by the U.S. Post Office for mail delivery and a small percentage may cross state lines. {ZIP} Code Tabulation Areas ({ZCTAs}) are representations of {ZIP} Codes made by Census.}
+      \field{langid}{english}
+      \field{title}{County Adjacency}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/elven/Zotero/storage/VQ8VVGCD/county-adjacency.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nber.org/research/data/county-adjacency
+      \endverb
+      \verb{url}
+      \verb https://www.nber.org/research/data/county-adjacency
+      \endverb
+    \endentry
+    \entry{pinna_cable_2021}{report}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=a8300434f40fa50cdadce03379a156d4}{%
+           family={Pinna},
+           familyi={P\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a1e7adfbece760a993e4187d0de4524c}{%
+           family={Picard},
+           familyi={P\bibinitperiod},
+           given={L\'{e}o},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e1505c6b4a09af2c50597eb9b851f16d}{%
+           family={Goessmann},
+           familyi={G\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Social Science Research Network}%
+      }
+      \list{location}{1}{%
+        {Rochester, {NY}}%
+      }
+      \strng{namehash}{326854d0f3377b3cc11776ebd1658f55}
+      \strng{fullhash}{dd240ebf2ea03ac99b11832d286ae247}
+      \strng{bibnamehash}{dd240ebf2ea03ac99b11832d286ae247}
+      \strng{authorbibnamehash}{dd240ebf2ea03ac99b11832d286ae247}
+      \strng{authornamehash}{326854d0f3377b3cc11776ebd1658f55}
+      \strng{authorfullhash}{dd240ebf2ea03ac99b11832d286ae247}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{COVID}-19 vaccines have already reduced infections and hospitalizations across the globe, yet resistance to vaccination remains strong. This paper investigates the role of cable television news in vaccine skepticism and associated local vaccination rates in the United States. We find that, in the later stages of the vaccine roll-out (starting May 2021), higher local viewership of Fox News Channel has been associated with lower local vaccination rates. We can verify that this association is causal using exogenous geographical variation in the channel lineup. The effect is driven by younger individuals (under 65 years of age), for whom {COVID}-19 has a low mortality risk. Consistent with changes in beliefs about the effectiveness of the vaccine as a mechanism, we find that Fox News increased reported vaccine hesitancy in local survey responses. We can rule out that the effect is due to differences in partisanship, to local health policies, or to local {COVID}-19 infections or death rates. The other two major television networks, {CNN} and {MSNBC}, have no effect, indicating that messaging matters and that the observed effect on vaccinations is not due the consumption of cable news in general. We also show that there is no historical effect of Fox News on flu vaccination rates, suggesting that the effect is {COVID}-19-specific and not driven by general skepticism toward vaccines.}
+      \field{day}{20}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{3890340}
+      \field{title}{Cable News and {COVID}-19 Vaccine Compliance}
+      \field{type}{{SSRN} Scholarly Paper}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2139/ssrn.3890340
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/elven/Zotero/storage/LFR8FMX2/Pinna et al. - 2021 - Cable News and COVID-19 Vaccine Compliance.pdf:application/pdf;Snapshot:/home/elven/Zotero/storage/BIXCU5VB/papers.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=3890340
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=3890340
+      \endverb
+      \keyw{Cable News and {COVID}-19 Vaccine Compliance,Christoph Goessmann,L\'{e}o Picard,Matteo Pinna,{SSRN}}
+    \endentry
+    \entry{prri_2020_2020}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=4a1a95692d89d39b4085a4f41431a795}{%
+           family={{PRRI}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a1a95692d89d39b4085a4f41431a795}
+      \strng{fullhash}{4a1a95692d89d39b4085a4f41431a795}
+      \strng{bibnamehash}{4a1a95692d89d39b4085a4f41431a795}
+      \strng{authorbibnamehash}{4a1a95692d89d39b4085a4f41431a795}
+      \strng{authornamehash}{4a1a95692d89d39b4085a4f41431a795}
+      \strng{authorfullhash}{4a1a95692d89d39b4085a4f41431a795}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{2020 Census of American Religion}
+      \field{titleaddon}{Public Religion Research Institute}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb PRRI:/home/elven/Zotero/storage/Z7TR4I7H/2020-census-of-american-religion.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.prri.org/research/2020-census-of-american-religion/
+      \endverb
+      \verb{url}
+      \verb https://www.prri.org/research/2020-census-of-american-religion/
+      \endverb
+    \endentry
+    \entry{thirumurthy_association_2022}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=7945ceb27cfa7f67398c5b5d9d1b44bf}{%
+           family={Thirumurthy},
+           familyi={T\bibinitperiod},
+           given={Harsha},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a202a20964f729cc42b266a473e2c500}{%
+           family={Milkman},
+           familyi={M\bibinitperiod},
+           given={Katherine\bibnamedelima L.},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=75027e4ea237507842f819a9d1cd5079}{%
+           family={Volpp},
+           familyi={V\bibinitperiod},
+           given={Kevin\bibnamedelima G.},
+           giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=702f6d29435069e8d82d0f9746522378}{%
+           family={Buttenheim},
+           familyi={B\bibinitperiod},
+           given={Alison\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=69b7ff253aa6ebb7897504d97b8ffd01}{%
+           family={Pope},
+           familyi={P\bibinitperiod},
+           given={Devin\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=254d6917e6eccd2a4f80e3648dba7dbd}{%
+           family={Galak},
+           familyi={G\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0b2ee173a1c715baaa921c4e8acef6d}
+      \strng{fullhash}{ae08b2623ec1655d13ae8590a0bd83a7}
+      \strng{bibnamehash}{ae08b2623ec1655d13ae8590a0bd83a7}
+      \strng{authorbibnamehash}{ae08b2623ec1655d13ae8590a0bd83a7}
+      \strng{authornamehash}{b0b2ee173a1c715baaa921c4e8acef6d}
+      \strng{authorfullhash}{ae08b2623ec1655d13ae8590a0bd83a7}
+      \strng{editorbibnamehash}{254d6917e6eccd2a4f80e3648dba7dbd}
+      \strng{editornamehash}{254d6917e6eccd2a4f80e3648dba7dbd}
+      \strng{editorfullhash}{254d6917e6eccd2a4f80e3648dba7dbd}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{To promote {COVID}-19 vaccination, many states in the {US} introduced financial incentives ranging from small, guaranteed rewards to lotteries that give vaccinated individuals a chance to win large prizes. There is limited evidence on the effectiveness of these programs and conflicting evidence from survey experiments and studies of individual states\textquoteright{} lotteries. To assess the effectiveness of {COVID}-19 vaccination incentive programs, we combined information on statewide incentive programs in the {US} with data on daily vaccine doses administered in each state. Leveraging variation across states in the daily availability of incentives, our difference-in-differences analyses showed that statewide programs were not associated with a significant change in vaccination rates. Furthermore, there was no significant difference in vaccination trends between states with and without incentives in any of the 14 days before or after incentives were introduced. Heterogeneity analyses indicated that neither lotteries nor guaranteed rewards were associated with significant change in vaccination rates.}
+      \field{day}{30}
+      \field{issn}{1932-6203}
+      \field{journaltitle}{{PLOS} {ONE}}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{{PLoS} {ONE}}
+      \field{title}{Association between statewide financial incentive programs and {COVID}-19 vaccination rates}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{volume}{17}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e0263425}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0263425
+      \endverb
+      \verb{file}
+      \verb Thirumurthy et al. - 2022 - Association between statewide financial incentive .pdf:/home/elven/Zotero/storage/XJCH7UFU/Thirumurthy et al. - 2022 - Association between statewide financial incentive .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.plos.org/10.1371/journal.pone.0263425
+      \endverb
+      \verb{url}
+      \verb https://dx.plos.org/10.1371/journal.pone.0263425
+      \endverb
+    \endentry
+    \entry{viswanath_individual_2021}{article}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=737e04d6b07adfb5e8f0a83c8e7f2986}{%
+           family={Viswanath},
+           familyi={V\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b109ea1d868272583607a47d91b2c00f}{%
+           family={Bekalu},
+           familyi={B\bibinitperiod},
+           given={Mesfin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7a866980065b15b007639cd06a5313b2}{%
+           family={Dhawan},
+           familyi={D\bibinitperiod},
+           given={Dhriti},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e875b9bd82d985b9069adf657e2dc1bc}{%
+           family={Pinnamaneni},
+           familyi={P\bibinitperiod},
+           given={Ramya},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0d21980d43aa1bf4c613e367b77ded52}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Jenna},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2c2ff02f30512cb9f7897e5430873345}{%
+           family={{McLoud}},
+           familyi={M\bibinitperiod},
+           given={Rachel},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f7dc0e5468bec72d06124c94af69d02f}
+      \strng{fullhash}{cbfb3fb02e3276e6b4fa309c0c7b4449}
+      \strng{bibnamehash}{cbfb3fb02e3276e6b4fa309c0c7b4449}
+      \strng{authorbibnamehash}{cbfb3fb02e3276e6b4fa309c0c7b4449}
+      \strng{authornamehash}{f7dc0e5468bec72d06124c94af69d02f}
+      \strng{authorfullhash}{cbfb3fb02e3276e6b4fa309c0c7b4449}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{COVID}-19 has had a devastating impact and efforts are being made to speed up vaccinations. The growing problem of vaccine hesitancy may affect the uptake of {COVID}-19 vaccine. We examined the individual, communication and social determinants associated with vaccines uptake.}
+      \field{day}{28}
+      \field{issn}{1471-2458}
+      \field{journaltitle}{{BMC} Public Health}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{1}
+      \field{shortjournal}{{BMC} Public Health}
+      \field{title}{Individual and social determinants of {COVID}-19 vaccine uptake}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{volume}{21}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{818}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s12889-021-10862-1
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/elven/Zotero/storage/YR8ZMDGI/Viswanath et al. - 2021 - Individual and social determinants of COVID-19 vac.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s12889-021-10862-1
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s12889-021-10862-1
+      \endverb
+      \keyw{{COVID}-19 vaccine uptake,Partisanship and vaccine acceptance,Social determinants and vaccine uptake,Trust in scientists}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
