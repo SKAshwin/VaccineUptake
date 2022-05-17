@@ -85,15 +85,50 @@
 			z_y=\frac{y_i-\bar{y}}{\hat{\sigma}_y} = \sum_{j=1}^{k} \frac{\hat{\sigma}_j}{\hat{\sigma}_y}\beta_j z_{ij}
 		\end{equation}
 		
-		Hence, we can calculate, for each covariate $x_j$, a beta coefficient $\hat{b}_j := \frac{\hat{\sigma}_j}{\hat{\sigma}_y}\beta_j$, interpreted as the standard deviation change in in $y_i=\textrm{vaccuptake}_i$ (in this context) frome a one standard deviation change in covariate $x_j$. This in a sense standardizes the units across the covariates and makes them more directly comparable (although, not perfectly so, as some covariates are drawn from more-spread-out distributions).
+		Hence, we can calculate, for each covariate $x_j$, a beta coefficient $\hat{b}_j := \frac{\hat{\sigma}_j}{\hat{\sigma}_y}\beta_j$, interpreted as the standard deviation change in in $y_i=\textrm{vaccuptake}_i$ (in this context) frome a one standard deviation change in covariate $x_j$. This in a sense standardizes the units across the covariates and makes their corresponding effect sizes more directly comparable (although, not perfectly so, as some covariates are drawn from more-spread-out distributions).
+		
+		We also more explicitly estimate any trends in the covariates over time, by estimating the model
+		\begin{equation}
+			\textrm{vaccuptake}_{it} =  \beta_0 + \boldsymbol{\alpha}\cdot\mathbf{x}_{i} + \boldsymbol{\beta}\cdot\mathbf{x}_{i}\cdot t + \boldsymbol{\gamma}\cdot\mathbf{x}_{i}\cdot t^2 + u_i
+		\end{equation}
+		on a panel dataset of observations of vaccine uptake at the start of every month (from May 2021 to March 2021), where $\mathbf{x}_{i}$ is a vector of covariates, using clustered standard errors by county, so as to correct for serial correlation across time in each county. For any covariate $x_j$, we have that
+		\begin{equation} \label{eq:trends}
+			\frac{\partial \textrm{vaccineuptake}_{it}}{\partial x_{ij}} = \alpha_j + \beta_jt + \gamma_jt^2
+		\end{equation}
+		Hence, $\beta_j$ and $\gamma_j$ measure a quadratic trend in the effect size of the covariate on the vaccination rate over time.
+		
+		
+		It is important to note that we cannot interpret any of the coefficients estimated in Model (\ref{eq:crosssection}) and Model (\ref{eq:trends})  as estimates of the \textit{causal impact} of the respective covariate on vaccine uptake. That would require an assumption of exogeneity (and strict exogeneity in the panel Model (\ref{eq:trends})), which is unlikely to be satisfied; for example, we cannot conclude, if the coefficient on $ln(\textrm{medincome})$ is positive, that increasing incomes would increase vaccine uptake. Higher incomes may simply correlate with being more informed, an unobserved variable, and so being less likely to believe myths about vaccination harms. This would lead to omitted variable bias, biasing the coefficient on $ln(\textrm{medincome})$ upwards. Instead these coefficients simply reflect correlations in the data, which are at best suggestive.
+		
+		To answer part (b), however, we need to find out what \textit{causes} vaccine uptake to increase. We hence turn our attention to a policy many states attempted in 2021: vaccine lotteries. We will focus in particular on Colorado's "Colorado Comeback Cash" program, where all those who had received at least one dose of the vaccine were eligible for a weekly \$1 million dollar lottery (CITE). The program began on May 25, and ran to June 30 (CITE).
+		
+		% Hopefully have more lit review elaboration on this
 		
 		\begin{figure}
 			\centering
 			\includegraphics[width=6in]{../graphs/Border_Counties.png}
-			\caption*{\footnotesize{Description of figure}}
+			\caption*{\footnotesize{Oklahoma, Kansas, Nebraska and Wyoming did not have vaccine lotteries over this period (CITE). New Mexico did, and hence counties bordering New Mexico are excluded from this regression. Utah is excluded from the dataset due to missing data on some covariates.}}
 			\caption{Counties in Pair Design}
 			\label{fig:bordercounties}
 		\end{figure}
+		
+		To evaluate the effect of the vaccine lottery, we use a design inspired by Dube (2010) (CITE). We pick counties in Colorado which border counties in states which did not have vaccine lotteries across this period (see Figure \ref{fig:bordercounties}). We reason that these counties are reasonably similar to counties they share a border with (and hence, form a 'county-pair') - most things which affect one county in any period $t$ will probably also affect a paired county across the state border. Table \ref{table:didsummary} compares the selected border counties on some selected covariates; within each county-pair, differences in covariate values are generally within one standard deviation of the covariate.
+		
+		\begin{table}
+			\centering
+			\caption{Summary Statistics}
+			\centerline{\input{tables/didsummary.tex}}
+			\label{table:didsummary}
+		\end{table}
+		
+		However, only one member of each pair (the county within Colorado) is affected by the lottery. We can hence use the paired non-treated county as a control to estimate the causal impact of the vaccine lottery. We construct, as in Dube (2010), a dataset of consisting of every possible county-pair, from 10 days before the start of the lottery, to 10 days after. We then estimate on this panel the model:
+		
+		\begin{equation} \label{eq:pairdesign}
+			\textrm{vaccuptake}_{ipt} = \alpha + \beta \textrm{treated}_{it} + \phi_i + \tau_{pt} + u_{ipt}
+		\end{equation}
+		
+		$i$ is a specific county, $p$ is a county-pair it belongs to, and $t$ is the day in the panel. $\tau_{pt}$ is a pair-specific time fixed effect (shocks beside the lottery happen to both members of a pair) , and $\phi_i$ is a county fixed account (accounting for initial differences). $\textrm{treated}_it=1$ if the county $i$ is in Colorado, and $t$ is after 25 May. $\beta$, the effect of the vaccine lottery on vaccine uptake, is consistently estimated if $Cov(\textrm{treated}_{it}, u_{itp})=0$ - shocks which only affect one county in the pair.
+		
 		
 		\begin{table}
 			\centering
@@ -107,13 +142,6 @@
 			\caption{Coefficient Change Over Time}
 			\centerline{\input{tables/trends.tex}}
 			\label{table:trends}
-		\end{table}
-		
-		\begin{table}
-			\centering
-			\caption{Summary Statistics}
-			\centerline{\input{tables/didsummary.tex}}
-			\label{table:didsummary}
 		\end{table}
 	
 		\begin{table}
