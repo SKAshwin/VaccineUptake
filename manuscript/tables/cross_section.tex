@@ -4,7 +4,7 @@
 	\def\arraystretch{1.1}
 	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l*{5}{cc}}
 	\hline\hline
-				&\multicolumn{3}{c}{December 31 Sample}     & \multicolumn{2}{c}{June 2 Sample}\\
+				&\multicolumn{3}{c}{December 31 Sample}     & \multicolumn{2}{c}{June 1 Sample}\\
 				\cmidrule{2-4}\cmidrule(l{1ex}r{1ex}){5-6}
 	            &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}\\
 	            &        \multirow{2}{*}{Two Doses}        &    Two Doses    &       \multirow{2}{*}{One Dose}         &        \multirow{2}{*}{Two Doses}         &        Two Doses\\
@@ -40,6 +40,6 @@
 	White Test F-Stat&1.274&&52.24\sym{***}&5.16\sym{**}&\\
 	\hline\hline
 	\end{tabular*}
-	\caption*{\footnotesize{Notes:\\ 
+	\caption*{\footnotesize{Notes: The dependent variable in Columns 1 and 4 was the percentage of people in each county who had received at least two doses of the vaccine. The dependent variable in Column 3 was the percentage of people who had received at least one dose of the vaccine. Columns 1-3 consider vaccine up take as of 31 December 2021, whilst columns 4-5 consider vaccine uptake as of 1 June 2021. The one-dose regression is not repeated for 1 June for brevity, as its results are shown to be very similar to the two-dose regression in the 31 December sample. Beta coefficients for the two dose regressions are presented in Columns 2 and 5 without standard errors (their significance is the same as in Columns 1 and 4 respectively). The F statistic of the special variant of the White test for heteroskedasticity, ie regressing $\hat{u}_i^2=\beta_0 + \beta_1 \hat{y}_i + \hat{y}_i^2$ and testing for overall significance, is reported at the bottom. As there is evidence of heteroskedasticity in 2 out of 3 regressions, heteroskedasticity-robust standard errors are reported in parantheses for \textbf{all} coefficients for convenience (robust standard errors are still consistent in the absense of heteroskedasticity). State fixed effects are excluded for brevity, and the effect of the rural dummies are excluded as they are jointly insignificant, and thier F-statistics are reported instead.\\ 
 	\sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}}
 \end{minipage}

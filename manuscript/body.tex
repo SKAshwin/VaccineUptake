@@ -107,7 +107,7 @@
 		\begin{figure}
 			\centering
 			\includegraphics[width=6in]{../graphs/Border_Counties.png}
-			\caption*{\footnotesize{Oklahoma, Kansas, Nebraska and Wyoming did not have vaccine lotteries over this period (CITE). New Mexico did, and hence counties bordering New Mexico are excluded from this regression. Utah is excluded from the dataset due to missing data on some covariates.}}
+			\caption*{\footnotesize{Oklahoma, Kansas, Nebraska and Wyoming did not have vaccine lotteries over this period (CITE). New Mexico did, and hence counties bordering New Mexico are excluded from this regression. Utah is excluded from the dataset due to missing data on some covariates. Each county-pair in the pair design dataset consists of one county in Colorado (in dark grey), and one county in an untreated state (in light grey).}}
 			\caption{Counties in Pair Design}
 			\label{fig:bordercounties}
 		\end{figure}
@@ -121,14 +121,18 @@
 			\label{table:didsummary}
 		\end{table}
 		
-		However, only one member of each pair (the county within Colorado) is affected by the lottery. We can hence use the paired non-treated county as a control to estimate the causal impact of the vaccine lottery. We construct, as in Dube (2010), a dataset of consisting of every possible county-pair, from 10 days before the start of the lottery, to 10 days after. We then estimate on this panel the model:
+		However, only one member of each pair (the county within Colorado) is affected by the lottery. We can hence use the paired non-treated county as a control to estimate the causal impact of the vaccine lottery. We construct, as in Dube (2010), a panel of consisting of every cross-border county-pair, from 10 days before the start of the lottery, to 10 days after. We then estimate the model:
 		
 		\begin{equation} \label{eq:pairdesign}
 			\textrm{vaccuptake}_{ipt} = \alpha + \beta \textrm{treated}_{it} + \phi_i + \tau_{pt} + u_{ipt}
 		\end{equation}
 		
-		$i$ is a specific county, $p$ is a county-pair it belongs to, and $t$ is the day in the panel. $\tau_{pt}$ is a pair-specific time fixed effect (shocks beside the lottery happen to both members of a pair) , and $\phi_i$ is a county fixed account (accounting for initial differences). $\textrm{treated}_it=1$ if the county $i$ is in Colorado, and $t$ is after 25 May. $\beta$, the effect of the vaccine lottery on vaccine uptake, is consistently estimated if $Cov(\textrm{treated}_{it}, u_{itp})=0$ - shocks which only affect one county in the pair.
+		$i$ is a specific county, $p$ is a county-pair it belongs to, and $t$ is the day in the panel. $\tau_{pt}$ is a pair-specific time fixed effect (shocks beside the lottery happen to both members of a pair) , and $\phi_i$ is a county fixed account (accounting for initial differences). $\textrm{treated}_{it}=1$ if the county $i$ is in Colorado, and $t$ is after 25 May. $\beta$, the effect of the vaccine lottery on vaccine uptake, is consistently estimated if $Cov(\textrm{treated}_{it}, u_{itp})=0$ - shocks which only affect one county in the pair.
 		
+		Finally, to further check the robustness of this causal estimate, we utilize a Synthetic Control design, as detailed in (CITE) and used in prior studies on Ohio's vaccine lottery (CITE, CITE, CITE). We collapse our 3075 county level dataset into a state-level dataset, and exclude the 23 other states who had vaccine lotteries in this period (CITE). We construct a synthetic Colorado by taking a weighted average of other states to closely match Colorado on some predictive covariates (see CITE for exact details on the estimation method). We use these weights to see how vaccine uptake would have evolved in the synthetic Colorado (made of untreated states), and take the difference between the synthetic Colorado and the real Colorado's vaccine uptake on day $t$ as the causal impact of the vaccine lottery on day $t$, and test its significance.
+		
+		\section{Results and Discussion}
+		Results from the estimation of Model (\ref{eq:crosssection}) are presented in Table \ref{table:crosssection}.
 		
 		\begin{table}
 			\centering
