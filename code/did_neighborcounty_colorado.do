@@ -220,3 +220,14 @@ eststo ddose1: reg dDose1pct treated i.pairdateid i.fips, vce(cluster statecode 
 cd "$tables_dir"
 esttab fullvax dose1 dfullvax ddose1, keep(treated) se
 esttab fullvax dose1 dfullvax ddose1 using didresults.tex, keep(treated) se replace
+
+** Allow effect to vary over time
+
+gen t = date - (td(25may2021)+10)
+
+gen t_treated = t * treated
+eststo fullvax_t: reg fullvaxpct treated t_treated i.pairdateid i.fips, vce(cluster statecode pairid)
+eststo dose1_t: reg dose1pct treated t_treated i.pairdateid i.fips, vce(cluster statecode pairid)
+eststo dfullvax_t: reg dFullvaxpct treated t_treated i.pairdateid i.fips, vce(cluster statecode pairid)
+eststo ddose1_t: reg dDose1pct treated t_treated i.pairdateid i.fips, vce(cluster statecode pairid)
+

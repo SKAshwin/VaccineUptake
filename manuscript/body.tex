@@ -48,6 +48,8 @@
 		
 		By the end of 2021, only 2\% of people wanted a vaccine and had not yet got it, from survey
 		
+		% put in the fox news bit
+		
 		\section{Data and Methods}
 		\subsection{Data}
 		Regressions were generally done on the county level. Data on vaccination rates across time by county (and by state) were all sourced from the CDC (CITE). A dataset of time-invariant characteristics of each county was also compiled from many sources for 3075 counties in the United States; remaining counties were excluded due to some or all information not being available for them. This includes all US territories (such as Puerto Rico), which do not have presidential voting records, and all counties in Alaska and Hawaii. Utah's counties were also excluded due to spotty COVID-19 case data. Outside of these states, the following counties also had missing records: Bedford and Clifton Forge City, Dukes, Nantucket, Barnstable, and Ogala Lakota County, and Yellowstone National Park (which has no population).
@@ -127,7 +129,7 @@
 			\textrm{vaccuptake}_{ipt} = \alpha + \beta \textrm{treated}_{it} + \phi_i + \tau_{pt} + u_{ipt}
 		\end{equation}
 		
-		$i$ is a specific county, $p$ is a county-pair it belongs to, and $t$ is the day in the panel. $\tau_{pt}$ is a pair-specific time fixed effect (shocks beside the lottery happen to both members of a pair) , and $\phi_i$ is a county fixed account (accounting for initial differences). $\textrm{treated}_{it}=1$ if the county $i$ is in Colorado, and $t$ is after 25 May. $\beta$, the effect of the vaccine lottery on vaccine uptake, is consistently estimated if $Cov(\textrm{treated}_{it}, u_{itp})=0$ - ie, if some other shocks occurred to Colorado counties without affecting the paired counties, after 25 May.
+		$i$ is a specific county, $p$ is a county-pair it belongs to, and $t$ is the day in the panel. $\tau_{pt}$ is a pair-specific time fixed effect (shocks beside the lottery happen to both members of a pair) , and $\phi_i$ is a county fixed account (accounting for initial differences). $\textrm{treated}_{it}=1$ if the county $i$ is in Colorado, and $t$ is after 25 May. $\beta$, the effect of the vaccine lottery on vaccine uptake, is consistently estimated if $Cov(\textrm{treated}_{it}, u_{itp})=0$ - ie, if some other shocks occurred to Colorado counties without affecting the paired counties, after 25 May. We also estimate an alternative model including a $\gamma t\cdot\textrm{treated}_{it}$ term, allowing the effect of the vaccine lottery to change linearly with time over the 10 days post-treatment.
 		
 		Finally, to further check the robustness of this causal estimate, we utilize a Synthetic Control design, as detailed in (CITE) and used in prior studies on Ohio's vaccine lottery (CITE, CITE, CITE). We collapse our 3075 county level dataset into a state-level dataset, and exclude the 23 other states who had vaccine lotteries in this period (CITE). We construct a synthetic Colorado by taking a weighted average of other states to closely match Colorado on some predictive covariates (see CITE for exact details on the estimation method). We use these weights to see how vaccine uptake would have evolved in the synthetic Colorado (made of untreated states), and take the difference between the synthetic Colorado and the real Colorado's vaccine uptake on day $t$ as the causal impact of the vaccine lottery on day $t$, and test its significance.
 		
@@ -171,12 +173,12 @@
 			\input{tables/synthcontrolresults.tex}
 		\end{table}
 		
-		Our results here are consistent with the broader literature - though the pair design is novel for this topic - which generally finds that such lotteries had either no effect or very small or positive (and negative!) effects on vaccination. If non-vaccination is largely driven by false beliefs on supposed extreme health dangers of the vaccine, or a simple mistrust of the government, offering financial rewards may not overcome these perceived costs of vaccination.
+		Our results here are consistent with the broader literature which generally finds that such lotteries had either no effect or very small effects on vaccination. If non-vaccination is largely driven by false beliefs on supposed extreme health dangers of the vaccine, or a simple mistrust of the government, offering financial rewards may not overcome these perceived costs of vaccination.
 		
 		\section{Conclusion}
-		In conclusion
+		We have affirmed that variation in vaccine uptake across the United States are explainable, largely, by variation in political and religious affiliations, race and less so based on factors such as the local age structure and pre-vaccination Covid cases in a county. We have also found that racial, religious and political polarization is only increasing in time; we argue that this is suggestive of the impact of social influence on vaccine uptake. While data limitations prevent us from directly testing the importance of social messaging, this is line with prior literature.
 		
-	
+		We were able to construct two probably causal designs to consistently estimate the treatment effect of the vaccine lottery program in Colorado, and find no significant effect. Given that financial incentives seem ineffective at raising vaccine uptake, focus needs to be on social messaging; the increasing vaccine uptake in counties with more Catholics over time may suggest that messaging from religious leaders can be effective.
 		
 	\end{spacing}
 
