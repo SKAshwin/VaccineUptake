@@ -2093,11 +2093,15 @@
     <bcf:citekey order="18">burki_increasing_2021</bcf:citekey>
     <bcf:citekey order="19">murphy_colorado_2021</bcf:citekey>
     <bcf:citekey order="20">thirumurthy_association_2022</bcf:citekey>
-    <bcf:citekey order="21">dube_minimum_2010</bcf:citekey>
-    <bcf:citekey order="22">abadie_using_2021</bcf:citekey>
-    <bcf:citekey order="23">lang_did_2022</bcf:citekey>
-    <bcf:citekey order="24">thirumurthy_association_2022</bcf:citekey>
-    <bcf:citekey order="25">gawel_effects_2021</bcf:citekey>
+    <bcf:citekey order="21">thirumurthy_association_2022</bcf:citekey>
+    <bcf:citekey order="22">thirumurthy_association_2022</bcf:citekey>
+    <bcf:citekey order="23">dube_minimum_2010</bcf:citekey>
+    <bcf:citekey order="24">abadie_using_2021</bcf:citekey>
+    <bcf:citekey order="25">lang_did_2022</bcf:citekey>
+    <bcf:citekey order="26">thirumurthy_association_2022</bcf:citekey>
+    <bcf:citekey order="27">gawel_effects_2021</bcf:citekey>
+    <bcf:citekey order="28">wiltshire_allsynth_2022</bcf:citekey>
+    <bcf:citekey order="29">wiltshire_allsynth_2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

@@ -34,20 +34,12 @@
 \usepackage[backend=biber, bibencoding=utf8, style=apa, natbib]{biblatex}
 \addbibresource{Vaccine Uptake Project.bib}
 
+\usepackage{pdfpages}
 
 \begin{document}
-	\maketitle
-	\begin{spacing}{1.5} % set 1.5 line spacing
-		Q1. Vaccination take-up rates: Inter-State differences in the USA in 2021.
-		
-		At the end of 2021 the share of the population fully vaccinated against Covid-19 differed widely across US States.
-		
-		a) Identify and evaluate the main economic and social factors giving rise to this outcome.
-		
-		b) On the basis of your answer to a), suggest how high vaccination rates might be achieved across the entire United States.
-		
-		\wordcount words
-		\pagebreak
+	\includepdf[pages=-,pagecommand={},width=\textwidth]{titlepage.pdf}
+	\begin{spacing}{1.5} % set 1.5 line spacing		
+		%\wordcount words
 		\section{Introduction}
 		By the end of 2021, only 2\% of people wanted a vaccine and had not yet got it (\cite{kff_kff_2022}). Differences in vaccine uptake is hence likely due to to personal choice. Existing research has highlighted correlations in vaccine uptake by factors such as race and party affiliation (\cite{viswanath_individual_2021}). Causal studies have focused on the effect of media consumption (\cite{pinna_cable_2021}), finding that Fox News consumption causally reduces vaccine uptake.
 		
@@ -112,7 +104,7 @@
 		\begin{figure}
 			\centering
 			\includegraphics[width=6in]{../graphs/Border_Counties.png}
-			\caption*{\footnotesize{Oklahoma, Kansas, Nebraska and Wyoming did not have vaccine lotteries over this period (CITE). New Mexico did, and hence counties bordering New Mexico are excluded from this regression. Utah is excluded from the dataset due to missing data on some covariates. Each county-pair in the pair design dataset consists of one county in Colorado (in dark grey), and one county in an untreated state (in light grey). County-pairs were matched using the NBER county adjacency dataset.}}
+			\caption*{\footnotesize{Oklahoma, Kansas, Nebraska and Wyoming did not have vaccine lotteries over this period (\cite{thirumurthy_association_2022}). New Mexico did, and hence counties bordering New Mexico are excluded from this regression. Utah is excluded from the dataset due to missing data on some covariates. Each county-pair in the pair design dataset consists of one county in Colorado (in dark grey), and one county in an untreated state (in light grey). County-pairs were matched using the NBER county adjacency dataset.}}
 			\caption{Counties in Pair Design}
 			\label{fig:bordercounties}
 		\end{figure}

@@ -1214,6 +1214,39 @@
       \endverb
       \keyw{{COVID}-19 vaccine uptake,Partisanship and vaccine acceptance,Social determinants and vaccine uptake,Trust in scientists}
     \endentry
+    \entry{wiltshire_allsynth_2022}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=cb667d2d87ebe4f1990eff818a76b856}{%
+           family={Wiltshire},
+           familyi={W\bibinitperiod},
+           given={Justin\bibnamedelima C},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cb667d2d87ebe4f1990eff818a76b856}
+      \strng{fullhash}{cb667d2d87ebe4f1990eff818a76b856}
+      \strng{bibnamehash}{cb667d2d87ebe4f1990eff818a76b856}
+      \strng{authorbibnamehash}{cb667d2d87ebe4f1990eff818a76b856}
+      \strng{authornamehash}{cb667d2d87ebe4f1990eff818a76b856}
+      \strng{authorfullhash}{cb667d2d87ebe4f1990eff818a76b856}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Synthetic control methods are widely-used for estimating counterfactuals and treatment effects of policy interventions. allsynth adds greatly-enhanced functionality to the user-written synth module for Stata, which is widely used by practitioners to implement the \textquotedblleft{}classic\textquotedblright{} synthetic control estimation strategy. allsynth automates implementation of several extensions to the classic approach while retaining the syntax of synth. These include a bias-correction procedure that adjusts for differences in the predictor variable values between a treated unit and its synthetic control donors, as well as extensions of the classic and bias-corrected estimators to environments with many treated units and treatment periods (a \textquotedblleft{}stacked\textquotedblright{} synthetic control estimator) and to in-space placebo treatment estimation for randomization inference. allsynth also provides enhanced automated graphing capability and thorough diagnostics to help users with implementation. allsynth version 1.0 can be installed by typing ssc install allsynth, replace all in Stata\textquoteright{}s command line.}
+      \field{langid}{english}
+      \field{title}{allsynth: (Stacked) Synthetic Control Bias-Correction Utilities for Stata}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{40}
+      \range{pages}{1}
+      \verb{file}
+      \verb Wiltshire - allsynth (Stacked) Synthetic Control Bias-Correct.pdf:/home/elven/Zotero/storage/VDCRYDJJ/Wiltshire - allsynth (Stacked) Synthetic Control Bias-Correct.pdf:application/pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
