@@ -40,19 +40,3 @@ All code is in `code`. See `code/README` for more details, but this generally in
 `raw_tables` contains the raw LaTeX output by the stata code (usually via `esttab`). The final tables are manually edited from this base, and located in `manuscript/tables`. The LaTeX scripts do **not** reference the contents of `raw_tables`, which are regenerated every time the code is run (so do not make manual edits on them).
 
 `synth` contains the output of the various synthetic control estimates.
-
-## Graphs
-
-1. County level cross-section, showing beta coefficients, in two different periods, with state fixed effects. Generated already, but need to add a row for the White Test results. Comment on the beta coefficient sizes etc.
-
-2. Trend graph, showing the change of the partial effects (linear and quadratic). Commentary on the groups entrenching.
-
-3. Pair design summary statistics, showing similarities.
-
-4. Pair design shaded counties
-
-5. Pair design results
-
-6. Synthetic control results and Synthetic control weights
-
-7. Synthetic control graphs (depending on if they count for multiple)
