@@ -40,3 +40,5 @@ All code is in `code`. See `code/README` for more details, but this generally in
 `raw_tables` contains the raw LaTeX output by the stata code (usually via `esttab`). The final tables are manually edited from this base, and located in `manuscript/tables`. The LaTeX scripts do **not** reference the contents of `raw_tables`, which are regenerated every time the code is run (so do not make manual edits on them).
 
 `synth` contains the output of the various synthetic control estimates.
+
+`manuscript` contains all the LaTeX files, including the Biber files. `manuscript/count.txt` is used as part of the wordcounting script, and `manuscript/titlepage.pdf` is generated in word to match a format specified by the examiners. `manuscript/body.tex` contains the bulk of the text of the manuscript, and the tables used are in `manuscript/tables`.
