@@ -1,7 +1,6 @@
 # Data and Sources
 
-
-Data we have already obtained has details on how to obtain it. The ones unlabelled have yet to be acquired.
+Store all raw files in a folder `/raw` within this folder, with the same names.
 
 * Unemployment rates by county. `raw/laucmtycur14.xlsx` contains unemployment rates by county, fetched from https://www.bls.gov/lau/#tables
 
@@ -26,13 +25,6 @@ Data we have already obtained has details on how to obtain it. The ones unlabell
 * COVID-19 Deaths and Cases in 2020, by county. `raw/cases01dec20.csv` contains information on cases and deaths in every region of every country of the world, taken from the CSSE COVID-19 Data Repository maintained by John Hopkins, here: https://github.com/CSSEGISandData/COVID-19 
 
 * A county adjacency map, for the matched pair design, taken from https://www.nber.org/research/data/county-adjacency
-
-* Fox News viewership by county.
-
-* Fox News Channel number by county
-
-## Ideas on future sources
-
 
 
 
