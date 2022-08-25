@@ -15,7 +15,7 @@ achieved across the entire United States
 
 ## Solution Idea
 
-Question was addressed using county-level data in the United States. (see `data/` and the Navigation section below for how this data was assembled from about a dozen sources; see as well as the Data and Methods section of the final manuscript).
+Question was addressed using county-level data in the United States. (see `data/` and the Navigation section below for how this data was assembled from about a dozen sources; see as well as the Data and Methods section of the final manuscript). Data was generally obtained from several repositories (eg the census) and some webscraping in some cases.
 
 We first ran simple county-level regressions (no causal interpretation; see below for more sophisticated methodology), linking the share of the adult population vaccinated (the "vaccine uptake") with several county-level covariates, with state-level fixed effects. We also attempted this regression on a panel of counties, with their vaccine uptakes recorded for each month from May 2021 to March 2022, adding interactions with the covariates and time to watch the evolution of the slope estimates over time. With this, we observed greater polarization by party ID and by religion over time.
 
@@ -28,6 +28,18 @@ We then also attempted a state and county-level synthetic control design; only t
 ## Navigation
 
 The final report as submitted is located in `manuscript/2842A.pdf` ([see here](https://github.com/SKAshwin/VaccineUptake/blob/main/manuscript/2842A%20Question%201.pdf)), compiled using LaTeX (and a Word page used for the title page, as dictated by the requirements). The report had to adhere to a 2000-word limit not including table captions and text (hence the sheer amount of text stored in tables, to evade this limit), and then a maximum of 8 tables and figures.
+
+The README in `data/` contains information on how to obtain the raw datasets, which should be stored in `data/raw` for the files in `code` to run (note: non of the raw data was committed to the repo, you would have to fetch it manually as per the README instructions).
+
+All code is in `code`. See `code/README` for more details, but this generally involved python files to scrape or reformat the raw data sources, then stata files to assemble the various datasets, stata files to estimate the various models, and some stata files to generate relevant tables. Not all estimated models were ultimately used.
+
+`estimates` contain the `.ster` files from all of the estimates of the various models that are output from the files in `code`.
+
+`graphs` contains the graphs used in the manuscript (as is referenced by the LaTeX)
+
+`raw_tables` contains the raw LaTeX output by the stata code (usually via `esttab`). The final tables are manually edited from this base, and located in `manuscript/tables`. The LaTeX scripts do **not** reference the contents of `raw_tables`, which are regenerated every time the code is run (so do not make manual edits on them).
+
+`synth` contains the output of the various synthetic control estimates.
 
 ## Graphs
 
