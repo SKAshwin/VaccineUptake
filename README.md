@@ -1,3 +1,7 @@
+# Cambridge Part IIA Econometrics Project
+
+40% of Cambridge students' overall grades on the Part IIA (Second Year) Econometrics course is decided by an econometrics project for which students have 12 days to complete a selected question (not viewed beforehand). The following question was picked:
+
 ## Question
 
 At the end of 2021 the share of the population fully vaccinated against Covid-19 differed
@@ -9,45 +13,21 @@ achieved across the entire United States
 
 ----
 
-## Ideas
+## Solution Idea
 
-Planned focus: Media coverage on the vaccine, and FOX news
-Solution: more attempt to engage in advocacy for the vaccine on these right-wing networks
+Question was addressed using county-level data in the United States. (see `data/` and the Navigation section below for how this data was assembled from about a dozen sources; see as well as the Data and Methods section of the final manuscript).
 
-Instrument for media coverage/Republican membership: FOX news channel position
-Idea: more FOX news viewership → lower vaccination rates
+We first ran simple county-level regressions (no causal interpretation; see below for more sophisticated methodology), linking the share of the adult population vaccinated (the "vaccine uptake") with several county-level covariates, with state-level fixed effects. We also attempted this regression on a panel of counties, with their vaccine uptakes recorded for each month from May 2021 to March 2022, adding interactions with the covariates and time to watch the evolution of the slope estimates over time. With this, we observed greater polarization by party ID and by religion over time.
 
-Synthetic control for vaccine incentive programs: see https://jamanetwork.com/journals/jama/fullarticle/2781792 but maybe pick another state.
+We however, still wanted to make _causal_ claims; the above regression just gives some rough correlations. To answer part (b) of the question, we need to show some factor causes changes in vaccine uptake. We decided to study vaccine lotteries - in particular, Colorado's vaccine lottery, where getting a first jab of the vaccine entitled you to entry into a lottery to win millions of dollars.
 
-Use Vatican's statements to try and see how it influences Catholics: https://pubmed.ncbi.nlm.nih.gov/34960233/. This would work via a DiD type set up - counties with more Catholics should have their new vaccination gap emerge with other counties. Can use the statement by the Pope and North/South American bishops on 18 August 2021 to see if gap opened up between Catholics and other religious groups.
+We tested this state-level intervention by using a design inspired by Dube et al (2010)'s minimum wage study. Using NBER's county-pair adjacency dataset, we constructed a panel/cluster dataset consisting of every county-pair on the Colorado border (consisting of one Colorado county and non-Colorado county, that was untreated, that were adjacent to one another. IE, a single county would appear in multiple pairs, for each county-pair it was a member of, and hence be in multiple rows on the same day) across 10 days from before the start of their lottery program (on 25 May) to 10 days after the end. We then estimate the effect of the lottery - which only took place in one half of each pair, after 25 May, and controlled for pair-specific time fixed effects (IE all shocks that affect both members of a pair on each day) and county fixed effects (initial differences between counties in uptake); in effect we used the non-Colorado member of each adjacency pair as a "control" for the other member. We find no effect of the vaccine lottery (using standard errors clustered at the county-pair level); although its possible this result was driven by a lack of efficiency in our estimators (variances were fairly high; computational limits prevented us from considering a larger panel, across time or considering more states with lotteries).
 
-Use the proportion of votes in 2020 that were in person, after controlling for donald trump vote %, as a measure for how seriously COVID-19 is taken on average in that county (how much risk do people assess to themselves).
+We then also attempted a state and county-level synthetic control design; only the state level design was feasible in the end, due to computational constraints. This methodology also found no effect of the vaccine lotteries.
 
-Reduced form regression: rural status, Republican membership, total cumulative covid cases/deaths in that county, demographic factors, educational attainment
+## Navigation
 
-throw some of these into a panel but exogeneity is questionable there?
-
-Can also check for effect of income grants on vaccination rates. Can use the Biden stimulus checks: these were sent out over March 2021 (see https://www.aarp.org/money/taxes/info-2020/irs-timeline-to-send-stimulus-funds.html), and had equal nominal value, so vastly differing real values by county. Note the timing of these checks was staggered non-randomly’ based on whether previous income tax info was available. The vast majority of checks were on March 12/19 and April 2. The April 2 payment was for those with no previous tax return, and so likely the poorest, worth noting.
-
-Bill was signed around March 11, though widely expected.
-
-Can also use the expiry of the unemployment insurance top-up, but this was known in advance.
-
-Can use Afghan invasion as instrument for local Biden approval. Note that only state level data will be available for approval rating, however.
-
-
-https://www.census.gov/library/stories/2021/12/who-are-the-adults-not-vaccinated-against-covid.html
-
-This tells us that why Adults arent vaccinated, as of end 2021. Almost no one (2%) is due to inability to access the vaccine.
-
-https://www.census.gov/programs-surveys/household-pulse-survey/data.html
-
-The household pulse survey has a tonne of state level information.
-
-GENERAL NOTES ON FINDINGS:
-* Deaths per capita is actually not predictive of future vaccination
-* Cases per capita is; and positively so, but maybe this is a matter of reflecting more testing and so stronger attitudes towards covid
-* In 30 September, Republican effect weaker, and interestingly Catholic premium also disappears
+The final report as submitted is located in `manuscript/2842A.pdf` ([see here](https://github.com/SKAshwin/VaccineUptake/blob/main/manuscript/2842A%20Question%201.pdf)), compiled using LaTeX (and a Word page used for the title page, as dictated by the requirements). The report had to adhere to a 2000-word limit not including table captions and text (hence the sheer amount of text stored in tables, to evade this limit), and then a maximum of 8 tables and figures.
 
 ## Graphs
 
