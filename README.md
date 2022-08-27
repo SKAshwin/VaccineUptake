@@ -25,6 +25,19 @@ We tested this state-level intervention by using a design inspired by Dube et al
 
 We then also attempted a state and county-level synthetic control design; only the state level design was feasible in the end, due to computational constraints. This methodology also found no effect of the vaccine lotteries.
 
+## Quick Start Replication Guide
+
+```bash
+git clone git@github.com:SKAshwin/VaccineUptake.git
+cd VaccineUptake
+cd data
+bash download_data.sh
+```
+
+Execute the following lines to download the repository and then download the contents of the `data/` directory. On a windows computer, follow the instructions in `data/README.md` for how to set up the data directory after cloning to repository.
+
+Go to the `code` file, and execute the files in the order specified by `code/README.md`, changing any directory names at the top of each file.
+
 ## Navigation
 
 The final report as submitted is located in `manuscript/2842A.pdf` ([see here](https://github.com/SKAshwin/VaccineUptake/blob/main/manuscript/2842A%20Question%201.pdf)), compiled using LaTeX (and a Word page used for the title page, as dictated by the requirements). The report had to adhere to a 2000-word limit not including table captions and text (hence the sheer amount of text stored in tables, to evade this limit), and then a maximum of 8 tables and figures.
