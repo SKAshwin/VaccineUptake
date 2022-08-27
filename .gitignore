@@ -1,4 +1,6 @@
 data/*
 !data/README.md
+!data/download_data.sh
+!data/*json
 
 *.odt
