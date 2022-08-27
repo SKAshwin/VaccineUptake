@@ -1,4 +1,14 @@
-# Data and Sources
+## Loading Raw Data (Quick Start)
+
+The quickest way to obtain the raw data to replicate the paper is, on a unix system, to simply run (from this directory):
+
+```bash
+bash download_data.sh
+```
+
+Otherwise, visit [this site](https://downloads.skashwin.com/projects/VaccineUptake/VaccUptake_raw_data.zip) to download the zip file containing all the raw datasets. Then unzip the contents into a folder `/raw` in this directory.
+
+## Data and Sources
 
 Store all raw files in a folder `/raw` within this folder, with the same names.
 
@@ -26,5 +36,7 @@ Store all raw files in a folder `/raw` within this folder, with the same names.
 
 * A county adjacency map, for the matched pair design, taken from https://www.nber.org/research/data/county-adjacency
 
+## Webscraping
 
+The contents of `raw/webscrape` were scraped from some websites. The collection of 3 Postman requests needed to replicate this (as of the time of writing this) is stored in `metrics project webscrape.postman_collection.json`. Full documentation on the exact http requests made is available [here](https://documenter.getpostman.com/view/6196102/UyxdKp8F).
 
