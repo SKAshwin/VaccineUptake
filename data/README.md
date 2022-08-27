@@ -6,7 +6,7 @@ The quickest way to obtain the raw data to replicate the paper is, on a unix sys
 bash download_data.sh
 ```
 
-Otherwise, visit [this site](https://downloads.skashwin.com/projects/VaccineUptake/VaccUptake_raw_data.zip) to download the zip file containing all the raw datasets. Then unzip the contents into a folder `/raw` in this directory.
+Otherwise, visit [this site](https://downloads.skashwin.com/projects/VaccineUptake/VaccUptake_raw_data.zip) to download the zip file containing all the raw datasets. Then unzip the contents into a folder `/raw` in this directory. Then create empty folders `/cleaned`, `/regression_ready` and `/temp` in this directory (used by the code files).
 
 ## Data and Sources
 
