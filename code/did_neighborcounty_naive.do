@@ -6,25 +6,6 @@ global reg_ready_dir "/home/elven/Documents/College/metrics_project/data/regress
 global time_invariant "time_invariant"
 global vaccuptake "COVID-19_Vaccinations_in_the_United_States_County_Colorado_DID.csv"
 
-* Southern Border of Michigan
-* Treated
-* 021 027 149 023 (indiana border) || (ohio border) 059 091 115
-
-* Northern Border of indiana 
-* Untreated
-* 091 141 039 057 151
-
-* Northern Border of Ohio
-* Untreated
-* 171 051 095
-
-* Northern Border of Michigan
-* Treated
-* 053 071 043 109
-
-* Northern Border of Wisconsin
-* 051 125 041 037 075
-
 ****************************
 * Treatnment: 25 May to 30 June
 
