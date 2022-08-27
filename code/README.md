@@ -1,6 +1,6 @@
 The various code files can be broken down into the following tasks. Some never had their output used in the final product in the end. Make sure to only run code here after setting up the `/data/raw` folder (see `data/README.md`).
 
-All files will have the directories they reference (e.g. the path to the cleaned data directory and the path to the cleaned)
+All files will have the directories they reference (e.g. the path to the cleaned data directory and the path to the cleaned). Code should be executed in order of the task groupings (all parsing code run first, then all cleaning code, then the merging code, then the estimation code etc).
 
 ## Parsing raw files into CSVs
 
@@ -39,6 +39,8 @@ Several models are estimated: a set of simple cross-sections, a panel to see the
 
 * `cross_section.do` estimates several cross-sectional models of vaccine uptake by county (with different measures of uptake and different model specifications) and tests each of these models for heteroskedasticity.
 
+* `trend_overtime.do` measures the trend in the slopes of the main cross-sectional model over time (e.g. were more Democratic counties even more vaccinated, relatively, later in the pandemic).
+
 * `did_neighborcounty_naive.do` implements a difference-in-differences to measure the effects of the Colorado and Kentucky vaccine lottery, using their neighboring states' counties as untreatred units. The treated units are the counties of Colorado/Kentucky (done separately) that border the neighboring states, and similarly the untreated units are the neighbors' border counties. This is a fairly weak methodology (its unclear that the bordered counties are such good controls and nothing else happened to them as a whole in the treatment period). Results unused in the end.
 
 * `did_neighborcounty.do` implements Dube (2010)'s method to control for border county pair-time fixed effects (see the manuscript or the main README), on Kentucky to measure the effect of its vaccine lottery. Several errors are made in this do-file, which was a first attempt; for example, clustered standard errors are not used. Results unused in the end.
@@ -49,6 +51,12 @@ Several models are estimated: a set of simple cross-sections, a panel to see the
 
 * `coloradosynthcontrol.do` uses a synthetic control method to estimate the effect of the vaccine lottery in Colorado, using the other states that did not have a vaccine lottery over the period as components of a synthetic Colorado.
 
-* `coloradosynthcontrol_bycounty.do` attempts the same as the above,but with the synthetic Colorado constructed at the county-level, with each Colorado county having a synthetic control counterpart created using all untreated counties in similar states. Due to computational contraints, not feasible.
+* `coloradosynthcontrol_bycounty.do` attempts the same as the above,but with the synthetic Colorado constructed at the county-level, with each Colorado county having a synthetic control counterpart created using all untreated counties in similar states. Due to computational contraints, not feasible. No results obtained in the end.
 
 ## Generating tables/figures
+
+Stata code to help generate tables for some estimates (other tables were generated within the estimation folders above)
+
+* `cross_section_tables.do` generates the raw tables displaying the results of the cross-section regressions.
+
+* `final_table_help.do` estimates some stats (the White Test, the joint significance of the rural variables, and the join significance of the income variables) and puts them in a table, which is then manually appended to the cross section tables generated above in the final manuscript.
