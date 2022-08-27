@@ -41,8 +41,14 @@ Several models are estimated: a set of simple cross-sections, a panel to see the
 
 * `did_neighborcounty_naive.do` implements a difference-in-differences to measure the effects of the Colorado and Kentucky vaccine lottery, using their neighboring states' counties as untreatred units. The treated units are the counties of Colorado/Kentucky (done separately) that border the neighboring states, and similarly the untreated units are the neighbors' border counties. This is a fairly weak methodology (its unclear that the bordered counties are such good controls and nothing else happened to them as a whole in the treatment period). Results unused in the end.
 
-* `did_neighborcounty.do` implements Dube (2010)'s method to control for border county pair-time fixed effects (see the manuscript or the main README), on Kentucky to measure the effect of its vaccine lottery. Several errors are made in this do-file, which was a first attempt; for example, clustered standard errors are not used.
+* `did_neighborcounty.do` implements Dube (2010)'s method to control for border county pair-time fixed effects (see the manuscript or the main README), on Kentucky to measure the effect of its vaccine lottery. Several errors are made in this do-file, which was a first attempt; for example, clustered standard errors are not used. Results unused in the end.
 
 * `did_neighborcounty_colorado.do` implements Dube (2010)'s method to control for border county pair-time fixed effects on Colorado to measure the effect of its vaccine lottery. This is the correct implementation, using robust standard errors and also checking if the effects of the policy changed over time.
+
+* `catholicdid.do` is a silly attempt to use a papal announcement on 18 August 2021 as an exogenous shock which may have caused greater vaccine uptake in counties with more Catholics. Results unused in the end.
+
+* `coloradosynthcontrol.do` uses a synthetic control method to estimate the effect of the vaccine lottery in Colorado, using the other states that did not have a vaccine lottery over the period as components of a synthetic Colorado.
+
+* `coloradosynthcontrol_bycounty.do` attempts the same as the above,but with the synthetic Colorado constructed at the county-level, with each Colorado county having a synthetic control counterpart created using all untreated counties in similar states. Due to computational contraints, not feasible.
 
 ## Generating tables/figures
