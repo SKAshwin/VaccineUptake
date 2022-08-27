@@ -2,16 +2,10 @@
 
 40% of Cambridge students' overall grades on the Part IIA (Second Year) Econometrics course is decided by an econometrics project for which students have 12 days to complete a selected question (not viewed beforehand). The following question was picked:
 
-## Question
+>At the end of 2021 the share of the population fully vaccinated against Covid-19 differed widely across US States (see Figure 1).
+a) Identify and evaluate the main economic and social factors giving rise to this outcome.
+b) On the basis of your answer to a), suggest how high vaccination rates might be achieved across the entire United States
 
-At the end of 2021 the share of the population fully vaccinated against Covid-19 differed
-widely across US States (see Figure 1).
-a) Identify and evaluate the main economic and social factors giving rise to this
-outcome.
-b) On the basis of your answer to a), suggest how high vaccination rates might be
-achieved across the entire United States
-
-----
 
 ## Solution Idea
 
