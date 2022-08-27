@@ -35,4 +35,14 @@ The various datasets are merged into larger datasets for models to be estimated 
 
 ## Estimating models
 
+Several models are estimated: a set of simple cross-sections, a panel to see the change in the _coefficients_ on the time-invariant regressors over time, several difference-in-difference based specifications (including the Dube 2010 inspired methodology that forms the best founded part of the work) and then the synthetic controls. Not all of the results were used.
+
+* `cross_section.do` estimates several cross-sectional models of vaccine uptake by county (with different measures of uptake and different model specifications) and tests each of these models for heteroskedasticity.
+
+* `did_neighborcounty_naive.do` implements a difference-in-differences to measure the effects of the Colorado and Kentucky vaccine lottery, using their neighboring states' counties as untreatred units. The treated units are the counties of Colorado/Kentucky (done separately) that border the neighboring states, and similarly the untreated units are the neighbors' border counties. This is a fairly weak methodology (its unclear that the bordered counties are such good controls and nothing else happened to them as a whole in the treatment period). Results unused in the end.
+
+* `did_neighborcounty.do` implements Dube (2010)'s method to control for border county pair-time fixed effects (see the manuscript or the main README), on Kentucky to measure the effect of its vaccine lottery. Several errors are made in this do-file, which was a first attempt; for example, clustered standard errors are not used.
+
+* `did_neighborcounty_colorado.do` implements Dube (2010)'s method to control for border county pair-time fixed effects on Colorado to measure the effect of its vaccine lottery. This is the correct implementation, using robust standard errors and also checking if the effects of the policy changed over time.
+
 ## Generating tables/figures
