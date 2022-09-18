@@ -10,7 +10,7 @@ Otherwise, visit [this site](https://downloads.skashwin.com/projects/VaccineUpta
 
 ## Data and Sources
 
-Store all raw files in a folder `/raw` within this folder, with the same names. All links below (except for the BLS link, which could not easily be archived) are webarchive links and so should be permanently accessible.
+If you want to manually compile the data from its original sources, refer to this section. Store all raw files in a folder `/raw` within this folder, with the same names. All links below (except for the BLS link, which could not easily be archived) are webarchive links and so should be permanently accessible.
 
 * Unemployment rates by county. `raw/laucmtycur14.xlsx` contains unemployment rates by county, fetched from https://www.bls.gov/lau/#tables
 
